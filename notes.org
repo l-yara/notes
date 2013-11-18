@@ -1,0 +1,148 @@
+Шопен http://www.youtube.com/watch?v=t778ejt1oMI
+- логика + ссылки на учебники http://lectica.livejournal.com/6873.html
+- http://thinkrelevance.com/blog/tags/clojure
+- http://schegl2g.bget.ru/bayes/YudkowskyBayes.html
+- http://skillsmatter.com/podcast/home/high-performance-design
+- http://skillsmatter.com/podcast/home/cascalog-hadoop-sanity
+- http://skillsmatter.com/podcast/home/deuce-is-not-yet-emacs-under-clojure
+- http://skillsmatter.com/podcast/scala/real-world-comparison-of-scala-and-clojure
+- http://www.lambdanext.com (training / consultancy)
+
+- https://devcenter.heroku.com/categories/learning
+- https://devcenter.heroku.com/articles/clojure-web-application
+- http://nakkaya.com/2013/04/06/using-clojure-with-org-babel-and-nrepl/
+- http://nakkaya.com/2009/11/30/running-compojure-as-a-service/
+
+
+
+Books to select:
+- http://www.manning.com/marz/
+- http://www.manning.com/crowther/
+- http://www.manning.com/bjarnason/
+- http://www.manning.com/ghosh/
+- http://www.manning.com/rathore2/
+- http://www.amazon.com/gp/product/178216264X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=178216264X&linkCode=as2&tag=aleottshompag-20
+
+-- Bruce Durling on Data processing by cascalog: http://skillsmatter.com/podcast/java-jee/cascalog-for-the-80-of-data-science/mh-7168 , recommends to use Midje for testing over REPL - produced code;
+Cascalog for Impatient: https://github.com/Quantisan/Impatient/wiki
+
+-- Books:
+---- http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure
+---- http://pragprog.com/book/rdbcd/behind-closed-doors
+
+-- Weka - ML package (Mahout?)
+-- jBLAS - linear algebra package
+-- Session lib (???)
+
+
+- пробить REST операции и их аналоги по CRUD
+- Олегу: RSA Factorisation Challenge (Clay Millennium Problems)
+- слушаем Silly Wizard, The Pogues
+- фильм "Внутреннее пространство"; "Первый рыцарь"
+- Junior Chess Club: East Grinstead, David Fryer 01342 317287
+- профиль на линкед Ин - переделать с нуля (погуглить что нужно)
++ Shred it
++ курсы для Люды
+
+-- Thursday, 13: 16.00 11 Leadenhall Street: Shilen Shah 07711 773621
+
+* Hunting
+-- http://www.just-java.co.uk/ (nafik)
+-- CWJobs
+-- Jobsite
+-- Jobserve
+-- emptylemon(s).co.uk
+-- planetjobs
+-- LinkedIn
+** Ashton Carter: Alex Quill
+-- Barcap - Java Developer - 62569
+** Ashton Carter: James Egan
+-- Mizuho - Java Middleware Senior Developer
+** Ruth Warren (Gibbs S3)
+-- State Street: Java Architect role (2498565)
+** James Goddard (Monarch Recruitment)
+-- Global Dawn
+** Joseph Matthews (RequiredBI)
+-- UBS (92004BR)
+** Mauro Casali (SALT)
+-- Xtrakter
+** Roundabout
+-- foodity.com
+** Sam Rushton (Astbury Marsden)
+-- JP Morgan
+** James Zelenczuk (c4commerce)
+- Hybris (Portaltech Reply) - трепались в пятницу, похоже, пошлю(т)
+** Sam Shah (Tau Search)
+- Sungard
+** Rachel Ody (Oho Group)
+- Roboreus (Geosweep), Geonomics
+** Joanna Harrison (Pentasia)
+- BGO
+** McGregor-Boyall (Jamie Hearne)
+- HSBC
+** Client Server (with Adam Juckes)
+- Moving Picture Company
+- Ontology Systems
+- Moogsoft (послан после интервью в Guildford)
+- Morgan Stanley
+- Gamesys
+** Client Server (Robert Canavan)
+- Erudine Financial
+*** Erudine Financial :
+- Q:
+-- what is the knowledge base here (it is not a rule engine, OK - but it some questions, so is it a sort of ML categorisation engine?).
+-- why the TDD was mentioned a few times - is it a sort of Machine Learning engine which is being
+-- why are the words "functional" and "Erlang" was used? Is this about Sparkl product? If yes, does Erudine team consider new "trendy" languages like Scala and Clojure?
+-- a bit more details: once I've seen that "Erudine builds an app from data" (and I've seen a strange Swing application with some sort of Entity-Relation editor). Does it imply Model Driven Design and (God save us) dynamic entity model?
+-- a bit more of the story: it is quite unusual ()
+
+** Thomas Pearson (Recworks)
+- Erudine (пшли нах)
+** Ali
+- Morgan Stanley
+- Goldman Sachs
+- Gresearch
+- Man AHL
+- Palantir Technologies
+- Citi - eTrading Credit Algo
+** Oliver Bernard (Tom Nicholls)
+- BSkyB
+- Local World
+- Aimia
+** Penta Consulting Ltd (James Peachey)
+- Leading FX trading house in London urgently requires a C# Software Engineer
+** Stott and May (Adrien Amsellem)
+- Zeebox
+- Peerius
+- Unibet (missed)
+- SwiftKey
+** eSynergy (Danny Barber)
+- Brickendon
+** Hydrogen (Dom West)
+- TimeOut
+** Requiva (Zac Wallis)
+- Flexeye 8-()
+** Oscar Associates (Kevin Holt) - Oil & Gas!!!
+- Consultancy
+** TRG Technology Recruitment (Adam Scott)
+
+
+* Chess
+www.englishchess.org.uk/calendars-rd/  => Calendars
+Membership number: JB23837 Grading core: 293658G
+
+
+* Копипаста
+
+- "the world can go to hell unless I have my lunch"
+- When you are with work - be with work. When you are with your woman - be with your woman. When you drink coffee - coffee is your woman....
+- ...мелкий чиновник Цутому Ямагути 6 августа 1945 года был в Хиросиме, когда на город упала американская атомная бомба. Японец получил тяжелые ожоги и на следующий день вернулся домой в город Нагасаки, на который 8 августа США сбросили вторую ядерную бомбу. В 2009 году, за год до смерти... (http://plumqqz.livejournal.com/365205.html)
+- "Конь в бою должен быть в одном трипе с хозяином, иначе далеко они не уедут"
+
+
+* Java
+** Functional Libraries:
+-- totallylazy
+-- Enumberable.java
+-- guava-libraries
+

@@ -1,0 +1,40 @@
+
+I can honestly say if someone had shown me the Programming in Scala book by by Martin Odersky, Lex Spoon & Bill Venners back in 2003 I'd probably have never created Groovy. James Strachan, creator of Groovy.
+* Bay scala jobs: https://gist.github.com/ymasory/4486774
+Companies hiring Scala developers in the Bay Area.
+Created in response to a thread on scala-base.
+
+My favorites:
+- CloudPhysics
+- Wordnik
+
+Unbiased list:
+- 10Gen
+- Audax Health
+- Bizo
+- Box
+- Coraid
+- Ephox
+- FortyTwo
+- Foursquare
+- Guavus
+- HealthExpense
+- Heroku
+- Impermium (considering Scala transition)
+- Intel
+- InsideVault
+- Kixeye
+- Linium
+- LinkedIn
+- MessageBus (soon)
+- Meraki
+- Nest
+- quantiFind
+- Rackspace
+- StackMob
+- Sumo Logic
+- Twitter
+- Typesafe
+- Versal (soon)
+- VMware
+- Xeralux

@@ -1,0 +1,383 @@
+,,#-*- mode: org -*-
+#+STARTUP: showall
+
+* REPL tricks
+- выход: C-d (End of File), or (System/exit 0)(killing whole JVM)
+- загрузить и исполнить файл:
+=> (load-file "file-path")
+- Load current ns from source to nREPL: C-c M-n
+- Clojure REPL starts by default in the user namespace. In addition, if there is a file named user.clj at the root of the Java classpath, Clojure will load that file automatically when it starts.
+** Querying about:
+*** Metadata:
+=> (meta #'find)
+*** Find out if function is a macro:
+=> (:macro (meta #'defn))
+;=> true
+*** сказать класс
+=> (class (/ 1 3))
+;=>clojure.lang.Ratio
+*** взять доку из исходника функции
+=> (doc force-t)
+*** исходники
+=> (source println)
+*** поискать доку по фрагменту имени
+=> (find-doc "text")
+*** запаковать - распаковать (does not work with records/other Java class-based objects):
+=> (read-string (pr-str {:val 5, :l nil, :r nil}))
+;=> {:val 5, :l nil, :r nil}
+
+** Warn if compile can not infer the type so reflection will be used in runtime
+=> (set! *warn-on-reflection* true)
+;=> true
+
+
+
+* Language tricks:
+- проверка "упорядочена ли последовательность":
+user=> (< 1 2 3)
+;=>true
+- построение строки из пачки объектов:
+=> (str "and " 1 " is less than " (/ 4 2))
+;=> "and 1 is less than 2"
+- измерение времени на прогон чего-либо:
+=> (time (exercise-agents send-off))
+; "Elapsed time: 1008.771296 msecs"
+- запуск web - аппликухи под Leiningen:
+> lein ring server-headless
+** Non-stack-consuming looping construct: =recur=
+- Either a function or a loop can be used as the recursion point. Either way, recur rebinds the bindings of the recursion point to the values it is passed. Recur must be called from the tail-position, and calling it elsewhere will result in an error.
+=> (loop [x 5 result []]
+    (if (> x 0)
+      (recur (dec x) (conj result (+ 2 x)))
+      result))
+;=>[7 6 5 4 3]
+** Reader Macros:
+*** Quote ':
+=> (def tena 9) (quote tena)
+;=> tena
+*** Syntax-quote ` - expands to full symbol:
+= > `(1 2 3) ;=> (1 2 3)
+=> `map
+;=> clojure.core/map
+=> `Integer
+;=> java.lang.Integer
+=>`(map even? [1 2 3])
+;=> (clojure.core/map clojure.core/even? [1 2 3])
+*** Unquote ~:
+=> `(+ 10 (* 3 2)) ;=> (clojure.core/+ 10 (clojure.core/* 3 2))
+=> `(+ 10 ~(* 3 2)) ;=> (clojure.core/+ 10 6)
+*** Unquote-splicing ~@ - unquotes and unpacks the sequence:
+=> (let [x '(2 3)] `(1 ~@x))
+;=> (1 2 3)
+*** All-together tricks:
+=>(defn contextual-eval [ctx expr] (eval
+    `(let [~@(mapcat (fn [[k v]] [k `'~v]) ctx)] ~expr)))
+=> (contextual-eval {'a 1, 'b 2} '(+ a b))
+;=> 3
+=> (contextual-eval {'a 1, 'b 2} '(let [b 1000] (+ a b)))
+;=> 1001
+
+** Keywords, symbols, : vs ::
+- Keywords are symbolic identifiers that evaluate to themselves. They provide very fast equality tests...
+- Symbols are identifiers that are normally used to refer to something else. They can be used in program forms to refer to function parameters, let bindings, class names and global vars...
+- In addition to single-colon syntax, you can use a double-colon to make a namespace-qualified keyword
+user> :foo
+ :foo
+user> ::foo
+user> :user/foo
+
+- Trick to avoid long namespace name:
+=> (ns my.company.division.project.module-b
+  (:require
+    [my.company.division.project.module-a :as module-a]))
+=> (get some-map ::module-a/keyword)
+
+** Type-hinting the arguments and returns
+; array type hints:
+ objects  ints  longs  floats  doubles  chars  shorts  bytes  booleans
+=> (defn ^Float asum-sq [ ^floats xs]...)
+; if have no access to source - can type-hint the object:
+=> (.intValue ^Float (asum-sq (float-array [1 2 3 4 5])))
+
+** Coercion
+=>(Math/round (float 1.23897398798929929872987890030893796768727987138M))
+;=> 1
+
+
+* Namespaces:
+** Creation
+*** ns: create namespace and switch to. Intended to use in source code; imports =java.lang= and =clojure.core=
+=> (ns chimp)
+
+; macros: =:exclude, :only, :as, :refer-clojure, :import, :use, :load, :require=
+=> (ns joy.ns-ex
+     (:refer-clojure :exclude [defstruct])
+     (:use (clojure set xml))
+     (:use [clojure.test :only (are is)])
+     (:require clojure.set)
+     (:require [clojure.zip :as z])
+     (:import (java.util Date)
+     (java.io File)))
+
+*** DONE in-ns: imports =java.lang= only (no =clojure.core= !!!); takes an explicit symbol as the namespace qualifier:
+=> (in-ns 'gibbon)
+
+- more amendable for REPL than ns (?)
+
+*** create-ns: takes symbol and returns namespace object (does NOT switch to the namespace):
+=> (def b (create-ns 'bonobo))
+b
+;=> #<Namespace bonobo>
+
+** Manipulation
+=> (def b (create-ns 'bonobo))
+b
+;=> #<Namespace bonobo>
+
+*** ns-map
+=> ((ns-map b) 'String)
+;=> java.lang.String
+
+*** intern
+=> (intern b 'reduce clojure.core/reduce)
+;=> #'bonobo/reduce
+=> (intern b '+ clojure.core/+)
+;=> #'bonobo/+
+=> (in-ns 'bonobo) (reduce + [1 2 3 4 5])
+;=> 15
+
+*** ns-unmap
+
+*** remove-ns - wipe a namespace
+
+* Multimethods:
+=> (defmulti compiler :os)
+=> (defmethod compiler ::unix [m] (get m :c-compiler))
+=> (defmethod compiler ::osx [m] (get m :c-compiler))
+** Can define a relation "is-a" for functions:
+=> (defmulti home :os)
+=> (defmethod home ::unix [m] (get m :home))
+*** Define relation:
+=> (derive ::osx ::unix)
+*** Query:
+=> (parents ::osx)
+;=> #{:user/unix}
+=> (ancestors ::osx)
+;=> #{:user/unix}
+=> (descendants ::unix)
+;=> #{:user/osx}
+=> (isa? ::osx ::unix)
+;=> true
+=> (isa? ::unix ::osx)
+;=> false
+*** Conflict prevention / manipulation
+**** preference
+=> (derive ::osx ::bsd)
+=> (defmethod home ::bsd [m] "/home")
+=> (home osx)
+; java.lang.IllegalArgumentException: Multiple methods in multimethod
+; 'home' match dispatch value: :user/osx -> :user/unix and
+; :user/bsd, and neither is preferred
+;;; So to fix:
+=> (prefer-method home ::unix ::bsd) ; here the "home" multimethod will prefer the :unix realisation over :bsd one
+**** remove-method
+=> (remove-method home ::bsd)
+**** make-hierarchy
+=> (derive (make-hierarchy) ::osx ::unix)
+;=> {:parents {:user/osx #{:user/unix}}, :ancestors {:user/osx #{:user/unix}}, :descendants {:user/unix #{:user/osx}}}
+
+** Madskills:
+=> (defmulti compile-cmd (juxt :os compiler))
+=> (defmethod compile-cmd [::osx "gcc"] [m] (str "/usr/bin/" (get m :c-compiler)))
+=> (defmethod compile-cmd :default [m] (str "Unsure where to locate " (get m :c-compiler)))
+
+* Types, protocols, records
+** Records
+=> (defrecord TreeNode [val l r])
+- creation
+=> (TreeNode. 5 nil nil)
+- field access
+=> (:val (TreeNode. 5 3 9))
+;=> 5
+;; =assoc= and =dissoc= work but latter returns the simple =map=
+
+** Protocol
+*** creation
+=> (defprotocol FIXO
+     (fixo-push [fixo value])
+     (fixo-pop [fixo])
+     (fixo-peek [fixo]))
+*** extending:
+- extend-type: for both types and records
+=> (extend-type TreeNode FIXO (fixo-push [node value] (xconj node value)))
+; or
+=> (extend-type clojure.lang.IPersistentVector FIXO (fixo-push [vector value] (conj vector value)))
+; =fixo-push= is now defined for all classes that inherit from IPersistentVector.
+Distinguish this from mixins!
+**** trick: expanding nil
+=> (extend-type nil FIXO (fixo-push [t v] (TreeNode. v nil nil)))
+;; - to fix jokes like =(reduce fixo-push nil [3 5 2 4 6 0])=
+
+- extend: uses map of method implementations:
+=> (def tree-node-fixo {
+     :fixo-push (fn [node value](xconj node value))
+     :fixo-peek (fn [node] (if (:l node) (recur (:l node)) (:val node)))
+     :fixo-pop (fn [node] (if (:l node)
+                             (TreeNode. (:val node) (fixo-pop (:l node)) (:r node))
+                             (:r node)))})
+=> (extend TreeNode FIXO tree-node-fixo)
+*** reify - воплотить класс:
+=> (str (let [f "foo"]
+(reify Object
+(toString [this] f))))
+;=> "foo"
+
+
+
+** Notes
+- Both records and types require explicit imports (as these are honest classes)
+=> (ns my-cool-ns (:import joy.udp.TreeNode))
+- Record can implement methods from a certain protocol:
+=> (defrecord TreeNode [val l r]
+     FIXO
+     (fixo-push [t v] (if (< v val) (TreeNode. val (fixo-push l v) r) (TreeNode. val l (fixo-push r v))))
+     (fixo-peek [t] (if l (fixo-peek l) val))
+     (fixo-pop [t] (if l (TreeNode. val (fixo-pop l) r) r)))
+=> (def sample-tree2 (reduce fixo-push (TreeNode. 3 nil nil) [5 2 4 6]))
+- Simple value object implementation - chess move:
+=> (defrecord Move [from to castle? promotion]
+    Object
+    (toString [this] (str "Move " (:from this) " to " (:to this) (if (:castle? this) " castle" (if-let [p (:promotion this)] (str " promote to " p) "")))))
+;; and builder:
+=> (defn build-move [& {:keys [from to castle? promotion]}]
+    {:pre [from to]}
+    (Move. from to castle? promotion))
+
+
+* Java.next
+** proxy - generates the bytecode for an actual class on demand but allows dynamic implementation:
+=> (proxy [HttpHandler] []
+    (handle [exchange]
+      (.sendResponseHeaders exchange HttpURLConnection/HTTP_OK 0)
+      (doto (.getResponseBody exchange)
+        (.write (.getBytes txt))
+        (.close)))))
+;; than, to update:
+=> (update-proxy p {"handle" (make-handler-fn fltr txt)})))
+;; sometimes we refer to the superclass:
+=> (defn screaming-filter [o] (proxy [FilterOutputStream] [o]
+     (write [b] (proxy-super write (.getBytes (str "<strong>"
+                                                (.toUpperCase (String. b))
+                                                "</strong>"))))))
+;;; !!! proxy-super is not thread-safe !!!
+
+** gen-class - creating class in ns "on-the-fly"
+
+* Arrays
+- primitive types: char-array, boolean-array, byte-array, char-array, double-array, float-array, int-array, long-array, object-array, short-array
+- other tricks: make-array, into-array, to-array, to-array-2d
+
+* Multithreading
+** STM
+*** Do not put IO operations into transaction - use io! macros whenever possible:
+=> (io! (.println System/out "Haikeeba!"))
+;=> Haikeeba!
+;; but:
+=> (dosync (io! (.println System/out "Haikeeba!")))
+; java.lang.IllegalStateException: I/O in transaction
+*** dosync, alter / commute (when a value of Ref within a given transaction is not important for its completion semantics) / ref-set (assign a given raw value, usually to fix something) / ensure (to avoid a "write skew").
+** Agents
+*** =send-off= - actions being sent to the queue are processed by single special thread
+*** =send= - actions are processed by agents being run by the threads in the special pool (pool size depends on amount of CPUs). Do not =send= actions which can block - this will lead to the blocking one of these limited threads!
+- good fit for IO operations. Example:
+=> (def log-agent (agent 0))
+=> (defn do-log [msg-id message] (println msg-id ":" message) (inc msg-id))
+;; - returns a new agent state. Now, somewhere in our code:
+=> ... (send-off log-agent do-log (str channel message))
+;; getting the agent state:
+=> @log-agent
+;; locking until completion: =await= or =await-for=
+=> (do-step "important: " "this must go out")
+=> (await log-agent)
+*** Error handling:
+**** :fail (default)
+=> (send log-agent (fn [] 2000)) ; incorrect - should accept parameter
+=> @log-agent
+;=> 1001
+;; now check what happened:
+=> (agent-error log-agent)
+;=> #<IllegalArgumentException java.lang.IllegalArgumentException: ;	Wrong number of args passed to: user$eval--509$fn>
+;; oops:
+=> (send log-agent (fn [_] 3000))
+; java.lang.RuntimeException: Agent is failed, needs restart
+;; restarting:
+=> (restart-agent log-agent 2500 :clear-actions true)
+;=> 2500
+;; - deletes all the actions waiting in queue up to now 8-{}
+**** :continue - just skip the wrong action and go on. Switched on automatically is :error-handler is provided:
+=> (defn handle-log-error [the-agent the-err] (println "An action sent to the log-agent threw " the-err))
+=> (set-error-handler! log-agent handle-log-error)
+=> (set-error-mode! log-agent :continue)
+;; error handler can not change the agent state
+
+** Atom
+=> (let [cache (atom {})]
+=> ..... (swap! cache assoc args ret))
+;; clearing:
+=> (reset! cache {})
+;; or
+=> (swap! cache dissoc '(108))
+*** Locking
+;; reentrant lock:
+=> (locking a-monitor-obj do-something-function)
+
+*** Futures
+=> (time (let [x (future (do (Thread/sleep 5000) (+ 41 1)))]
+     [@x @x]))
+; "Elapsed time: 5001.682 msecs"
+;=> [42 42]
+*** Promises (write-once)
+=> (def x (promise))
+=> (def y (promise))
+=> (def z (promise))
+=> (dothreads! #(deliver z (+ @x @y)))
+=> (dothreads! #(do (Thread/sleep 2000) (deliver x 52)))
+=> (dothreads! #(do (Thread/sleep 4000) (deliver y 86)))
+=> (time @z)
+; "Elapsed time: 3995.414 msecs"
+;=> 138
+-- recommended to use in dataflow concurrency
+*** Parallelism
+**** =pvalue= macro: executes an arbitrary number of executions in parallel
+**** =pmap= function: parallel version of core =map= function
+**** =pcalls= function: takes an arbitrary number of functions, calls them in parallel
+
+
+
+
+** Parallelism (parallelization)
+
+* Functions implement Java interfaces (Runnable, Callable, Comparator etc.):
+;; find out:
+=> (ancestors(class#())
+
+
+* Setup:
+1. https://github.com/technomancy/leiningen/blob/master/README.md # ставим lein натурально за пару секунд. lein это как sbt но ставится проще и работает искаропки.
+2. lein new huj # сделали проект
+3. ставим nrepl el-getом # ещё пара секунд
+4. M-x nrepl-jack-in
+
+всё - у нас есть всё сразу в емаксике интегрированное и работающее. без миллиарда жарок насраных где попало, неработающем и энзайме (пока пути не поправишь) итд. есессно можно держать пачку разных проектов с разными кложами без пер-прожект настроек для емакса - в отличие от.
+lein repl :headless  - пускает репл сервер
+
+** eval-region и :reload по hot keys.
+"выполнить текущий кусок из редактора в репле" и "перезагрузить отредактированный код в работающем процессе"
+
+** lein immutant run ; check!!!:
+interaction - through the leiningen plug-in: in project.clj;
+:immutant (:swank-port 4005)
+
+-- than: lein immutant deploy
+
+-- hiccup: web framework(?)
