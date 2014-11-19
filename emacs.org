@@ -3,7 +3,7 @@
 
 * Tips and Tricks
 - Open file on Amazon server described in ~/.ssh/config as awshost1 using tramp:
-C-x C-f /sshx:awshost1:
+  C-x C-f /sshx:awshost1:
 
 * Org-mode
   TAB/S-TAB - (un)fold
@@ -27,7 +27,7 @@ C-x C-f /sshx:awshost1:
 ** GTD - separate story at [[http://orgmode.org/worg/org-tutorials/org4beginners.html][]
 * Prelude
 ** Common
-   C-M-h       Kill the previous word(backward-kill-word). (as in Bash/Zsh)
+   M-e       Kill the previous word(backward-kill-word).
    C-x </kbd>  align-regexp
    C-+         Increase font size(text-scale-increase).
    C--  Decrease font size(text-scale-decrease).
@@ -35,6 +35,7 @@ C-x C-f /sshx:awshost1:
    C-x ^        Join two lines into one(join-line).
    C-x p        Start proced (manage processes form Emacs, works only in Linux).
    C-x m        Start eshell.
+   C-x M        Start eshell.
    C-x M-m      Start your default shell.
    C-x C-m      Alias for M-x.
    C-h A        Run apropos (search in all Emacs symbols).
@@ -46,7 +47,8 @@ C-x C-f /sshx:awshost1:
 ** Prelude-mode
    C-c o        Open the currently visited file with an external program.
    C-c g        Search in Google for the thing under point (or an interactive query).
-   S-RET        Insert an empty line and indent it properly (as in most IDEs).
+   S-RET        Insert an empty line below current and indent it properly (as in most IDEs).
+   C-S-RET      Insert an empty line _above_ current and indent it properly (as in most IDEs).
    C-S-up       Move the current line up.
    C-S-down     Move the current line down.
    C-c n        Fix indentation in buffer and strip whitespace.

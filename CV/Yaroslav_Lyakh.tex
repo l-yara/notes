@@ -1,0 +1,164 @@
+% Yaroslav Lyakh's resume
+
+\documentclass{res}
+\usepackage{helvetica} % uses helvetica postscript font
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\usepackage{hyperref}
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\setlength{\headsep}{4pt}  % space between header and text
+\setlength{\headheight}{12pt} % allow room for header
+\pagestyle{fancy}     % set pagestyle for document
+% \usepackage[utf8x]{inputenc}
+\rhead{ {\it Yaroslav Lyakh (L\textunderscore yara@bigmir.net; tel: +447501 301536)}} % put text in header (right side)
+\cfoot{}                                     % the foot is empty
+\topmargin=-0.5in % start text higher on the page
+\footskip=3in
+
+\setlength{\parindent}{2em}
+
+% switch full / short version
+\newif\ifFullVersion
+\FullVersiontrue  % un-comment for the ``full'' version
+
+\begin{document}
+% \thispagestyle{empty} % this page has no header
+\begin{resume}
+
+\section{\leftline{SUMMARY}}
+\vspace{8pt} % provide vertical space between section title and contents
+\noindent Team Lead / Principal Software Developer with more than 15 years of total experience in IT applied in various industries: Oil \& Gas, Utilities, Public Safety, Web Security, Banking and Finance. More than 5~years of team leading experience with proven ability to lead by example, coach and mentor team members. \\
+\ifFullVersion
+\indent Strong engineering background, working knowledge and seasoned experience in evolving IT system along with the customer’s business transformation. Able to interact well at all levels, articulate the IT-specific issues to non-IT partners in a clear business-oriented way and translate complex functional requirements into simple, well composed modules. \\
+\fi
+\indent Deeply involved in the development of the Java-based multi-threaded low-latency high-throughput systems for the last 4 year. Looking for a challenging role where my skills and qualifications will add value and make a significant contribution to the company.
+
+\vspace{8pt}
+\section{\leftline{CAREER HIGHLIGHTS}}
+\vspace{15pt}
+\begin{itemize}
+\item {\bf Formed and led the Software Development team} (up to eight people) in a multi-million GIS MT project for Gazprom gas-transportation giant. Our role in this project constantly increased due to the high level of technical and business expertise developed by team members combined with collaborative rapport built with our partners.
+\item Introduced a number of system design improvements, particularly enabling a {\bf massive multi-threading data processing} on top of Spring Integration infrastructure with Fizzback team. The scalability level is now sufficient for any foreseeable load value.
+\item Designed and developed the {\bf data collection, verification and migration infrastructure} for Utility and Oil \& Gas - specific databases (both spatial and attribute parts). The changes in the business process proposed by our team and backed by our software enabled a significant productivity increase: 3-4 times compared to old approach.
+\item Holding two {\bf patents} awarded on IT innovations in {\bf Data Presentation} and {\bf Data Visualisation} fields.
+\ifFullVersion
+\item As a {\bf Principal Developer / Architect} made a key contribution to the success of the PS\&E project when worked for Kring LLC. Despite unusual team configuration and inconvenient technology set the system showed {\bf good performance and reliability} achieved with a {\bf purpose-built testing facility}.
+\item Built a set of the state- and local- {\bf budget data management tools} when worked in a large KPMG consultancy projects for the Ministry of Finance of Ukraine. The projects enjoyed the great success and were credited with eliminating 2 months from the budget development cycle and expanding the analytical capabilities of the Ministry of Finance.
+\item A few times won the special prizes in {\bf ``Thinking Out of the Box''} during the traditional {\bf Hack Day} events in MapInfo / Pitney Bowes.
+\fi
+\end{itemize}
+
+\vspace{8pt}
+\section{\leftline{SKILLS}}
+\vspace{15pt}
+\begin{itemize}
+  \item {\em Full software development lifecycle (SLDC):} requirement gathering and analysis, design, prototyping, implementation, performance tuning, quality assurance (QA), release management. {\bf Continuous Integration (CI}) with Hudson/{\bf Jenkins}.
+  \item {\em Development process organisation:} {\bf Scrum} (and other {\bf Agile} flavours), RUP, Waterfall. Team work planning and coordination, peer code reviews, team members coaching and mentoring.
+  \item {\em Enterprise Technologies:} Enterprise Integration patterns (EIP), Service Oriented Architecture (SOA), {\bf messaging, caching}. Server-side and middleware development. {\bf Multi-threading and distributed computing}. Mobile devices communicating (SMS, TETRA).
+  \item {\em Data Modelling, Data Analysis and Presentation, Extract-Transform-Load (ETL)}, including complex {\bf data transformation and cleansing}; advanced report building and data presentation.
+  \item {\em Methodologies:} Object-oriented design ({\bf OOD}), Test-driven development ({\bf TDD}): {\bf jUnit, Mocks}. Integration testing with {\bf Robot Framework}. Domain-specific languages (DSL). Strong interest in {\bf functional programming}, Data Science and Machine Learning / Business Intelligence systems.
+  \item {\em JVM - based Languages:} {\bf Java} (from 1.3 to 7.0) J2SE/J2EE, multi-threading, JDBC, Spring (Core, Integration, MVC, Roo), Hibernate, jBPM/Activiti. Active studying {\bf Clojure} (active member of London Clojurians group). Some knowledge in {\bf Scala (Akka)} (completed a few courses) and {\bf Groovy} (used for small ad-hoc utility programming). {\bf Performance diagnosis and optimization / tuning}, particularly in multi-thread environments and high-load distributed systems: {\bf Visual VM, jMeter}.
+  \item {\em Other Programming Languages:} {\bf C\#}, some {\bf Python}, basic{\bf R} and {\bf Octave}. OS’s: {\bf Linux, Mac OS and Windows}. Linux {\bf Shell Script}.
+  \item {\em Relational Databases (RDBMS):} {\bf Oracle} complex {\em SQL} query authoring and optimisation, {\bf PL/SQL} development, query performance tuning. {\bf MySQL, Microsoft SQL Server.}
+  \item {\em Others:} StackOverflow \url{http://stackoverflow.com/users/900174/l-yara}, GitHub \url{https://github.com/l-yara}. Emacs, \LaTeX ~typesetting system, Eclipse, IntelliJ Idea, Visual Studio. UML notation with Sparx Enterprise Architect and Rational Rose. XML, Crystal Reports, Sybase PowerBuilder, Borland Delphi.
+\end{itemize}
+
+\section{\leftline{EXPERIENCE}}
+\vspace{8pt}
+\noindent {\sl ION Trading: London, UK} \hfill        July 2013 - Present \\
+{\bf Senior Software Developer:} {\em Java 7, distributed multithreaded low-latency systems. Continuous Integration (CI) with Jenkins, Acceptance Testing with the Robot Framework. TDD( jUnit + Mockito), Visual VM, Maven, Git, Groovy, JRebel, RMI, Scrum, peer reviews.}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item Introduced a number of improvements in the Continuous Integration infrastructure: re-designed a custom Maven plugin; greatly streamlined the existing Robot Framework keywords. Improved a set of utility modules for the Integration Testing which allowed increasing test reliability and reduced the test execution time.
+ \item Re-designed the JDBC Query Execution module, transforming it from the single-node to the distributed parallel executing subsystem.
+ \item Implemented the Attribute Replacement feature which greatly improved the system’s configuration flexibility and made administering and configuring the whole system much more convenient.
+ \end{itemize}
+
+\noindent {\sl Fizzback Inc (now part of NICE Co): London, UK} \hfill        June 2011 - July 2013 \\
+{\bf Senior Software Engineer:} {\em Java 6, multi - threading, Spring (Core, Spring Integration, SpEL, Spring Roo), Hibernate, Activiti BPM, Groovy, jUnit, Mockito, Visual VM, Maven, Domain-Specific Languages (DSLs), Python (Jython) SMS-based mobile communicating, Mac OS, Linux, Scrum, peer reviews}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item Introduced a number of system design improvements, particularly enabling a massive multi-threading data processing on top of Spring Integration pipelines. While for some modules it was enough to re-code the critical pieces with the standard “stateless or immutable” approach, the main part of existed system required deep re-design based on Enterprise Integration Patterns (EIP) messaging idea and extensive use of Java 6 multi-threading tools. The effect of changes introduced was constantly controlled using jMeter and VisualVM.
+ \item Database access (initially built on top of Spring Roo as a poor man's meta-programming tool) also required serious redevelopment work, particularly related to Hibernate-vs-explicit caching. It took a lot of efforts to get rid of locking-related problems; some modules were completely re-built. Current database schema and Java persistence layer are quite robust and reliable.
+ \item In addition to usual scalability improvements deeply re-developed the Communication and Reporting sub-modules to make them more convenient in configuration and maintenance. These changes (like introducing ad-hoc configuration DSL and flexible report templates) greatly improved overall system's maintainability and customer provisioning time.
+ \item 	Improved the project’s Maven structure including speeding-up the whole Unit Testing process (mostly due to database-related optimisation). Initiated use of CI service (Jenkins) as a key component of the team’s Scrum Agile methodology approach.
+ \item Developed good working relations with colleagues from Operations, QA, and Customer Support departments; combined with good ``pure'' development work this allowed to decrease an average response time of defect handling process and improved overall IT team flexibility and confidence.
+\end{itemize}
+
+\noindent {\sl ScanSafe Inc (now part of Cisco): London, UK} \hfill        July 2010 - June 2011\\
+{\bf Senior Software Developer:} {\em Java 6, multi - threading, Spring, Hibernate, Tomcat, JSP, Spring MVC, Groovy, jUnit, Mockito, XML/XSLT, jMeter, Hudson, Oracle 11g, Oracle SQL, PL/SQL, Linux, Sparx EA, Selenium, Agile Development (Scrum)}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item Designed and implemented various parts of a major Web Security system based on a set of multi-thread services being executed in a cloud environment. This included a lot of re-design work, particularly switching from the standard Java objects to the immutable structures in combination with elements of functional-oriented programming. Data structures like tries and algorithm tricks like specifically built hash functions were used to provide the required scalability level (up to 10 million requests per day).
+ \item Implemented Data Analysis and Reporting modules with sophisticated “on-the-fly” SQL query building and serious database tuning including some PL/SQL programming.
+\end{itemize}
+
+\noindent {\sl Pitney Bowes Business Insight (former MapInfo): Chatham, UK} \hfill      July 2008 - April 2010\\
+{\bf Senior Software Engineer:} {\em .NET (C\#), NUnit, Rhino Mocks, Visual Studio, MS Entity Framework, LINQ, WPF/XAML, Web Services, Subversion, Oracle 11g, SQL, PL/SQL, GIS, ETL, Agile Scrum Development}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item Took a key part in major system redesign and redevelopment works managed around the Scrum methodology. Innovative approaches like LINQ and SaaS were also featured in this project together with some elements of functional-based design which allowed to cut down the codebase size; the stability and reliability of the whole system also improved.
+ \item Suggested and implemented a number of innovations like Finite-State Machine formalisation of business logic and using flexible BPM workflow patterns in system architecture. This allowed us to build a powerful and flexible user-friendly product; the project codebase size was reduced in size and simplified.
+\end{itemize}
+
+\noindent {\sl Original Solutions: Limerick, Ireland} \hfill        December 2007 - May 2008\\
+{\bf Consulting Software Developer:} {\em Java 5, multi – threading, Spring, Hibernate, jBoss jBPM, jUnit, Eclipse, Perforce, Ant, Oracle, SQL, PL/SQL}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item Provided performance optimization works; created a project-specific performance testing subsystem. Amending jBPM for use in multi-threaded environment was a massive effort but we managed to provide a high level of scalability on our system.
+\end{itemize}
+
+\noindent {\sl Kring East and Central Europe: Ukraine - Denmark} \hfill        December 2006 - December 2007\\
+{\bf Principal Software Developer/Architect:} {\em Java 5, Spring, JDBC, jUnit, jMock, Eclipse, Subversion, Ant, Oracle, SQL, .NET Compact Edition (C\#), NUnit, Rhino Mocks, Visual Studio, GIS, TETRA – based mobile devices communication.}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item Lead the offshore development project of a major Public Safety and Emergency (PS\&E) system development. The system gathers real-time information about positions of PS\&E resources (paramedics, police crews, fire brigades etc.) and their state; this information is communicated to the operation HQ via specialised messaging infrastructure.
+ \item The project consisted of the server part built on Java (conversion of existing military Terma FlexCCIS Command and Control Information System) and mobile clients based in .Net Compact Framework (C\#). Modules for interacting with on-board GPS receivers and specialised communication hardware were implemented along with purpose-built integration testing facility.
+\end{itemize}
+
+\noindent {\sl Vnipitransgaz joint-stock company: Kiev, Ukraine} \hfill        July 2002 - November 2006\\
+{\bf Team Lead:} {\em Java 1.3 and 5, multi-threading, GIS, Oracle Spatial Data Option (SDO), Bentley MicroStation, Intergraph suite, Spring, O/R Mapping, Swing, JDBC, jUnit, jMock, Eclipse, EJB, JSP, Oracle jDeveloper, Subversion, Oracle 8i, 9i, and 10g, SQL, PL/SQL, UML, Sparx EA, Rational Rose, XML, MS Office + VBA, XSLT, TDD and RUP}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item Formed and led the Software Development team involved in the development of major distributed Geographical Information System (GIS MT) for the Gasprom gas transportation company. My role included business process analysis and modelling, requirement analysis, system design and architecting in cooperation with customer’s IT department and other development teams as well as work coordination with partners.
+ \item Inside team was responsible for planning development efforts for team members, technical oversight and coaching as well as hands-on project work. The project version one itself has exceeded the customer’s expectation and was recommended for adoption in all Gasprom child companies. Two modules developed by our team were honoured with special patents of the Russian Federation.
+ \item Worked as IT Consultant on the numerous smaller projects for Energy, Utility and Oil\&Gas - oriented customers.
+\end{itemize}
+
+\noindent {\sl Lost Boys Business Solutions: Amsterdam, the Netherlands} \hfill        June 2001 - December 2001\\
+{\bf Software Engineer:} {\em Java 1.3: JSP, EJB, JDBC, jUnit, Oracle 8i, SQL, PL/SQL, custom-built performance measurement tools}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item Was selected to be part of the special fine-tuning and performance optimization team - a distinction given to the best developers at the Company.
+\end{itemize}
+
+\noindent {\sl KPMG Consulting Barents Group: Kiev, Ukraine} \hfill        November 1997 - May 2001\\
+{\bf Analyst Programmer:} {\em MS SQL Server, MS Office (particularly MS Access), VBA, Delphi, Crystal Reports, IIS + ASP, XML/XSLT}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item As a staff Programmer/Analyst, took part in planning, design and technical implementation of various projects to improve the budgeting process of the state and local budgets.  The projects were credited with eliminating 2 months from the budget development cycle and with greatly expanding the analytical capabilities of the Ministry of Finance.
+\end{itemize}
+
+\noindent {\sl Short-term contracts: Kiev, Ukraine / Bratislava, Slovakia} \hfill        March 1996 - November 1997\\
+{\bf Software Engineer}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item Various short-term assignments.
+\end{itemize}
+
+\section{\leftline{EDUCATION}}
+\vspace{8pt}
+\noindent {\sl National Technical University of Ukraine (NTUU), Kiev, USSR} \hfill        September 1990 – March 1996\\
+{\bf Engineer Diploma with Honours in Electrical Engineering}
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item Engineer Diploma (USSR equivalent of MSc) in Electrical Engineering.
+\end{itemize}
+\noindent {\sl Coursera and Udacity self-study online courses} \hfill        Present
+\begin{itemize} \itemsep -2pt % reduce space between items
+ \item ``Functional Programming Principles in Scala'', ``Principles of Reactive Programming (in Scala)'', ``Design and Analysis of Algorithms'' (Parts 1 and 2), ``Introduction to Artificial Intelligence (AI)'', ``Machine Learning (ML)''
+ \item ``Introduction to Finance'', ``Model Thinking'', ``Computational Investing'', ``An Introduction to Operations Management'', ``Quantum Mechanics and Quantum Computation'', ``Introduction to Genetics and Evolution''.
+ \item Currently following Coursera’s ``Data Science'' Specialisation: a set of courses in Data Science field.
+\end{itemize}
+
+\vspace{8pt}
+\section{\leftline{SPECIALS}}
+\vspace{8pt}
+\begin{itemize}
+ \item An active member of Data Science London, London Java Community (LJC), London Scala User Group (LSUG) and London Clojurians communities.
+ \item Sports: volleyball (former player of ``CBPhoto'' Irish Division 1 team, now playing in Kent amateur league), sailing (former pupil of Kiev Olympic School).
+\end{itemize}
+
+
+\end{resume}
+\end{document}

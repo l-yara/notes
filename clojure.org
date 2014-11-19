@@ -5,6 +5,10 @@
 - выход: C-d (End of File), or (System/exit 0)(killing whole JVM)
 - загрузить и исполнить файл:
 => (load-file "file-path")
+- Get classpath:
+=> (println (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader))))
+- Get current namespace:
+=> (str *ns*)
 - Load current ns from source to nREPL: C-c M-n
 - Clojure REPL starts by default in the user namespace. In addition, if there is a file named user.clj at the root of the Java classpath, Clojure will load that file automatically when it starts.
 ** Querying about:
@@ -26,13 +30,14 @@
 => (read-string (pr-str {:val 5, :l nil, :r nil}))
 ;=> {:val 5, :l nil, :r nil}
 
+** Special Variables
+- Most Recent expressions: *1, *2, *3
+
+- Recent Exception: \*e or use (pst) to print a stack trace
 ** Warn if compile can not infer the type so reflection will be used in runtime
 => (set! *warn-on-reflection* true)
-;=> true
 
-
-
-* Language tricks:
+o* Language tricks:
 - проверка "упорядочена ли последовательность":
 user=> (< 1 2 3)
 ;=>true
@@ -44,6 +49,10 @@ user=> (< 1 2 3)
 ; "Elapsed time: 1008.771296 msecs"
 - запуск web - аппликухи под Leiningen:
 > lein ring server-headless
+- Java-like call:
+=> (.. "hello" getClass getProtectionDomain)
+; is equivalent to "hello".getClass().getProtectionDomain(); in Java
+
 ** Non-stack-consuming looping construct: =recur=
 - Either a function or a loop can be used as the recursion point. Either way, recur rebinds the bindings of the recursion point to the values it is passed. Recur must be called from the tail-position, and calling it elsewhere will result in an error.
 => (loop [x 5 result []]
@@ -119,7 +128,7 @@ user> :user/foo
      (:import (java.util Date)
      (java.io File)))
 
-*** DONE in-ns: imports =java.lang= only (no =clojure.core= !!!); takes an explicit symbol as the namespace qualifier:
+*** in-ns: imports =java.lang= only (no =clojure.core= !!!); takes an explicit symbol as the namespace qualifier:
 => (in-ns 'gibbon)
 
 - more amendable for REPL than ns (?)
@@ -149,6 +158,7 @@ b
 *** ns-unmap
 
 *** remove-ns - wipe a namespace
+
 
 * Multimethods:
 => (defmulti compiler :os)
@@ -232,8 +242,6 @@ Distinguish this from mixins!
 (toString [this] f))))
 ;=> "foo"
 
-
-
 ** Notes
 - Both records and types require explicit imports (as these are honest classes)
 => (ns my-cool-ns (:import joy.udp.TreeNode))
@@ -252,7 +260,6 @@ Distinguish this from mixins!
 => (defn build-move [& {:keys [from to castle? promotion]}]
     {:pre [from to]}
     (Move. from to castle? promotion))
-
 
 * Java.next
 ** proxy - generates the bytecode for an actual class on demand but allows dynamic implementation:

@@ -1,0 +1,4 @@
+* Output:
+- "Normal" output:
+> pdflatex <file>
+- LaTex to everything: http://johnmacfarlane.net/pandoc/demos.html - PDF, DOC, EPUB

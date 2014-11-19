@@ -10,7 +10,6 @@
 
 - https://devcenter.heroku.com/categories/learning
 - https://devcenter.heroku.com/articles/clojure-web-application
-- http://nakkaya.com/2013/04/06/using-clojure-with-org-babel-and-nrepl/
 - http://nakkaya.com/2009/11/30/running-compojure-as-a-service/
 
 
@@ -20,7 +19,6 @@ Books to select:
 - http://www.manning.com/crowther/
 - http://www.manning.com/bjarnason/
 - http://www.manning.com/ghosh/
-- http://www.manning.com/rathore2/
 - http://www.amazon.com/gp/product/178216264X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=178216264X&linkCode=as2&tag=aleottshompag-20
 
 -- Bruce Durling on Data processing by cascalog: http://skillsmatter.com/podcast/java-jee/cascalog-for-the-80-of-data-science/mh-7168 , recommends to use Midje for testing over REPL - produced code;
@@ -31,6 +29,7 @@ Cascalog for Impatient: https://github.com/Quantisan/Impatient/wiki
 ---- http://pragprog.com/book/rdbcd/behind-closed-doors
 
 -- Weka - ML package (Mahout?)
+-- Orange Python http://orange.biolab.si/ - Open Sourse data visualisation, analysis, ML, text and data mining
 -- jBLAS - linear algebra package
 -- Session lib (???)
 
@@ -41,8 +40,6 @@ Cascalog for Impatient: https://github.com/Quantisan/Impatient/wiki
 - фильм "Внутреннее пространство"; "Первый рыцарь"
 - Junior Chess Club: East Grinstead, David Fryer 01342 317287
 - профиль на линкед Ин - переделать с нуля (погуглить что нужно)
-+ Shred it
-+ курсы для Люды
 
 -- Thursday, 13: 16.00 11 Leadenhall Street: Shilen Shah 07711 773621
 
@@ -145,4 +142,3 @@ Membership number: JB23837 Grading core: 293658G
 -- totallylazy
 -- Enumberable.java
 -- guava-libraries
-
