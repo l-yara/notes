@@ -18,15 +18,23 @@
 \setlength{\parindent}{2em}
 
 % switch full / short version
+% see http://tex.stackexchange.com/questions/1492/passing-parameters-to-a-document for detail
+% use  pdflatex "\def\longversion{1} \input{Yaroslav_Lyakh.tex} command like for long,
+% use pandoc for exporting:
+% pandoc Yaroslav_Lyakh.tex -o Yaroslav_Lyakh.docx
 \newif\ifFullVersion
-\FullVersiontrue  % un-comment for the ``full'' version
+\ifdefined\longversion
+  \FullVersiontrue  % un-comment for the ``full'' version
+\else
+  \FullVersionfalse
+\fi
 
 \begin{document}
 % \thispagestyle{empty} % this page has no header
 \begin{resume}
 
-\section{\leftline{SUMMARY}}
-\vspace{8pt} % provide vertical space between section title and contents
+\section{SUMMARY}
+\vspace{1pt} % provide vertical space between section title and contents
 \ifFullVersion
 \noindent Team Lead / Principal Software Developer
 \else
@@ -40,37 +48,34 @@ with more than 15 years of total IT experience applied in various industries: Oi
  \indent More than 8 years of total Java development experience; for the last 4 years was deeply involved in the development of the Java-based high-load and low-latency data processing systems.
 \fi
 
-\section{\leftline{CAREER HIGHLIGHTS}}
-\vspace{8pt}
+\ifFullVersion
+\section{CAREER HIGHLIGHTS}
 \begin{itemize}
 \item {\bf Formed and led the Software Development team} (up to eight people) in a multi-million GIS MT project for Gazprom gas-transportation giant. Our role in this project constantly increased due to the high level of technical and business expertise developed by team members combined with collaborative rapport built with our partners.
 \item Introduced a number of system design improvements, particularly enabling a {\bf massive multi-threading data processing} on top of Spring Integration infrastructure with Fizzback team. The scalability level is now sufficient for any foreseeable load value.
 \item Designed and developed the {\bf data collection, verification and migration infrastructure} for Utility and Oil \& Gas - specific databases (both spatial and attribute parts). The changes in the business process proposed by our team and backed by our software enabled a productivity increase in 3-4 times compared to old approach.
 \item Holding two {\bf patents} awarded on IT innovations in {\bf Data Presentation} and {\bf Data Visualisation} fields.
-\ifFullVersion
 \item As a {\bf Principal Developer / Architect} made a key contribution to the success of the PS\&E project when worked for Kring LLC. Despite unusual team configuration and inconvenient technology set the system showed {\bf good performance and reliability} achieved with a {\bf purpose-built testing facility}.
 \item Built a set of the state- and local- {\bf budget data management tools} when worked in a large KPMG consultancy projects for the Ministry of Finance of Ukraine. The projects enjoyed the great success and were credited with eliminating 2 months from the budget development cycle.
 \item Two times won the special prizes in {\bf ``Thinking Out of the Box''} nominations during the traditional {\bf Hack Day} events in MapInfo / Pitney Bowes.
-\fi
 \end{itemize}
+\fi
 
-\section{\leftline{SKILLS}}
-\vspace{8pt}
+\section{SKILLS}
 \begin{itemize}
-  \item {\em Full software development lifecycle (SLDC):} requirement gathering and analysis, design, prototyping, implementation, performance tuning, quality assurance (QA), release management. {\bf Continuous Integration (CI}) with Hudson/{\bf Jenkins}.
+  \item {\em Full software development lifecycle (SLDC):} requirement gathering and analysis, design, prototyping, implementation, performance tuning, quality assurance (QA) organisation, release management. {\bf Continuous Integration (CI}) with Hudson/{\bf Jenkins}.
   \item {\em Development process organisation:} {\bf Scrum} (and other {\bf Agile} flavours), RUP, Waterfall. Team work planning and coordination, peer code reviews, team members coaching and mentoring.
-  \item {\em JVM - based Languages:} {\bf Java} (from 1.3 to 7.0) J2SE/J2EE, multi-threading, JDBC, Spring (Core, Integration, MVC, Roo), Hibernate, jBPM/Activiti. Active studying {\bf Clojure} (active member of London Clojurians group). Some knowledge in {\bf Scala (Akka)} and {\bf Groovy}. {\bf Performance diagnosis and optimization / tuning} in multi-thread environments and high-load distributed systems: {\bf Visual VM, jMeter}.
-  \item {\em Relational Databases (RDBMS):} {\bf Oracle} complex {\em SQL} query authoring and optimisation, {\bf PL/SQL} development, query performance tuning. {\bf MySQL, Microsoft SQL Server.}
+  \item {\em JVM - based Languages:} {\bf Java} (from 1.3 to 7.0) J2SE/J2EE, multi-threading, JDBC, Spring (Core, Integration, MVC, Roo), Hibernate, jBPM/Activiti. Active studying {\bf Clojure} (active member of London Clojurians group). Some knowledge in {\bf Scala (Akka)} and {\bf Groovy}. {\bf Performance diagnosis and optimization} in multi-thread high-load distributed systems: {\bf Visual VM, jMeter}.
+  \item {\em Relational Databases (RDBMS):} {\bf Oracle} complex {\em SQL} query authoring and optimisation; {\bf PL/SQL} development and performance tuning. {\bf MySQL, MS SQL Server.}
   \item {\em Data Modelling, Data Analysis and Presentation, Extract-Transform-Load (ETL)}, including complex {\bf data transformation and cleansing}; advanced report building and data presentation.
-  \item {\em Enterprise Technologies:} Enterprise Integration patterns (EIP), Service Oriented Architecture (SOA), {\bf messaging, caching}. Server-side and middleware development. {\bf Multi-threading and distributed computing}.
+  \item {\em Enterprise Technologies:} Enterprise Integration patterns (EIP), Service Oriented Architecture (SOA), {\bf messaging, caching}. Server-side and middleware development.
   \item {\em Methodologies:} Object-oriented design ({\bf OOD}), Test-driven development ({\bf TDD}): {\bf jUnit, Mocks}. Integration testing with {\bf Robot Framework}. Domain-specific languages (DSL). Strong interest in {\bf functional programming}, Data Science and Machine Learning / Business Intelligence systems.
 
   \item {\em Other Programming Languages:} {\bf C\#}, some {\bf Python}, some {\bf R} and {\bf Octave}. OS’s: {\bf Linux, Mac OS and Windows}. Linux {\bf Shell Script}.
   \item {\em Others:} StackOverflow \url{http://stackoverflow.com/users/900174/l-yara}, GitHub \url{https://github.com/l-yara}. Emacs, \LaTeX ~typesetting system, Eclipse, IntelliJ Idea, Visual Studio. UML notation with Sparx Enterprise Architect and Rational Rose. XML, Crystal Reports, Sybase PowerBuilder, Borland Delphi.
 \end{itemize}
 
-\section{\leftline{EXPERIENCE}}
-\vspace{8pt}
+\section{EXPERIENCE}
 \noindent {\sl ION Trading: London, UK} \hfill        July 2013 - Present \\
 {\bf Senior Software Developer:} {\em Java 7, distributed multithreaded low-latency systems. Continuous Integration (CI) with Jenkins, Acceptance Testing with the Robot Framework. TDD( jUnit + Mockito), Visual VM, Maven, Git, Groovy, JRebel, RMI, Scrum, peer reviews.}
 \begin{itemize} \itemsep -2pt % reduce space between items
@@ -142,9 +147,8 @@ with more than 15 years of total IT experience applied in various industries: Oi
  \item Various short-term assignments.
 \end{itemize}
 
-\section{\leftline{EDUCATION}}
-\vspace{8pt}
-\noindent {\sl National Technical University of Ukraine (NTUU), Kiev, USSR} \hfill        September 1990 – March 1996\\
+\section{EDUCATION}
+\noindent {\sl National Technical University of Ukraine (NTUU), Kiev, USSR} \hfill        September 1990 - March 1996\\
 {\bf Engineer Diploma with Honours in Electrical Engineering}
 \begin{itemize} \itemsep -2pt % reduce space between items
  \item Engineer Diploma (USSR equivalent of MSc) in Electrical Engineering.
@@ -156,9 +160,7 @@ with more than 15 years of total IT experience applied in various industries: Oi
  \item Currently following Coursera’s ``Data Science'' Specialisation: a set of courses in Data Science field.
 \end{itemize}
 
-\vspace{8pt}
-\section{\leftline{SPECIALS}}
-\vspace{8pt}
+\section{SPECIALS}
 \begin{itemize}
  \item An active member of Data Science London, London Java Community (LJC), London Scala User Group (LSUG) and London Clojurians communities.
  \item Sports: volleyball (former player of ``CBPhoto'' Irish Division 1 team, now playing in Kent amateur league), sailing (former pupil of Kiev Olympic School).
