@@ -2,37 +2,61 @@
 
 \documentclass{res}
 \usepackage{helvetica} % uses helvetica postscript font
-%\usepackage{newcent}   % uses new century schoolbook postscript font
 \usepackage{hyperref}
+\hypersetup{
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Resume},
+    pdfauthor={Yaroslav Lyakh},
+    pdfkeywords={Java} {multithreading} {RDBMS} {Team Lead}, % list of keywords
+    colorlinks=true,       % false: boxed links; true: colored links
+    % linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    % citecolor=green,        % color of links to bibliography
+    % filecolor=magenta,      % color of file links
+    urlcolor=black           % color of external links
+}
+
+
+%\setlength{\textheight}{9.5in} % increase text height to fit on 1-page
+%\textwidth=5.2in % increase textwidth to get smaller right margin
 \newsectionwidth{0pt}  % So the text is not indented under section headings
+
 \usepackage{fancyhdr}  % use this package to get a 2 line header
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
 \setlength{\headsep}{4pt}  % space between header and text
 \setlength{\headheight}{12pt} % allow room for header
 \pagestyle{fancy}     % set pagestyle for document
-\rhead{ {\it Yaroslav Lyakh (L\textunderscore yara@bigmir.net; tel: +447501 301536)}} % put text in header (right side)
+\rhead{ {\it Yaroslav Lyakh (\href{mailto:l_yara@bigmir.net}{L\_yara@bigmir.net}; tel: +447501 301536)}} % put text in header (right side)
 \cfoot{}                                     % the foot is empty
 \topmargin=-0.5in % start text higher on the page
 \footskip=3in
 
 \setlength{\parindent}{2em}
 
+% \begin{format}
+%   \title{l}\employer{r}\\
+%   \dates{r}\\
+%   \body\\
+%   \location{l}\\
+% \end{format}
+
 % switch full / short version
 % see http://tex.stackexchange.com/questions/1492/passing-parameters-to-a-document for detail
-% use  pdflatex "\def\longversion{1} \input{Yaroslav_Lyakh.tex} command like for long,
-% use pandoc for exporting:
+% use  pdflatex "\def\longversion{1} \input{Yaroslav_Lyakh.tex}"
+% command use pandoc for exporting:
 % pandoc Yaroslav_Lyakh.tex -o Yaroslav_Lyakh.docx
 \newif\ifFullVersion
-\ifdefined\longversion
-  \FullVersiontrue  % un-comment for the ``full'' version
-\else
-  \FullVersionfalse
-\fi
+\FullVersiontrue  % un-comment for the ``full'' version
+% \ifdefined\longversion
+%   \FullVersiontrue  % un-comment for the ``full'' version
+% \else
+%   \FullVersionfalse
+% \fi
 
 \begin{document}
 % \thispagestyle{empty} % this page has no header
 \begin{resume}
 
+\name{Yaro}
 \section{SUMMARY}
 \vspace{1pt} % provide vertical space between section title and contents
 \ifFullVersion
@@ -40,12 +64,13 @@
 \else
 \noindent Senior Java Developer / Software Engineer
 \fi
-with more than 15 years of total IT experience applied in various industries: Oil \& Gas, Utilities, Public Safety, Web Security, Banking and Finance. Strong engineering background, working knowledge and proven skills in all stages of the software development lifecycle.\\
+with more than 15 years of total IT experience applied in a variety of roles across a number of
 \ifFullVersion
+ industries: Finance, Web Security, Oil \& Gas, Utilities, Public Safety and Banking. Strong engineering background, working knowledge and proven skills in all stages of the software development lifecycle.\\
 \indent More than 5~years of team leading experience, able to interact well at all levels and articulate the IT-specific issues to non-IT colleagues in a clear business-transparent way. Praised for the ability to translate the complex functional and non-functional requirements into simple, convenient for implementation and testing architecture.\\
 \indent Looking for a challenging role where my skills and qualifications will add value and make a significant contribution to the company.
 \else
- \indent More than 8 years of total Java development experience; for the last 4 years was deeply involved in the development of the Java-based high-load and low-latency data processing systems.
+industries. More than 8 years of total Java development experience, particularly high-load and low-latency data processing systems.
 \fi
 
 \ifFullVersion
@@ -63,16 +88,23 @@ with more than 15 years of total IT experience applied in various industries: Oi
 
 \section{SKILLS}
 \begin{itemize}
-  \item {\em Full software development lifecycle (SLDC):} requirement gathering and analysis, design, prototyping, implementation, performance tuning, quality assurance (QA) organisation, release management. {\bf Continuous Integration (CI}) with Hudson/{\bf Jenkins}.
+\ifFullVersion
+  \item {\em Full software development lifecycle (SLDC):} requirement gathering and analysis, design, prototyping, implementation, performance tuning, quality assurance (QA) organisation, release management.
   \item {\em Development process organisation:} {\bf Scrum} (and other {\bf Agile} flavours), RUP, Waterfall. Team work planning and coordination, peer code reviews, team members coaching and mentoring.
-  \item {\em JVM - based Languages:} {\bf Java} (from 1.3 to 7.0) J2SE/J2EE, multi-threading, JDBC, Spring (Core, Integration, MVC, Roo), Hibernate, jBPM/Activiti. Active studying {\bf Clojure} (active member of London Clojurians group). Some knowledge in {\bf Scala (Akka)} and {\bf Groovy}. {\bf Performance diagnosis and optimization} in multi-thread high-load distributed systems: {\bf Visual VM, jMeter}.
+\fi
+  \item {\em JVM - based Languages:} {\bf Java} (from 1.3 to 7.0) J2SE/J2EE, multi-threading, JDBC, Spring (Core, Integration, MVC, Roo), Hibernate, jBPM/Activiti. Actively studying {\bf Clojure} (active member of London Clojurians group). Some knowledge in {\bf Scala (Akka)} and {\bf Groovy}. {\bf Performance diagnosis and optimization} in multi-thread high-load distributed systems: {\bf Visual VM, jMeter}.
   \item {\em Relational Databases (RDBMS):} {\bf Oracle} complex {\em SQL} query authoring and optimisation; {\bf PL/SQL} development and performance tuning. {\bf MySQL, MS SQL Server.}
-  \item {\em Data Modelling, Data Analysis and Presentation, Extract-Transform-Load (ETL)}, including complex {\bf data transformation and cleansing}; advanced report building and data presentation.
+  \item {\em Data Modelling, Data Analysis and Presentation, Extract-Transform-Load (ETL)}, including complex {\bf data transformation and cleansing}; advanced report building.
   \item {\em Enterprise Technologies:} Enterprise Integration patterns (EIP), Service Oriented Architecture (SOA), {\bf messaging, caching}. Server-side and middleware development.
-  \item {\em Methodologies:} Object-oriented design ({\bf OOD}), Test-driven development ({\bf TDD}): {\bf jUnit, Mocks}. Integration testing with {\bf Robot Framework}. Domain-specific languages (DSL). Strong interest in {\bf functional programming}, Data Science and Machine Learning / Business Intelligence systems.
-
-  \item {\em Other Programming Languages:} {\bf C\#}, some {\bf Python}, some {\bf R} and {\bf Octave}. OS’s: {\bf Linux, Mac OS and Windows}. Linux {\bf Shell Script}.
-  \item {\em Others:} StackOverflow \url{http://stackoverflow.com/users/900174/l-yara}, GitHub \url{https://github.com/l-yara}. Emacs, \LaTeX ~typesetting system, Eclipse, IntelliJ Idea, Visual Studio. UML notation with Sparx Enterprise Architect and Rational Rose. XML, Crystal Reports, Sybase PowerBuilder, Borland Delphi.
+  \item {\em Methodologies:} Object-oriented design ({\bf OOD}), Test-driven development ({\bf TDD}): {\bf jUnit, Mocks}. Integration testing with {\bf Robot Framework}. Domain-specific languages (DSL).
+\ifFullVersion
+Strong interest in {\bf functional programming}, Data Science and Machine Learning / Business Intelligence systems.
+\else
+  \item {\em Development process organisation:} {\bf Scrum} (and other {\bf Agile} flavours), RUP, Waterfall. Team work planning and coordination, peer code reviews, team members coaching and mentoring.
+\fi
+  \item {\em Other Languages:} {\bf C\#}, some {\bf Python}, {\bf R} and {\bf Octave}. Shell Script.
+  \item {\em Operation Systems:} {\bf Linux}, {\bf Mac OS} and {\bf Windows}.
+  \item {\em Other Tools and Technologies:} {\bf Continuous Integration (CI}) with Hudson/{\bf Jenkins} and {\bf Maven}. Git, SVN, Subversion. Emacs, \LaTeX ~typesetting system, Eclipse, IntelliJ Idea, Visual Studio. UML with Sparx Enterprise Architect and Rational Rose. XML/XSL, JSON.
 \end{itemize}
 
 \section{EXPERIENCE}
@@ -164,6 +196,7 @@ with more than 15 years of total IT experience applied in various industries: Oi
 \begin{itemize}
  \item An active member of Data Science London, London Java Community (LJC), London Scala User Group (LSUG) and London Clojurians communities.
  \item Sports: volleyball (former player of ``CBPhoto'' Irish Division 1 team, now playing in Kent amateur league), sailing (former pupil of Kiev Olympic School).
+ \item Profiles: StackOverflow \url{http://stackoverflow.com/users/900174/l-yara}, GitHub \url{http://github.com/l-yara}, LinkedIn \url{http://uk.linkedin.com/in/ylyakh}.
 \end{itemize}
 
 
