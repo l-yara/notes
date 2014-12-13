@@ -1,4 +1,7 @@
 \documentclass{res}
+% suppress widows/orphans:
+\widowpenalty=1000
+\clubpenalty=1000
 \usepackage{helvetica} % uses helvetica postscript font
 \usepackage{hyperref}
 \hypersetup{
@@ -12,7 +15,7 @@
     % filecolor=magenta,      % color of file links
     urlcolor=black           % color of external links
 }
-
+\usepackage{needspace}
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 
 % \usepackage{color}
@@ -31,14 +34,15 @@
 \usepackage{enumitem}
 \setlist[itemize]{itemsep=-2pt, topsep=4pt, labelindent=\parindent}
 
-\newcommand{\jobdes}[3]{{\bf \large #1\hspace{2ex}}{{\em \small #2}}{\hfill #3}}
-%use like \jobdes{job title}{company, location}{dates}
+\newcommand{\jobdes}[4]{\needspace{3\baselineskip}%to keep with next paragraph
+{\noindent \bf #3\hspace{2ex}}{{\em \small #1}}{\hfill #2}\\{{\em \small #4.}}}
+% \newcommand{\jobdes}[4]{{\bf \large #3\hspace{2ex}}{{\em \small #1}}{\hfill #2}\\{{\em \small #4}}}
 
 \newcommand{\osection}[1]{\section{\sc {\Large \textbf{#1}\\}} \vspace{0.30cm}}
 
 %set formatting, put semicolon and dot as needed
 \newcommand{\profileItem}[2]{\item {\sc #1:} #2.}
-\newcommand{\emp}[1]{{\em #1 }}
+\newcommand{\emp}[1]{{\em#1}}
 
 \usepackage{fancyhdr}  % use this package to get a 2 line header
 \pagestyle{fancy}     % set pagestyle for document
@@ -119,98 +123,92 @@ Strong interest in \emp{functional programming}, Data Science and Machine Learni
 \else
   \profileItem{Development process organisation} {\emp{Scrum} (and other \emp{Agile} flavours), RUP, Waterfall. Team work planning and coordination, peer code reviews, team members coaching and mentoring. \emp{Continuous Integration (CI)} and \emp{Release Management}}
 \fi
-  \profileItem{Other Languages} {\emp{C\#}, some \emp{Python}, \emp{R} and \emp{Octave}. Shell Script, XML/XSL, JSON, \LaTeX ~typesetting system, MD markup language}
+  \profileItem{Other Languages} {\emp{C\#}, some \emp{Python}, \emp{R/Octave}. Shell Script, XML/XSL, JSON, \LaTeX ~typesetting system, MD markup language}
   \profileItem{Operation Systems} {\emp{Linux, Mac OS} and \emp{Windows}}
 \end{itemize}
 
 \osection{Career History}
-\noindent {\sl ION Trading: London, UK} \hfill        July 2013 - Present \\
-{\bf Senior Software Developer:} {\em Java 7, distributed multithreaded low-latency systems. Continuous Integration (CI) with Jenkins, Acceptance Testing with the Robot Framework. TDD( jUnit + Mockito), Visual VM, Maven, Git, Groovy, JRebel, RMI, Scrum, peer reviews.}
+\jobdes{ION Trading: London, UK} {July 2013 - Present}{Senior Software Developer}
+{Java 7, distributed multithreaded low-latency systems. Continuous Integration (CI) with Jenkins, Acceptance Testing with the Robot Framework. TDD( jUnit + Mockito), Visual VM, Maven, Git, Groovy, JRebel, RMI, Scrum, peer reviews}
 \begin{itemize}
  \item Re-designed the Query Execution module transforming it from the single-node to the distributed parallel executing subsystem.
- \item Introduced a number of improvements in the Continuous Integration infrastructure: re-implemented a custom Maven plugin; greatly streamlined the existed Robot Framework structures. Improved a set of improvements which increased the test reliability and reduced the test execution time.
+ \item Enhanced the Continuous Integration infrastructure, re-implemented a project-specific Maven plugins. Streamlined the existed Robot Framework modules which increased the test reliability and reduced the test execution time.
  \item Implemented the Attribute Replacement feature which greatly improved the system’s configuration flexibility and made administering and configuring the whole system much more convenient.
  \end{itemize}
 
-\noindent {\sl Fizzback Inc (now part of NICE Co): London, UK} \hfill        June 2011 - July 2013 \\
-{\bf Senior Software Engineer / Software Architect} {\em Java 6, multi - threading, Spring (Core, Spring Integration, SpEL, Spring Roo), Hibernate, Activiti BPM, Groovy, jUnit, Mockito, Visual VM, Maven, Domain-Specific Languages (DSLs), Python (Jython) SMS-based mobile communicating, Mac OS, Linux, Scrum, peer reviews}
+\jobdes{Fizzback (now NICE Co): London, UK} {June 2011 - July 2013}{Senior Software Engineer}
+{Java 6, multi-threading, Spring (Core, Spring Integration, SpEL, Spring Roo), Hibernate, Activiti BPM, Groovy, jUnit, Mockito, Visual VM, Maven, Domain-Specific Languages (DSLs), Python (Jython) SMS-based mobile communicating, Mac OS, Linux, Scrum, peer reviews}
 \begin{itemize} \itemsep -2pt % reduce space between items
- \item Introduced a number of system design improvements, particularly enabling a massive multi-threading data processing on top of Spring Integration pipelines. While for some modules it was enough to re-code the critical pieces with the standard “stateless or immutable” approach, the main part of existed system required deep re-design based on Enterprise Integration Patterns (EIP) messaging-based architecture and extensive use of Java multi-threading tools. The effect of changes introduced was constantly controlled using jMeter and VisualVM.
- \item Database access (initially built on top of Spring Roo as a poor man's meta-programming tool) also required serious redevelopment work, particularly related to Hibernate-vs-explicit caching. It took a lot of efforts to get rid of locking-related problems; some modules were completely re-built until the required level of performance and reliability was achieved.
+ \item Refactored and enhanced a set of modules enabling a massive multi-threading data processing on top of Spring Integration pipelines.
+\ifFullVersion
+While for some modules it was enough to re-code the critical pieces with the standard “stateless or immutable” approach, the main part of existed system required deep re-design based on Enterprise Integration Patterns (EIP) messaging-based architecture and extensive use of Java multi-threading tools.
+\fi
+The changes in performance were constantly monitored using jMeter and VisualVM.
+ \item Database access (initially built on top of Spring Roo) also required serious redevelopment work, particularly related to Hibernate-vs-explicit caching. It took a lot of efforts to get rid of locking-related problems; some modules were completely re-built until the required level of performance and reliability was achieved.
  \item In addition to usual scalability improvements deeply re-developed the Communication and Reporting sub-modules to make them more convenient in configuration and maintenance. These changes (like introducing ad-hoc configuration DSL and flexible report templates) greatly improved overall system's maintainability and customer provisioning time.
- \item 	Improved the project’s Maven structure including speeding-up the whole Unit Testing process (mostly due to database-related optimisation). Initiated use of CI service (Jenkins) as a key component of the team’s Scrum Agile methodology approach.
+ \item 	Improved the project’s Maven structure to speed-up the whole Unit Testing process (mostly due to database-related optimisation). Initiated use of CI service (Jenkins) as a key component of the team’s Scrum Agile methodology approach.
  \item Developed good working relations with colleagues from Operations, QA, and Customer Support departments; combined with good ``pure'' development work this allowed to decrease an average response time of defect handling process and improved overall IT team flexibility and confidence.
 \end{itemize}
 
-\noindent {\sl ScanSafe Inc (now part of Cisco): London, UK} \hfill        July 2010 - June 2011\\
-{\bf Senior Software Developer:} {\em Java 6, multi - threading, Spring, Hibernate, Tomcat, JSP, Spring MVC, Groovy, jUnit, Mockito, XML/XSLT, jMeter, Hudson, Oracle 11g, Oracle SQL, PL/SQL, Linux, Sparx EA, Selenium, Agile Development (Scrum)}
+\jobdes{ScanSafe Inc (now part of Cisco): London, UK}{July 2010 - June 2011}{Senior Software Developer}
+{Java 6, multi - threading, Spring, Hibernate, Tomcat, JSP, Spring MVC, Groovy, jUnit, Mockito, XML/XSLT, jMeter, Hudson, Oracle 11g, Oracle SQL, PL/SQL, Linux, Sparx EA, Selenium, Agile Development (Scrum)}
 \begin{itemize} \itemsep -2pt % reduce space between items
- \item Designed and implemented various parts of a major Web Security system based on a set of multi-thread services being executed in a cloud environment. This included a lot of re-design work, particularly switching from the standard Java objects to the immutable structures in combination with elements of functional-oriented programming. Data structures like tries and algorithm tricks like specifically built hash functions were used to provide the required scalability level (up to 10 million requests per day).
+ \item Designed and implemented various parts of a major Web Security system based on a set of parallel running services being executed in a cloud environment. This included a lot of re-design work, particularly switching from the standard Java objects to the immutable structures in combination with elements of functional-oriented programming. Data structures like tries and algorithm tricks like specifically built hash functions were used to provide the required scalability level (up to 10 million requests per day).
  \item Implemented Data Analysis and Reporting modules with sophisticated “on-the-fly” SQL query building and serious database performance tuning including some PL/SQL programming.
 \end{itemize}
 
-\noindent {\sl Pitney Bowes Business Insight (former MapInfo): Chatham, UK} \hfill      July 2008 - April 2010\\
-{\bf Senior Software Engineer:} {\em .NET (C\#), NUnit, Rhino Mocks, Visual Studio, MS Entity Framework, LINQ, WPF/XAML, Web Services, Subversion, Oracle 11g, SQL, PL/SQL, GIS, ETL, Agile Scrum Development}
+\jobdes{Pitney Bowes (MapInfo): Chatham, UK}{July 2008 - April 2010}{Senior Software Engineer}
+{.NET (C\#), NUnit, Rhino Mocks, Visual Studio, MS Entity Framework, LINQ, WPF/XAML, Web Services, Subversion, Oracle 11g, SQL, PL/SQL, GIS, ETL, Agile Scrum Development}
 \begin{itemize} \itemsep -2pt % reduce space between items
  \item Took a key part in major system redesign and redevelopment works managed around the Scrum methodology. Innovative approaches like LINQ and SaaS were also featured in this project together with some elements of functional-based design which allowed to cut down the codebase size; the stability and reliability of the whole system also improved.
  \item Suggested and implemented a number of innovations like Finite-State Machine formalisation of business logic and using flexible BPM workflow patterns in system architecture. This allowed us to build a powerful and flexible user-friendly product; the project codebase size was reduced in size and simplified.
 \end{itemize}
 
-\noindent {\sl Original Solutions: Limerick, Ireland} \hfill        December 2007 - May 2008\\
-{\bf Consulting Software Developer:} {\em Java 5, multi – threading, Spring, Hibernate, jBoss jBPM, jUnit, Eclipse, Perforce, Ant, Oracle, SQL, PL/SQL}
+\jobdes {Original Solutions: Limerick, Ireland}{December 2007 - May 2008}{Consulting Software Developer}
+{Java 5, multi – threading, Spring, Hibernate, jBoss jBPM, jUnit, Eclipse, Perforce, Ant, Oracle, SQL, PL/SQL}
 \begin{itemize} \itemsep -2pt % reduce space between items
  \item Provided performance optimization works; created a project-specific performance testing subsystem. Amending jBPM for use in multi-threaded environment was a massive effort but we managed to provide a high level of scalability on our system.
 \end{itemize}
 
-\noindent {\sl Kring East and Central Europe: Ukraine - Denmark} \hfill        December 2006 - December 2007\\
-{\bf Principal Software Developer/Architect:} {\em Java 5, Spring, JDBC, jUnit, jMock, Eclipse, Subversion, Ant, Oracle, SQL, .NET Compact Edition (C\#), NUnit, Rhino Mocks, Visual Studio, GIS, TETRA – based mobile devices communication.}
+\jobdes {Kring LLC: Ukraine - Denmark}{December 2006 - December 2007}{Principal Software Developer/Architect}
+{Java 5, Spring, JDBC, jUnit, jMock, Eclipse, Subversion, Ant, Oracle, SQL, .NET Compact Edition (C\#), NUnit, Rhino Mocks, Visual Studio, GIS, TETRA – based mobile devices communication}
 \begin{itemize} \itemsep -2pt % reduce space between items
- \item Lead the offshore development project of a major Public Safety and Emergency (PS\&E) system development. The system gathers real-time information about positions of PS\&E resources (paramedics, police crews, fire brigades etc.) and their state; this information is communicated to the operation HQ via specialised messaging infrastructure.
- \item The project consisted of the server part built on Java (conversion of existing military Terma FlexCCIS Command and Control Information System) and mobile clients based in .Net Compact Framework (C\#). Modules for interacting with on-board GPS receivers and specialised communication hardware were implemented along with purpose-built integration testing facility.
+ \item Lead the offshore development project of a major Public Safety and Emergency (PS\&E) system development. The project consisted of the server part built on Java (conversion of existing military Terma FlexCCIS Command and Control Information System) and mobile clients based in .Net Compact Framework (C\#). Modules for interacting with on-board GPS receivers and specialised communication hardware were implemented along with purpose-built integration testing facility.
 \end{itemize}
 
-\noindent {\sl Vnipitransgaz joint-stock company: Kiev, Ukraine} \hfill        July 2002 - November 2006\\
-{\bf Team Lead:} {\em Java 1.3 and 5, multi-threading, GIS, Oracle Spatial Data Option (SDO), Bentley MicroStation, Intergraph suite, Spring, O/R Mapping, Swing, JDBC, jUnit, jMock, Eclipse, EJB, JSP, Oracle jDeveloper, Subversion, Oracle 8i, 9i, and 10g, SQL, PL/SQL, UML, Sparx EA, Rational Rose, XML, MS Office + VBA, XSLT, TDD and RUP}
+\jobdes{Vnipitransgaz: Kiev, Ukraine}{July 2002 - November 2006}{Team Lead}
+{Java 1.3 and 5, multi-threading, GIS, Oracle Spatial Data Option (SDO), Bentley MicroStation, Intergraph suite, Spring, O/R Mapping, Swing, JDBC, jUnit, jMock, Eclipse, Subversion, Oracle 8i, 9i, and 10g, SQL, PL/SQL, UML, Sparx EA, Rational Rose, XML, MS Office + VBA, XSLT, TDD and RUP}
 \begin{itemize} \itemsep -2pt % reduce space between items
  \item Formed and led the Software Development team involved in the development of major distributed Geographical Information System (GIS MT) for the Gasprom gas transportation company. My role included business process analysis and modelling, requirement analysis, system design and architecting in cooperation with customer’s IT department and other development teams as well as work coordination with partners.
  \item Inside team was responsible for planning development efforts for team members, technical oversight and coaching as well as hands-on project work. The project version one itself has exceeded the customer’s expectation and was recommended for adoption in all Gasprom child companies. Two modules developed by our team were honoured with special patents of the Russian Federation.
  \item Worked as IT Consultant on the numerous smaller projects for Energy, Utility and Oil\&Gas - oriented customers.
 \end{itemize}
 
-\noindent {\sl Lost Boys Business Solutions: Amsterdam, the Netherlands} \hfill        June 2001 - December 2001\\
-{\bf Software Engineer:} {\em Java 1.3: JSP, EJB, JDBC, jUnit, Oracle 8i, SQL, PL/SQL, custom-built performance measurement tools}
+\jobdes {Lost Boys Business Solutions: Amsterdam, The Netherlands}{June 2001 - December 2001}{Software Engineer}
+{Java 1.3: JSP, EJB, JDBC, jUnit, Oracle 8i, SQL, PL/SQL, custom-built performance measurement tools}
 \begin{itemize} \itemsep -2pt % reduce space between items
  \item Was selected to be part of the special fine-tuning and performance optimization team - a distinction given to the best developers at the Company.
 \end{itemize}
 
-\noindent {\sl KPMG Consulting Barents Group: Kiev, Ukraine} \hfill        November 1997 - May 2001\\
-{\bf Analyst Programmer:} {\em MS SQL Server, MS Office (particularly MS Access), VBA, Delphi, Crystal Reports, IIS + ASP, XML/XSLT}
+\jobdes {KPMG Consulting Barents Group: Kiev, Ukraine}{November 1997 - May 2001}{Analyst Programmer}
+{MS SQL Server, MS Office (particularly MS Access), VBA, Delphi, Crystal Reports, IIS + ASP, XML/XSLT}
 \begin{itemize}
  \item As a staff Programmer/Analyst, took part in planning, design and technical implementation of various projects to improve the budgeting process of the state and local budgets.  The projects were credited with eliminating 2 months from the budget development cycle and greatly expanded the analytical capabilities of the Ministry of Finance.
 \end{itemize}
 
-\noindent {\sl Short-term contracts: Kiev, Ukraine / Bratislava, Slovakia} \hfill        March 1996 - November 1997\\
-{\bf Software Engineer}
-\begin{itemize} \itemsep -2pt % reduce space between items
- \item Various short-term assignments.
-\end{itemize}
+\jobdes {KiGIS LLC: Kiev, Ukraine / Bratislava, Slovakia}{March 1996 - November 1997}{Software Engineer}
+{Geographical Information Systems (GIS)-specific software: Intergraph, Bentley Microstation/Geographics}
 
 \osection{EDUCATION}
-\noindent {\sl National Technical University of Ukraine (NTUU), Kiev, USSR} \hfill        September 1990 - March 1996\\
-{\bf Engineer Diploma with Honours in Electrical Engineering}
-\begin{itemize} \itemsep -2pt % reduce space between items
- \item Engineer Diploma (USSR equivalent of MSc) in Electrical Engineering.
-\end{itemize}
-\noindent {\sl Coursera and Udacity self-study online courses} \hfill        Present
-\begin{itemize} \itemsep -2pt % reduce space between items
- \item ``Functional Programming Principles in Scala'', ``Principles of Reactive Programming (in Scala)'', ``Design and Analysis of Algorithms'' (Parts 1 and 2), ``Introduction to Artificial Intelligence (AI)'', ``Machine Learning (ML)''
- \item ``Introduction to Finance'', ``Model Thinking'', ``Computational Investing'', ``An Introduction to Operations Management'', ``Quantum Mechanics and Quantum Computation'', ``Introduction to Genetics and Evolution''.
- \item Currently following Coursera’s ``Data Science'' Specialisation: a set of courses in Data Science field.
-\end{itemize}
+\jobdes {National Technical University of Ukraine (KPI): Kiev, USSR}{September 1990 - March 1996}{Engineer Diploma}
+ {Engineer Diploma (USSR equivalent of MSc) in Electrical Engineering}
+
+\jobdes {Coursera and Udacity online courses}{Present}{Self-study}
+{``Functional Programming Principles in Scala'', ``Principles of Reactive Programming (in Scala)'', ``Design and Analysis of Algorithms'' (Parts 1 and 2), ``Introduction to Artificial Intelligence (AI)'', ``Machine Learning (ML)'',``Introduction to Finance'', ``Model Thinking'', ``Computational Investing'', ``An Introduction to Operations Management'', ``Quantum Mechanics and Quantum Computation'', ``Introduction to Genetics and Evolution'',Currently following ``Data Science'' Specialisation: a set of courses in Data Science field.}
 
 \osection{SPECIALS}
 \begin{itemize}
- \item An active member of Data Science London, London Java Community (LJC), London Scala User Group (LSUG) and London Clojurians communities.
+ \item An active member of Data Science London, London Java Community (LJC) and London Clojurians communities.
  \item Sports: volleyball (former player of ``CBPhoto'' Irish Division 1 team, now playing in Kent amateur league), sailing (former pupil of Kiev Olympic School).
  \item Profiles: StackOverflow \url{http://stackoverflow.com/users/900174/l-yara}, GitHub \url{http://github.com/l-yara}, LinkedIn \url{http://uk.linkedin.com/in/ylyakh}.
 \end{itemize}
