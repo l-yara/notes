@@ -4,7 +4,42 @@ git log --oneline --decorate
 ** Safe update (see http://stackoverflow.com/questions/6406762/why-am-i-merging-remote-tracking-branch-origin-develop-into-develop for discussion):
 $ git remote update -p;git merge --ff-only @{u}
 
+** Store current work (stash):
+git stash
+*** Control over already existing:
+git stash list
+git stash pop
+-- or, as a variant:
+git stash apply [-- index]
+-- if needed:
+git stash clear
+
 ** Branch operation:
 *** Show with the last commits:
 $ git branch -av
-#--all
+
+*** Delete branch WN on client and remote:
+git branch -d WN
+git push origin --delete WN
+
+*** Switch to branch:
+$ git checkout WN
+
+*** Move pointer on the commit a12b34c56 (on master branch):
+    git reset --hard a12b34c56
+    git push --force origin master
+
+** Revert all changes: (notice branch reference):
+git reset --hard origin/master
+
+** Applying commits from another branch to my current (WN):
+*** switch to branch:
+git checkout WN
+*** apply commit
+git cherry-pick a12b34c56
+*** or, for range apply:
+git cherry-pick a12b34c56^..d12e23f67
+*** merge a set of commits into one, starting from a1b2c3d4:
+git rebase -i a1b2c3d4
+*** amend the commit message:
+git commit --amend -m "...new message..."
