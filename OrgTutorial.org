@@ -1,5 +1,0 @@
-* Tasks
-** TODO ILR
-** TODO Clojure - Part 7
-*** Photos
-- Вот нафига, спрашивается???
