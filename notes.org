@@ -1,4 +1,4 @@
-Шопен http://www.youtube.com/watch?v=t778ejt1oMI
+Currents
 - логика + ссылки на учебники http://lectica.livejournal.com/6873.html
 - http://thinkrelevance.com/blog/tags/clojure
 - http://schegl2g.bget.ru/bayes/YudkowskyBayes.html
