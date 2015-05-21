@@ -1,8 +1,17 @@
-** Logging:
+#-*- mode: org -*-
+#+STARTUP: showall
+
+** Logs:
 git log --oneline --decorate
+# convenient for checking before merge:
+git log -5
+# compact:
+git log --onleine -5
 
 ** Safe update (see http://stackoverflow.com/questions/6406762/why-am-i-merging-remote-tracking-branch-origin-develop-into-develop for discussion):
-$ git remote update -p;git merge --ff-only @{u}
+git remote update -p;git merge --ff-only @{u}
+# if the above fails with a complaint that the local branch has diverged:
+git rebase -p @{u}
 
 ** Store current work (stash):
 git stash
@@ -16,21 +25,31 @@ git stash clear
 
 ** Branch operation:
 *** Show with the last commits:
-$ git branch -av
+git branch -av
 
 *** Delete branch WN on client and remote:
 git branch -d WN
 git push origin --delete WN
 
 *** Switch to branch:
-$ git checkout WN
+git checkout WN
 
 *** Move pointer on the commit a12b34c56 (on master branch):
-    git reset --hard a12b34c56
-    git push --force origin master
+git reset --hard a12b34c56
+# and push on remote
+git push --force origin master
 
-** Revert all changes: (notice branch reference):
+*** Move pointer on the commit a12b34c56 (on WN branch):
+git checkout WN
+git reset --hard a12b34c56
+# and push on remote
+git push --force origin WN
+
+** Revert all changes: (notice branch reference format):
 git reset --hard origin/master
+
+** Reveret the last commit
+git revert HEAD
 
 ** Applying commits from another branch to my current (WN):
 *** switch to branch:
@@ -43,3 +62,6 @@ git cherry-pick a12b34c56^..d12e23f67
 git rebase -i a1b2c3d4
 *** amend the commit message:
 git commit --amend -m "...new message..."
+
+** Get me outta here:
+git revert HEAD;git commit -m "revert";git push origin WN
