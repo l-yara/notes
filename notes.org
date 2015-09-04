@@ -1,5 +1,7 @@
 Currents
 - Betfair: Greg Bennett <Greg.Bennett@betfair.com>; Orestis Foufris <Orestis.Foufris@betfair.com>; Konstantin Anashkov (Konstantin.Anashkov@betfair.com); David Carter <David.Carter@betfair.com>; Simon Nash <simon.nash@betfair.com>; Alexander.Sklikas@betfair.com
+- Add to feedly: http://lj.rossia.org/users/lolepezy/
+- Russian (add to feedly?) http://baxus.livejournal.com/479733.html
 - логика + ссылки на учебники http://lectica.livejournal.com/6873.html
 - http://thinkrelevance.com/blog/tags/clojure
 - http://schegl2g.bget.ru/bayes/YudkowskyBayes.html
