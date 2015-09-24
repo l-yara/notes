@@ -34,6 +34,9 @@ git push origin --delete WN
 *** Switch to branch:
 git checkout WN
 
+*** Take the branch from server where it lives in remotes/origin/WN:
+git checkout -b WN remotes/origin/WN
+
 *** Move pointer on the commit a12b34c56 (on master branch):
 git reset --hard a12b34c56
 # and push on remote
