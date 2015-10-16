@@ -1,4 +1,5 @@
 Currents
+- Mockturtle: http://the-mockturtle.livejournal.com/184889.html, http://the-mockturtle.livejournal.com/285253.html, http://the-mockturtle.livejournal.com/200616.html, http://the-mockturtle.livejournal.com/306560.html, http://the-mockturtle.livejournal.com/309297.html
 - Betfair: Greg Bennett <Greg.Bennett@betfair.com>; Orestis Foufris <Orestis.Foufris@betfair.com>; Konstantin Anashkov (Konstantin.Anashkov@betfair.com); David Carter <David.Carter@betfair.com>; Simon Nash <simon.nash@betfair.com>; Alexander.Sklikas@betfair.com
 - Add to feedly: http://lj.rossia.org/users/lolepezy/
 - Russian (add to feedly?) http://baxus.livejournal.com/479733.html
