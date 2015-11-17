@@ -60,7 +60,7 @@
 % command use pandoc for exporting:
 % pandoc Yaroslav_Lyakh.tex -o Yaroslav_Lyakh.docx
 \newif\ifFullVersion
-% \FullVersiontrue  un-comment for the ``full'' version
+%\FullVersiontrue % un-comment for the ``full'' version
 % \ifdefined\longversion
 %   \FullVersiontrue  un-comment for the ``full'' version
 % \else
@@ -79,12 +79,12 @@
 \else
 \noindent Senior Software Developer
 \fi
-with more than fifteen years of total IT experience applied in a variety of roles across a number of industries: Banking, Finance, Web Security, Oil~\&~Gas, Utilities and Public Safety.
+with more than eighteen years of total IT experience applied in a variety of roles across a number of industries: Banking, Finance, Web Security, Oil~\&~Gas, Utilities and Public Safety.
 \ifFullVersion
 Strong engineering background, working knowledge and proven skills in all stages of the software development life-cycle. More than 5~years of team leading experience, ability to interact well at all levels and articulate the IT-specific issues to non-IT colleagues in a clear business-transparent way.\\
 \indent Looking for a challenging role where my skills and qualifications will add value and make a significant contribution to the company.
 \else
-More than eight years of Java development; extensive experience in high-load distributed low-latency data processing systems for last four years.
+More than ten years of Java development; extensive experience in high-load distributed low-latency data processing systems for last five years.
 \fi
 
 \ifFullVersion
@@ -123,13 +123,14 @@ Strong interest in \emp{functional programming}, Data Science and Machine Learni
 \end{itemize}
 
 \osection{Career History}
-\jobdes{Betfair: London, UK} {March 2015 - Present}{Consulting Senior Software Developer}
+\jobdes{Betfair: London, UK} {March 2015 - Present}{Principal Java Consultant}
 {Low-latency high-throughput systems based on low-level Java 7 and 8 multi-threading primitives (locks/barriers/phaser, Guava Monitor) and concurrent collections. Oracle SQL and PL/SQL. Zookeeper. Raft distributed consensus algorithm. Continuous Integration (CI) with Jenkins and Thoughtworks Go. TDD (TestNG + Mockito), Maven, Spring, Git, Scrum, peer reviews, mentoring junior team members}
 \begin{itemize}
  \item In an Agile environment, developed new functionality for a large-scale, high-volume Bet Matching module with so-called Virtual Bets and One-Way Matching extensions.
- \item Heavily involved in transition of the current Oracle-based ``traditional'' (i.e. built on classical read-process-write cycle) Matcher implementation into more robust stream-based architecture based on Raft distributed consensus algorithm.
+ \item Heavily involved in so-called ``Multiple Orchestrator'' project - a major development effort which enabled a significant increase in the degree of parallelism for the whole Bet Matching subsystem.
  \item Designed and implemented a project-specific Performance Testing facility.
- \item Provided training and on-the-fly consultancies to the junior team members.
+ \item Heavily involved in transition of the current Oracle-based ``traditional'' (i.e. built on classical read-process-write cycle) Matcher implementation into more robust stream-based architecture based on Raft distributed consensus algorithm.
+ \item Provided training and on-the-fly consultations to the junior team members.
  \end{itemize}
 
 \jobdes{ION Trading: London, UK} {July 2013 - March 2015}{Senior Software Developer}
@@ -148,7 +149,7 @@ Strong interest in \emp{functional programming}, Data Science and Machine Learni
 While for some modules it was enough to re-code the critical pieces with the standard “stateless or immutable” approach, the main part of existed system required deep re-design based on Enterprise Integration Patterns (EIP) messaging-based architecture and extensive use of Java multi-threading tools.
 \fi
 The changes in performance and resource consumption were constantly monitored using jMeter and VisualVM.
- \item Redeveloped a database access layer initially built on top of Spring Roo, got rid of locking-related problems.
+ \item Redeveloped a database access layer, got rid of locking-related problems.
 \ifFullVersion
 Some modules were completely re-built until the required level of performance and reliability was achieved.
 \fi
@@ -156,7 +157,7 @@ Some modules were completely re-built until the required level of performance an
 \ifFullVersion
    These changes (like introducing ad-hoc configuration DSL and flexible report templates) greatly improved overall system's maintainability and customer provisioning time.
 \fi
- \item 	Improved the project’s Maven structure to speed-up the whole Unit Testing process (mostly by database-related optimisation).
+Improved the execution time of the whole Unit Testing process (mostly by database-related optimisation).
 \ifFullVersion
 Initiated use of CI service (Jenkins) as a key component of the team’s Scrum Agile methodology approach.
 \fi
@@ -170,15 +171,14 @@ Initiated use of CI service (Jenkins) as a key component of the team’s Scrum A
  \ifFullVersion
    This included a lot of re-design work, particularly switching from the standard Java objects to the immutable structures in combination with elements of functional-oriented programming.
 \fi
-Data structures like tries and algorithm tricks like specifically built hash functions were used to provide the required scalability level (up to 10 million requests per day).
+Data structures like tries and algorithm tricks like specifically built hash functions were used to provide the required scalability level.
  \item Implemented Data Analysis and Reporting modules with sophisticated “on-the-fly” SQL query building. Provided the serious database performance tuning including query re-writing, some PL/SQL programming and index optimisation.
 \end{itemize}
 
 \jobdes{Pitney Bowes (MapInfo): Chatham, UK}{July 2008 - April 2010}{Senior Software Engineer}
 {.NET (C\#), NUnit, Rhino Mocks, Visual Studio, MS Entity Framework, LINQ, WPF/XAML, Web Services, Subversion, Oracle 11g, SQL, PL/SQL, GIS, ETL, Agile Scrum Development}
 \begin{itemize} \itemsep -2pt % reduce space between items
- \item Took a key part in major system redesign and redevelopment works managed around the Scrum methodology. Innovative approaches like LINQ and SaaS were also featured in this project together with some elements of functional-based design which allowed to cut down the codebase size; the stability and reliability of the whole system also improved.
- \item Suggested and implemented a number of innovations like Finite-State Machine formalisation of business logic and using BPM workflow patterns in system architecture.
+ \item Took a key part in major system redesign and redevelopment works managed around the Scrum methodology. Innovative approaches like LINQ and SaaS were also featured in this project together with some elements of functional-based design which allowed to cut down the codebase size; the stability and reliability of the whole system also improved. Suggested and implemented a number of innovations like Finite-State Machine formalisation of business logic and BPM workflow.
 \end{itemize}
 
 \jobdes {Original Solutions: Limerick, Ireland}{December 2007 - May 2008}{Consulting Software Developer}
@@ -196,8 +196,8 @@ Data structures like tries and algorithm tricks like specifically built hash fun
 \jobdes{Vnipitransgaz: Kiev, Ukraine}{July 2002 - November 2006}{Team Lead}
 {Java 1.3 and 5, multi-threading, GIS, Oracle Spatial Data Option (SDO), Bentley MicroStation, Intergraph suite, Spring, O/R Mapping, Swing, JDBC, jUnit, jMock, Eclipse, Subversion, Oracle 8i, 9i, and 10g, SQL, PL/SQL, UML, Sparx EA, Rational Rose, XML, MS Office + VBA, XSLT, TDD and RUP}
 \begin{itemize} \itemsep -2pt % reduce space between items
- \item Formed and led the Software Development Team involved in the major distributed Geographical Information System (GIS MT) for the Gasprom gas transportation company. My role included business process analysis and modelling, requirement analysis, system design and architecting in cooperation with customer’s IT department and other development teams as well as work coordination with partners.
- \item Inside team (up to eight people) was responsible for planning development efforts for team members, technical oversight and coaching as well as hands-on project work. The project version one itself has exceeded the customer’s expectation and was recommended for adoption in all Gasprom child companies. Two modules developed by our team were honoured with special patents of the Russian Federation.
+ \item Formed and led the Software Development Team involved in the major distributed Geographical Information System (GIS MT) for the Gasprom gas transportation company. My role included business process analysis and modelling, requirement analysis, system design and architecting in cooperation with customer’s IT department and other development teams plus work coordination with partners.
+ \item Inside team (up to eight people) was responsible for planning development efforts for team members, technical oversight and coaching as well as hands-on project work. The project has exceeded the customer’s expectation and was recommended for adoption in all Gasprom child companies. Two modules developed by our team were honoured with special patents of the Russian Federation.
  \ifFullVersion
  \item Wrote, maintained, and enhanced the numerous smaller projects for Energy, Utility and Oil\&Gas - oriented customers in the Data Capture, Data Verification and ETL areas.
 \else
@@ -222,7 +222,7 @@ Data structures like tries and algorithm tricks like specifically built hash fun
  {Engineer Diploma (USSR equivalent of MSc) in Electrical Engineering}
 
 \jobdes {Coursera and Udacity online courses}{Present}{Self-study}
-{``Functional Programming Principles in Scala'', ``Principles of Reactive Programming (in Scala)'', ``Design and Analysis of Algorithms'' (Parts 1 and 2), ``Introduction to Artificial Intelligence (AI)'', ``Machine Learning (ML)'',``Introduction to Finance'', ``Financial Markets'', ``Model Thinking'', ``Computational Investing'', ``An Introduction to Operations Management'', ``Quantum Mechanics and Quantum Computation'', ``Introduction to Genetics and Evolution''. Currently following ``Data Science'' Specialisation: a set of courses in Data Science field.}
+{``Functional Programming Principles in Scala'', ``Principles of Reactive Programming (in Scala)'', ``Design and Analysis of Algorithms'' (Parts 1 and 2), ``Introduction to Artificial Intelligence (AI)'', ``Machine Learning (ML)'',``Introduction to Finance'', ``Financial Markets'', ``Model Thinking'', ``Computational Investing'', ``An Introduction to Operations Management'', ``Quantum Mechanics and Quantum Computation'', ``Introduction to Genetics and Evolution''. Currently following ``Data Science'' Specialisation: a set of courses in a Data Science field.}
 
 \osection{SPECIALS}
 \vspace{0.20cm}

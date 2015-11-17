@@ -1,7 +1,5 @@
 Currents
-- Content: http://www.sharereactor.ru/cgi-bin/mzinfo.cgi?id=5530 ,http://film.arjlover.net/film/#d
 - Mockturtle: http://the-mockturtle.livejournal.com/184889.html, http://the-mockturtle.livejournal.com/285253.html, http://the-mockturtle.livejournal.com/200616.html, http://the-mockturtle.livejournal.com/306560.html, http://the-mockturtle.livejournal.com/309297.html , http://the-mockturtle.livejournal.com/324537.html ,
-- Look at it: http://dante-beretta.livejournal.com/
 
 - Java performance: http://psy-lob-saw.blogspot.co.uk/p/jmh-related-posts.html, the whole http://mechanical-sympathy.blogspot.co.uk/2012/10/compact-off-heap-structurestuples-in.html
 reference to talk and memory issues: http://psy-lob-saw.blogspot.co.uk/2013/05/know-thy-java-object-memory-layout.html
@@ -9,8 +7,7 @@ reference to talk and memory issues: http://psy-lob-saw.blogspot.co.uk/2013/05/k
 
 - Betfair: Greg Bennett <Greg.Bennett@betfair.com>; Orestis Foufris <Orestis.Foufris@betfair.com>; Konstantin Anashkov (Konstantin.Anashkov@betfair.com); David Carter <David.Carter@betfair.com>; Simon Nash <simon.nash@betfair.com>; Alexander.Sklikas@betfair.com
 - Reading: "Врата огня" Стивена Прессфилда? Я читал. Непосредственно описание Фермопильского сражения занимает что-то около 90 страниц, насколько я помню. И я не мог от него оторваться.
-- Add to feedly: http://lj.rossia.org/users/lolepezy/
-- Russian (add to feedly?) http://baxus.livejournal.com/479733.html
+- Russian http://baxus.livejournal.com/479733.html
 - логика + ссылки на учебники http://lectica.livejournal.com/6873.html
 - http://thinkrelevance.com/blog/tags/clojure
 - http://schegl2g.bget.ru/bayes/YudkowskyBayes.html
@@ -49,11 +46,8 @@ Cascalog for Impatient: https://github.com/Quantisan/Impatient/wiki
 - пробить REST операции и их аналоги по CRUD
 - Олегу: RSA Factorisation Challenge (Clay Millennium Problems)
 - слушаем Silly Wizard, The Pogues
-- фильм "Внутреннее пространство"; "Первый рыцарь"
 - Junior Chess Club: East Grinstead, David Fryer 01342 317287
 - профиль на линкед Ин - переделать с нуля (погуглить что нужно)
-
--- Thursday, 13: 16.00 11 Leadenhall Street: Shilen Shah 07711 773621
 
 * Hunting
 -- http://www.just-java.co.uk/ (nafik)
