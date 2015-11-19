@@ -6,6 +6,8 @@ reference to talk and memory issues: http://psy-lob-saw.blogspot.co.uk/2013/05/k
 
 
 - Betfair: Greg Bennett <Greg.Bennett@betfair.com>; Orestis Foufris <Orestis.Foufris@betfair.com>; Konstantin Anashkov (Konstantin.Anashkov@betfair.com); David Carter <David.Carter@betfair.com>; Simon Nash <simon.nash@betfair.com>; Alexander.Sklikas@betfair.com
+- Typical Saturday at Betfair: 2-5 billion requests; "normal" peak rate 65K / s.
+
 - Reading: "Врата огня" Стивена Прессфилда? Я читал. Непосредственно описание Фермопильского сражения занимает что-то около 90 страниц, насколько я помню. И я не мог от него оторваться.
 - Russian http://baxus.livejournal.com/479733.html
 - логика + ссылки на учебники http://lectica.livejournal.com/6873.html
