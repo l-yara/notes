@@ -1,5 +1,9 @@
 Currents
+- https://www.masteringemacs.org/reading-guide
+
 - Mockturtle: http://the-mockturtle.livejournal.com/184889.html, http://the-mockturtle.livejournal.com/285253.html, http://the-mockturtle.livejournal.com/200616.html, http://the-mockturtle.livejournal.com/306560.html, http://the-mockturtle.livejournal.com/309297.html , http://the-mockturtle.livejournal.com/324537.html ,
+
+- http://the-mockturtle.livejournal.com/507347.html
 
 - Java performance: http://psy-lob-saw.blogspot.co.uk/p/jmh-related-posts.html, the whole http://mechanical-sympathy.blogspot.co.uk/2012/10/compact-off-heap-structurestuples-in.html
 reference to talk and memory issues: http://psy-lob-saw.blogspot.co.uk/2013/05/know-thy-java-object-memory-layout.html

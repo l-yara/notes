@@ -21,36 +21,71 @@
    C-c C-v – show todos in current document
 *** Configuring todo's cycle:
 - In the file itself (on the beginning of the file):
-    #+TODO: TODO IN-PROGRESS WAITING DONE
+  #+TODO: TODO IN-PROGRESS WAITING DONE
 - in emacs - config:
   =(setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))=
 ** GTD - separate story at [[http://orgmode.org/worg/org-tutorials/org4beginners.html][]
-* Prelude
+
+* Prelude + Ergoemacs + Yara's expancions
+
 ** Common
-   M-e       Kill the previous word(backward-kill-word).
-   C-x </kbd>  align-regexp
-   C-+         Increase font size(text-scale-increase).
-   C--  Decrease font size(text-scale-decrease).
+   M-a          Alias for M-x.
+
+*** File/buffer/window commands
+    C-o          Find file (Open File)
+    C-s          Save buffer
+    C-x s        Save file (like save-as)
+    C-x b        Switch buffer
+    C-x k        Kill buffer
+    M-3          Delete other windows
+    M-2          Delete current window
+    M-4          Split window horizontally
+    M-S-4        Split window vertically
+
+    C-+          Increase font size(text-scale-increase).
+    C--          Decrease font size(text-scale-decrease).
+
+    F9 w         (enable-visual-line-mode)
+    F9 i         Arrange emacs window in center (arrange-center)
+
+    F12          Toggle the Emacs menu bar.
+
+** Unknown
+   C-x </kbd>   align-regexp
    C-x O        Go back to previous window (the inverse of other-window (C-x o)).
-   C-x ^        Join two lines into one(join-line).
+
+** Editing
+   M-e          Kill the previous word(backward-kill-word).
+   M-S-6 (M-^)  Join two lines into one(join-line).
+
+   M-</kbd>     Run hippie-expand (a replacement for the default dabbrev-expand).
+
+
+
+TODO in Emacs: move to previous/next to M-m / M-,
+*** Lines
+    F9 d         Duplicate line or region
+    C-d          Delete line(s)
+    S-RET        Insert an empty line below current and indent it properly (as in most IDEs).
+    C-S-RET      Insert an empty line _above_ current and indent it properly (as in most IDEs).
+    C-S-up       Move the current line up.
+    C-S-down     Move the current line down.
+
+** Shells
    C-x p        Start proced (manage processes form Emacs, works only in Linux).
    C-x m        Start eshell.
    C-x M        Start eshell.
    C-x M-m      Start your default shell.
-   C-x C-m      Alias for M-x.
+
+** Help
    C-h A        Run apropos (search in all Emacs symbols).
-   M-</kbd>     Run hippie-expand (a replacement for the default dabbrev-expand).
    C-x C-b      Open ibuffer (a replacement for the default buffer-list).
-   F12  Toggle the Emacs menu bar.
    C-x g        Open Magit's status buffer.
    C-=  Run expand-region (incremental text selection).
+
 ** Prelude-mode
    C-c o        Open the currently visited file with an external program.
    C-c g        Search in Google for the thing under point (or an interactive query).
-   S-RET        Insert an empty line below current and indent it properly (as in most IDEs).
-   C-S-RET      Insert an empty line _above_ current and indent it properly (as in most IDEs).
-   C-S-up       Move the current line up.
-   C-S-down     Move the current line down.
    C-c n        Fix indentation in buffer and strip whitespace.
    C-c f        Open recently visitted file.
    C-M-</kbd>   Indent region (if selected) or the entire buffer.
@@ -81,18 +116,8 @@
    C-c p s      Display a list of known projects you can switch to.
    C-c p h     Help on Projectile
 
-* TODO [#B] Common
-** File/buffer/window commands
-   C-x C-f     Find file
-   C-x C-s     Save buffer
-   C-x s       Save file (like save-as)
-   C-x b       Switch buffer
-   C-x k       Kill buffer
-   C-x 1       Delete other windows
-   C-x 0       Delete current window
-   C-x 2       Split window horizontally
-   C-x 3       Split window vertically
 ** Movement commands
+   C-a         Select All
    C-a         Beginning of line
    C-e         End of line
    C-n         Next line (down)
