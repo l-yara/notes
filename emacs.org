@@ -48,7 +48,7 @@
     F9 w         (enable-visual-line-mode)
     F9 i         Arrange emacs window in center (arrange-center)
 
-    F12          Toggle the Emacs menu bar.
+    F12          Toggle the menu bar.
 
 ** Unknown
    C-x </kbd>   align-regexp
@@ -62,7 +62,8 @@
 
 
 
-TODO in Emacs: move to previous/next to M-m / M-,
+
+   TODO in Emacs: move to previous/next to M-m / M-,
 *** Lines
     F9 d         Duplicate line or region
     C-d          Delete line(s)
@@ -78,10 +79,13 @@ TODO in Emacs: move to previous/next to M-m / M-,
    C-x M-m      Start your default shell.
 
 ** Help
-   C-h A        Run apropos (search in all Emacs symbols).
+   C-h A (F1 A) Run apropos (search in all Emacs symbols).
    C-x C-b      Open ibuffer (a replacement for the default buffer-list).
-   C-x g        Open Magit's status buffer.
    C-=  Run expand-region (incremental text selection).
+
+** Magit
+   C-x g        Open Magit's status buffer.
+   Tab          Toggle 'diff'
 
 ** Prelude-mode
    C-c o        Open the currently visited file with an external program.
