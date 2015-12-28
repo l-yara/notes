@@ -1,10 +1,11 @@
 (TeX-add-style-hook "Yaroslav_Lyakh"
  (lambda ()
     (TeX-add-symbols
-     '("emp" 1)
      '("profileItem" 2)
      '("osection" 1)
-     '("jobdes" 4))
+     '("aggjobdes" 4)
+     '("jobdes" 4)
+     '("emp" 1))
     (TeX-run-style-hooks
      "fancyhdr"
      "enumitem"

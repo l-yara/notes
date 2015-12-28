@@ -9,7 +9,7 @@
     pdfstartview={FitH},   % fits the width of the page to the window
     pdftitle={Resume},
     pdfauthor={Yaroslav Lyakh},
-    pdfkeywords={CV} {Java} {multithreading} {RDBMS} {Team Lead}, %list of keywords
+    pdfkeywords={CV} {Java} {multithreading} {RDBMS} {multithreading}, %list of keywords
     colorlinks=true,      % false: boxed links; true: colored links
     % linkcolor=black,          color of internal links (change box color with linkbordercolor)
     % citecolor=green,        color of links to bibliography
@@ -29,14 +29,25 @@
 \usepackage{enumitem}
 \setlist[itemize]{itemsep=-2pt, topsep=4pt, labelindent=\parindent}
 
+% hints to the word-breaking algo
+\hyphenation{conti-nuous}
+
+\newcommand{\emp}[1]{{\bf#1}}
+
 \newcommand{\jobdes}[4]{\needspace{3\baselineskip} %to keep with next paragraph
 {\noindent \bf #3\hspace{2ex}}{{\em \small #1}}{\hfill #2}\\{{\it \small #4.}}}
+
+\newcommand{\aggjobdes}[4]{\needspace{3\baselineskip} %to keep with next paragraph
+{\noindent \bf #1\hspace{2ex}}{\hfill #2}\\
+{{\noindent \small \textit{ \textbf{ Companies:} {\hfill #3}}}}\\{{\it \small #4.}}}
 
 \newcommand{\osection}[1]{\section{\sc {\Large \textbf{#1}\\}} \vspace{0.30cm}}
 
 % set formatting, put semicolon and dot as needed
-\newcommand{\profileItem}[2]{\item {\sc #1:} #2.}
-\newcommand{\emp}[1]{{\bf#1}}
+\newcommand{\profileItem}[2]{\item {\sl #1:} #2.}
+% \newcommand{\profileItem}[2]{\item {\sc #1:} #2.}
+
+% \sl is slanted, not \it (italic) !!! see also http://www.combinatorics.net/weblib/options/style.html
 
 \usepackage{fancyhdr} % use this package to get a 2 line header
 \pagestyle{fancy}     % set pagestyle for document
@@ -59,72 +70,34 @@
 % use  pdflatex "\def\longversion{1} \input{Yaroslav_Lyakh.tex}"
 % command use pandoc for exporting:
 % pandoc Yaroslav_Lyakh.tex -o Yaroslav_Lyakh.docx
-\newif\ifFullVersion
-%\FullVersiontrue % un-comment for the ``full'' version
-% \ifdefined\longversion
-%   \FullVersiontrue  un-comment for the ``full'' version
-% \else
-%   \FullVersionfalse
-% \fi
-
 \begin{document}
 % \thispagestyle{empty} %this page has no header
 % \name{Yaroslav Lyakh}
 \begin{resume}
 
-\osection{Summary}
+%\osection{Summary}
 % \vspace{0.20cm}
-\ifFullVersion
-\noindent Team Lead / Principal Software Developer
-\else
-\noindent Senior Software Developer
-\fi
-with more than eighteen years of total IT experience applied in a variety of roles across a number of industries: Banking, Finance, Web Security, Oil~\&~Gas, Utilities and Public Safety.
-\ifFullVersion
-Strong engineering background, working knowledge and proven skills in all stages of the software development life-cycle. More than 5~years of team leading experience, ability to interact well at all levels and articulate the IT-specific issues to non-IT colleagues in a clear business-transparent way.\\
-\indent Looking for a challenging role where my skills and qualifications will add value and make a significant contribution to the company.
-\else
-More than ten years of Java development; extensive experience in high-load distributed low-latency data processing systems for last five years.
-\fi
-
-\ifFullVersion
-\osection{Career Highlights}
-\begin{itemize}
-\item \emp{Formed and led the Software Development team} (up to eight people) in a multi-million GIS MT project for Gazprom gas-transportation giant. Our role in this project constantly increased due to the high level of technical and business expertise developed by team members combined with collaborative rapport built with our partners.
-\item Introduced a number of system design improvements, particularly enabling a \emp{massive multi-threading data processing} on top of Spring Integration infrastructure with Fizzback team. The scalability level is now sufficient for any foreseeable load.
-\item Designed and developed the \emp{data collection, verification and migration infrastructure} for Utility and Oil \& Gas - specific databases (both spatial and attribute parts). The changes in the business process proposed by our team and backed by our software enabled a productivity increase in 3-4 times compared to old approach.
-\item Holding two \emp{patents} awarded on IT innovations in \emp{Data Presentation} and \emp{Data Visualisation} areas.
-\item As a \emp{Principal Developer / Architect} made a key contribution to the success of the PS\&E project when worked for Kring LLC. Despite unusual team configuration and inconvenient technology set the system showed \emp{good performance and reliability} achieved with a \emp{purpose-built testing facility}.
-\item Built a set of the state- and local- budget \emp{data management tools} when worked in a large KPMG consultancy projects for the Ministry of Finance of Ukraine. The projects enjoyed the great success and were credited with eliminating 2 months from the budget development cycle.
-\item Two times won the special prizes in \emp{``Thinking Out of the Box''} nominations during the traditional \emp{Hack Day} events in MapInfo / Pitney Bowes.
-\end{itemize}
-\fi
+\indent Senior Software Engineer / Senior Java Developer with eighteen years of experience in a variety of roles across a number of industries: Finance, Banking, Web Security, Oil~\&~Gas, Online Gambling, Utilities and Public Safety. More than ten years of Java development experience; extensive involvement in high-load parallel distributed low-latency high-throughput data processing systems development for last five years.
 
 \osection{Technical Profile}
-\vspace{0.20cm}
+% \vspace{0.20cm}
 \begin{itemize}
-  \profileItem {Full software development lifecycle (SLDC)} {requirement gathering and analysis, design, prototyping, implementation, performance tuning, quality assurance (QA) organisation, release management}
-\ifFullVersion
-  \profileItem {Development process organisation} {\emp{Scrum} (and other \emp{Agile} flavours), RUP, Waterfall. Team work planning and coordination, peer code reviews, team members coaching and mentoring. \emp{Continuous Integration (CI)} and \emp{Release Management}}
-\fi
-  \profileItem {JVM - based languages} {\emp{Java} (from 1.3 to 8.0 in production) SE/EE, currently studying \emp{Clojure}. Basic knowledge of \emp{Scala} and \emp{Groovy}}
-  \profileItem{Performance diagnosis and optimisation} {high-load parallel and distributed high-throughput systems. Performance analysis with \emp{VisualVM, jMeter}. Multi-threading systems development; runtime performance tuning including Java Garbage Collector-related issues}
+  \profileItem {Full software development lifecycle (SLDC)} {requirement gathering and analysis, design, prototyping, implementation, performance tuning}
+  \profileItem {Development process organisation} {\emp{Scrum} (and other \emp{Agile} flavours), RUP, Waterfall. Team work planning and coordination, peer code reviews, team members coaching and mentoring. \emp{Continuous Integration (CI)} with Jenkins}
+  \profileItem {JVM - based languages} {\emp{Java} (from 1.3 to 8.0) SE/EE including \emp{multi-threading, collections} and \emp{synchronisation primitives} (lock/barrier/phaser, Guava Monitor). Basic knowledge of \emp{Scala} and \emp{Groovy}; currently studying \emp{Clojure}}
+  \profileItem{Performance diagnosis and optimisation} {performance analysis with \emp{jMeter, VisualVM} and \emp{JMH}. Multi-threading systems development; runtime performance tuning including Java Garbage Collector-related issues}
   \profileItem {Relational Databases (RDBMS)} {\emp{Oracle, MySQL, MS SQL Server;} complex \emp{SQL} query authoring and optimisation; \emp{PL/SQL} stored procedures development and performance tuning}
   \profileItem{Enterprise Technologies} {Enterprise Integration patterns (EIP), Service Oriented Architecture (SOA), \emp{messaging, caching}. Server-side and middleware development; REST-based microservices implementations; Raft distributed consensus algorithm}
-  \profileItem{Data Modelling, Data Analysis and Presentation, Extract-Transform-Load (ETL)} {including data denormalisation, complex \emp{data transformation and cleansing}; advanced report building}
-\ifFullVersion
-Strong interest in \emp{functional programming}, Data Science and Machine Learning / Business Intelligence systems.
-\else
-  \profileItem{Development process organisation} {\emp{Scrum} (and other \emp{Agile} flavours), RUP, Waterfall. Team work planning and coordination, peer code reviews, team members coaching and mentoring. \emp{Test-Driven Development (TDD), Continuous Integration (CI)} and \emp{Release Management}}
-\fi
-  \profileItem{Other Languages} {\emp{C\#}, some \emp{Python}, \emp{R/Octave}. Shell Script, XML/XSL, JSON, \LaTeX ~typesetting system, MD markup language}
-  \profileItem{Operation Systems, Tools, Technologies, Libraries} {\emp{Linux, Mac OS} and \emp{Windows}. Apache (Ant, Commons Lang, Commons IO, Log4j, \emp{Maven}, \emp{Tomcat}); Atlassian (\emp{Confluence}, \emp{Jira}); Cobertura Code Coverage; EasyMock; Emma/EclEmma Code Coverage; Crystal Reports; Google (Guava, \emp{Mockito}); \emp{Hibernate} ORM; JDBC; jBPM/Activiti; Java \emp{multi-threading, collections} and \emp{synchronisation primitives}. Java Server Pages (JSP); Java Swing; \emp{Jenkins CI}; jMock; \emp{jUnit}; \emp{Spring} (Core, Integration, MVC, Roo). IDEs: IntelliJ IDEA, Eclipse, Visual Studio. \emp{VisualVM diagnostic tool}. Source Code Control with \emp{Git and SVN/Subversion}. \emp{UML} with Sparx Enterprise Architect and Rational Rose. Emacs}
+  \profileItem{Data Modelling, Data Analysis and Presentation, Extract-Transform-Load (ETL)} {data denormalisation, complex \emp{data transformation and cleansing}; advanced \emp{report building}}
+  \profileItem{Other Languages} {\emp{C\#}, some \emp{Python}, \emp{R/Octave}. Shell Script, XML/XSL, JSON, \LaTeX, MD markup}
+  \profileItem{Operation Systems, Tools, Technologies, Libraries} {\emp{Linux, Mac OS} and \emp{Windows}. Apache (Ant, Commons Lang, Commons IO, Log4j, \emp{Maven}, \emp{Tomcat}). Crystal Reports. Google (Guava, \emp{Mockito}). JDBC, Hibernate ORM. jBPM/Activiti. Java Swing. \emp{jUnit}, EasyMock, jMock. \emp{Spring} (Core, Integration, MVC, Roo). IDEs: IntelliJ IDEA, Eclipse, Visual Studio. Source Code Control with \emp{Git} and \emp{SVN/Subversion}. \emp{UML} with Sparx Enterprise Architect and Rational Rose. Emacs}
 
 \end{itemize}
 
 \osection{Career History}
-\jobdes{Betfair: London, UK} {March 2015 - Present}{Principal Java Consultant}
-{Low-latency high-throughput systems based on low-level Java 7 and 8 multi-threading primitives (locks/barriers/phaser, Guava Monitor) and concurrent collections. Oracle SQL and PL/SQL. Zookeeper. Raft distributed consensus algorithm. Continuous Integration (CI) with Jenkins and Thoughtworks Go. TDD (TestNG + Mockito), Maven, Spring, Git, Scrum, peer reviews, mentoring junior team members}
+\aggjobdes {Senior Software Engineer / Senior Java Developer}{July 2010 - Present}
+{Betfair: 1 year, ION Trading: 1.5 years, Fizzback (NICE Co): 2 years, ScanSafe (Cisco): 1 year}
+{Low-latency high-throughput systems based on low-level Java 6, 7 and 8. Oracle SQL and PL/SQL. Zookeeper. Raft distributed consensus algorithm. Continuous Integration (CI) with Jenkins and Thoughtworks Go. TDD (jUnit / TestNG + Mockito), Acceptance Testing with the Robot Framework. VisualVM, Groovy, Spring (Core, Spring Integration, SpEL, Spring Roo), Hibernate, Activiti BPM, Groovy, Maven, Git, Subversion, Scrum, peer reviews, mentoring junior team members}
 \begin{itemize}
  \item In an Agile environment, developed new functionality for a large-scale, high-volume Bet Matching module with so-called Virtual Bets and One-Way Matching extensions.
  \item Heavily involved in so-called ``Multiple Orchestrator'' project - a major development effort which enabled a significant increase in the degree of parallelism for the whole Bet Matching subsystem.
@@ -134,7 +107,7 @@ Strong interest in \emp{functional programming}, Data Science and Machine Learni
  \end{itemize}
 
 \jobdes{ION Trading: London, UK} {July 2013 - March 2015}{Senior Software Developer}
-{Java 7, distributed multithreaded low-latency systems. Continuous Integration (CI) with Jenkins, Acceptance Testing with the Robot Framework. Java Remote Method Invocation (RMI), TDD (jUnit + Mockito), VisualVM, Maven, Git, Groovy, Scrum, Subversion, peer reviews}
+{Java 7, distributed multithreaded low-latency systems. Continuous Integration (CI) with Jenkins, }
 \begin{itemize}
  \item Re-designed the Query Execution module as a distributed parallel executing subsystem.
  \item Enhanced the Continuous Integration infrastructure, re-implemented a project-specific Maven plugins. Streamlined the existed Robot Framework modules which increased the test reliability and reduced the test execution time.
@@ -142,36 +115,20 @@ Strong interest in \emp{functional programming}, Data Science and Machine Learni
  \end{itemize}
 
 \jobdes{Fizzback (now NICE Co): London, UK} {June 2011 - July 2013}{Senior Software Engineer}
-{Java 6, multi-threading, Spring (Core, Spring Integration, SpEL, Spring Roo), Hibernate, Activiti BPM, Groovy, jUnit, Mockito, VisualVM, Maven, Domain-Specific Languages (DSLs), Python (Jython) SMS-based mobile communicating, Mac OS, Linux, Scrum, peer reviews}
+{Java 6, multi-threading, jUnit, Mockito, VisualVM, Maven, Domain-Specific Languages (DSLs), Python (Jython) SMS-based mobile communicating, Mac OS, Linux, Scrum, peer reviews}
 \begin{itemize} \itemsep -2pt % reduce space between items
  \item Refactored and enhanced a set of modules enabling a massive multi-threading data processing on top of Spring Integration pipelines.
-\ifFullVersion
-While for some modules it was enough to re-code the critical pieces with the standard “stateless or immutable” approach, the main part of existed system required deep re-design based on Enterprise Integration Patterns (EIP) messaging-based architecture and extensive use of Java multi-threading tools.
-\fi
-The changes in performance and resource consumption were constantly monitored using jMeter and VisualVM.
- \item Redeveloped a database access layer, got rid of locking-related problems.
-\ifFullVersion
-Some modules were completely re-built until the required level of performance and reliability was achieved.
-\fi
- \item In addition to the scalability improvements deeply re-developed the Communication and Reporting sub-modules to make them more convenient in configuration and maintenance.
-\ifFullVersion
-   These changes (like introducing ad-hoc configuration DSL and flexible report templates) greatly improved overall system's maintainability and customer provisioning time.
-\fi
-Improved the execution time of the whole Unit Testing process (mostly by database-related optimisation).
-\ifFullVersion
-Initiated use of CI service (Jenkins) as a key component of the team’s Scrum Agile methodology approach.
-\fi
+While for some modules it was enough to re-code the critical pieces with the standard “stateless or immutable” approach, the main part of existed system required deep re-design based on Enterprise Integration Patterns (EIP) messaging-based architecture and extensive use of Java multi-threading tools. The changes in performance and resource consumption were constantly monitored using jMeter and VisualVM.
+ \item Redeveloped a database access layer, got rid of locking-related problems. Some modules were completely re-built until the required level of performance and reliability was achieved.
+ \item In addition to the scalability improvements deeply re-developed the Communication and Reporting sub-modules to make them more convenient in configuration and maintenance. These changes (like introducing ad-hoc configuration DSL and flexible report templates) greatly improved overall system's maintainability and customer provisioning time.
+Improved the execution time of the whole Unit Testing process (mostly by database-related optimisation). Initiated use of CI service (Jenkins) as a key component of the team’s Scrum Agile methodology approach.
  \item Developed good working relations with colleagues from Operations, QA, and Customer Support departments. Combined with good ``pure'' development work this decreased an average defect response time and improved overall IT team flexibility and confidence.
 \end{itemize}
 
 \jobdes{ScanSafe Inc (now part of Cisco): London, UK}{July 2010 - June 2011}{Senior Software Developer}
 {Java 6, multi - threading, Spring, Hibernate, Tomcat, JSP, Spring MVC, Groovy, jUnit, Mockito, XML/XSLT, jMeter, Hudson, Oracle 11g, Oracle SQL, PL/SQL, VerticaDB, Linux, Sparx EA, Selenium, Agile Development (Scrum)}
 \begin{itemize} \itemsep -2pt % reduce space between items
- \item Designed and implemented various parts of a major Web Security system based on a set of parallel running services being executed in a cloud environment.
- \ifFullVersion
-   This included a lot of re-design work, particularly switching from the standard Java objects to the immutable structures in combination with elements of functional-oriented programming.
-\fi
-Data structures like tries and algorithm tricks like specifically built hash functions were used to provide the required scalability level.
+ \item Designed and implemented various parts of a major Web Security system based on a set of parallel running services being executed in a cloud environment. This included a lot of re-design work, particularly switching from the standard Java objects to the immutable structures in combination with elements of functional-oriented programming. Data structures like tries and algorithm tricks like specifically built hash functions were used to provide the required scalability level.
  \item Implemented Data Analysis and Reporting modules with sophisticated “on-the-fly” SQL query building. Provided the serious database performance tuning including query re-writing, some PL/SQL programming and index optimisation.
 \end{itemize}
 
@@ -197,12 +154,8 @@ Data structures like tries and algorithm tricks like specifically built hash fun
 {Java 1.3 and 5, multi-threading, GIS, Oracle Spatial Data Option (SDO), Bentley MicroStation, Intergraph suite, Spring, O/R Mapping, Swing, JDBC, jUnit, jMock, Eclipse, Subversion, Oracle 8i, 9i, and 10g, SQL, PL/SQL, UML, Sparx EA, Rational Rose, XML, MS Office + VBA, XSLT, TDD and RUP}
 \begin{itemize} \itemsep -2pt % reduce space between items
  \item Formed and led the Software Development Team involved in the major distributed Geographical Information System (GIS MT) for the Gasprom gas transportation company. My role included business process analysis and modelling, requirement analysis, system design and architecting in cooperation with customer’s IT department and other development teams plus work coordination with partners.
- \item Inside team (up to eight people) was responsible for planning development efforts for team members, technical oversight and coaching as well as hands-on project work. The project has exceeded the customer’s expectation and was recommended for adoption in all Gasprom child companies. Two modules developed by our team were honoured with special patents of the Russian Federation.
- \ifFullVersion
- \item Wrote, maintained, and enhanced the numerous smaller projects for Energy, Utility and Oil\&Gas - oriented customers in the Data Capture, Data Verification and ETL areas.
-\else
+ \item Inside team (up to eight people) was responsible for planning development efforts for team members, technical oversight and coaching as well as hands-on project work. The project has exceeded the customer’s expectation and was recommended for adoption in all Gasprom child companies.
    \item Designed, developed, maintained and enhanced the data collection, verification and migration ETL-like system for Utility and Oil \& Gas - specific databases (both spatial and attribute parts). The changes in the business process proposed by our team and backed by our software enabled a productivity increase in 3-4 times compared to old approach.
-\fi
 \end{itemize}
 \jobdes {Lost Boys Business Solutions: Amsterdam, The Netherlands}{June 2001 - December 2001}{Software Engineer}
 {Java 1.3: JSP, EJB, JDBC, jUnit, Oracle 8i, SQL, PL/SQL, custom-built performance measurement tools}
@@ -221,20 +174,17 @@ Data structures like tries and algorithm tricks like specifically built hash fun
 \jobdes {National Technical University of Ukraine (KPI): Kiev, Ukraine}{Sep 1990 - March 1996}{Engineer Diploma}
  {Engineer Diploma (USSR equivalent of MSc) in Electrical Engineering}
 
-\jobdes {Coursera and Udacity online courses}{Present}{Self-study}
-{``Functional Programming Principles in Scala'', ``Principles of Reactive Programming (in Scala)'', ``Design and Analysis of Algorithms'' (Parts 1 and 2), ``Introduction to Artificial Intelligence (AI)'', ``Machine Learning (ML)'',``Introduction to Finance'', ``Financial Markets'', ``Model Thinking'', ``Computational Investing'', ``An Introduction to Operations Management'', ``Quantum Mechanics and Quantum Computation'', ``Introduction to Genetics and Evolution''. Currently following ``Data Science'' Specialisation: a set of courses in a Data Science field.}
+\jobdes {online courses - see full list in LinkedIn profile}{Sep 1990 - March 1996}{Self-study}
+ {Computer Science (Algorithms, Functional Programming and Reactive Programming); Finance (including Computational Investing and Financial Markets); Data Science (including Big Data, Machine Learning and Artificial Intelligence)}
 
 \osection{SPECIALS}
 \vspace{0.20cm}
 \begin{itemize}
  \item Profiles: StackOverflow \url{http://stackoverflow.com/users/900174/l-yara}, GitHub \url{http://github.com/l-yara}, LinkedIn \url{http://uk.linkedin.com/in/ylyakh}.
  \item An active member of Data Science London, London Java Community (LJC) and London Clojurians communities.
-\ifFullVersion
  \item Sports: volleyball (former player of ``CBPhoto'' Irish Division 1 team, now playing in Kent amateur league), sailing (former pupil of Kiev Olympic School).
-\else
 \item Holding two patents awarded on IT innovations in Data Presentation and Data Visualisation areas.
 \item Available from mid-March 2016.
-\fi
 \end{itemize}
 
 

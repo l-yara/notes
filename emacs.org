@@ -4,12 +4,15 @@
 * Tips and Tricks
 - Open file on Amazon server described in ~/.ssh/config as awshost1 using tramp:
   C-x C-f /sshx:awshost1:
+- Compile (and load) the content of .emacs:
+  M-a (standard M-x)  eval-buffer
 
 * Org-mode
   TAB/S-TAB - (un)fold
   M-up/down – move a headline up or down
   M-left/right – promote or demote a headline
   M-RET – insert a new headline
+
 ** Lists:
 - un- ordered starts with -, * or \*;
 - ordered start with number and dot.
@@ -26,29 +29,37 @@
   =(setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))=
 ** GTD - separate story at [[http://orgmode.org/worg/org-tutorials/org4beginners.html][]
 
-* Prelude + Ergoemacs + Yara's expancions
+* Prelude + Ergoemacs + Yara's expansions
 
 ** Common
-   M-a          Alias for M-x.
+   M-a  :: Alias for M-x.
 
 *** File/buffer/window commands
-    C-o          Find file (Open File)
+    C-o  ::        Find file (Open File)
     C-s          Save buffer
     C-x s        Save file (like save-as)
     C-x b        Switch buffer
     C-x k        Kill buffer
-    M-3          Delete other windows
-    M-2          Delete current window
+
     M-4          Split window horizontally
     M-S-4        Split window vertically
+    M-s          Goto next window (pane)
+    M-S-s        Goto previous window (pane)
+    M-3          Delete other windows
+    M-2          Delete current window
 
+*** View
     C-+          Increase font size(text-scale-increase).
     C--          Decrease font size(text-scale-decrease).
 
     F9 w         (enable-visual-line-mode)
     F9 i         Arrange emacs window in center (arrange-center)
 
-    F12          Toggle the menu bar.
+    F12          Toggle the Emacs menu bar.
+
+*** Dired
+
+
 
 ** Unknown
    C-x </kbd>   align-regexp
