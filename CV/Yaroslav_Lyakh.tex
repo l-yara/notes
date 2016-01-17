@@ -84,10 +84,10 @@
 \begin{itemize}
   \profileItem {Full software development lifecycle (SLDC)} {requirement gathering and analysis, design, prototyping, implementation, performance tuning}
   \profileItem {Development process organisation} {\emp{Scrum} (and other \emp{Agile} flavours), RUP, Waterfall. Team work planning and coordination, peer code reviews, team members coaching and mentoring. \emp{Continuous Integration (CI)} with Jenkins}
-  \profileItem {JVM - based languages} {\emp{Java} (from 1.3 to 8.0) SE/EE including \emp{multi-threading, collections} and \emp{synchronisation primitives} (lock/barrier/phaser, Guava Monitor). Basic knowledge of \emp{Scala} and \emp{Groovy}; currently studying \emp{Clojure}}
-  \profileItem{Performance diagnosis and optimisation} {performance analysis with \emp{jMeter, VisualVM} and \emp{JMH}. Multi-threading systems development; runtime performance tuning including Java Garbage Collector-related issues}
+  \profileItem {JVM - based languages} {\emp{Java} (from 1.3 to 8.0) SE/EE with \emp{multi-threading, collections} and \emp{synchronisation primitives} (lock/barrier/phaser, Guava Monitor). Basic knowledge of \emp{Scala} and \emp{Groovy}; currently studying \emp{Clojure}}
+  \profileItem{Performance diagnosis and optimisation} {performance analysis with \emp{jMeter, VisualVM} and \emp{JMH}. Multi-threading systems development; runtime performance tuning incl. Java GC optimisation}
   \profileItem {Relational Databases (RDBMS)} {\emp{Oracle, MySQL, MS SQL Server;} complex \emp{SQL} query authoring and optimisation; \emp{PL/SQL} stored procedures development and performance tuning}
-  \profileItem{Enterprise Technologies} {Enterprise Integration patterns (EIP), Service Oriented Architecture (SOA), \emp{messaging, caching}. Server-side and middleware development; REST-based microservices implementations; Raft distributed consensus algorithm}
+  \profileItem{Enterprise Technologies} {Enterprise Integration Patterns (EIP), Service Oriented Architecture (SOA), \emp{messaging, caching}. Server-side and middleware development; REST-based microservices implementations; Raft distributed consensus algorithm}
   \profileItem{Data Modelling, Data Analysis and Presentation, Extract-Transform-Load (ETL)} {data denormalisation, complex \emp{data transformation and cleansing}; advanced \emp{report building}}
   \profileItem{Other Languages} {\emp{C\#}, some \emp{Python}, \emp{R/Octave}. Shell Script, XML/XSL, JSON, \LaTeX, MD markup}
   \profileItem{Operation Systems, Tools, Technologies, Libraries} {\emp{Linux, Mac OS} and \emp{Windows}. Apache (Ant, Commons Lang, Commons IO, Log4j, \emp{Maven}, \emp{Tomcat}). Crystal Reports. Google (Guava, \emp{Mockito}). JDBC, Hibernate ORM. jBPM/Activiti. Java Swing. \emp{jUnit}, EasyMock, jMock. \emp{Spring} (Core, Integration, MVC, Roo). IDEs: IntelliJ IDEA, Eclipse, Visual Studio. Source Code Control with \emp{Git} and \emp{SVN/Subversion}. \emp{UML} with Sparx Enterprise Architect and Rational Rose. Emacs}
@@ -96,92 +96,42 @@
 
 \osection{Career History}
 \aggjobdes {Senior Software Engineer / Senior Java Developer}{July 2010 - Present}
-{Betfair: 1 year, ION Trading: 1.5 years, Fizzback (NICE Co): 2 years, ScanSafe (Cisco): 1 year}
-{Low-latency high-throughput systems based on low-level Java 6, 7 and 8. Oracle SQL and PL/SQL. Zookeeper. Raft distributed consensus algorithm. Continuous Integration (CI) with Jenkins and Thoughtworks Go. TDD (jUnit / TestNG + Mockito), Acceptance Testing with the Robot Framework. VisualVM, Groovy, Spring (Core, Spring Integration, SpEL, Spring Roo), Hibernate, Activiti BPM, Groovy, Maven, Git, Subversion, Scrum, peer reviews, mentoring junior team members}
+{Betfair: 1 year, ION Trading: 1.5 years, Fizzback (NICE Co): 2 years, ScanSafe (Cisco): 1 year (All UK)}
+{Low-latency high-throughput systems based on low-level Java 6, 7 and 8. Oracle SQL and PL/SQL. Zookeeper, Raft distributed consensus algorithm. Continuous Integration (CI) with Jenkins and Go CD. TDD (jUnit / TestNG + Mockito), Acceptance Testing (Robot Framework). VisualVM, Groovy, Spring (Core, Spring Integration, SpEL, Spring Roo), Hibernate, Activiti BPM, Maven, Git, Subversion, Scrum, peer reviews, mentoring junior team members}
 \begin{itemize}
- \item In an Agile environment, developed new functionality for a large-scale, high-volume Bet Matching module with so-called Virtual Bets and One-Way Matching extensions.
- \item Heavily involved in so-called ``Multiple Orchestrator'' project - a major development effort which enabled a significant increase in the degree of parallelism for the whole Bet Matching subsystem.
- \item Designed and implemented a project-specific Performance Testing facility.
- \item Heavily involved in transition of the current Oracle-based ``traditional'' (i.e. built on classical read-process-write cycle) Matcher implementation into more robust stream-based architecture based on Raft distributed consensus algorithm.
- \item Provided training and on-the-fly consultations to the junior team members.
+ \item Developed new functionality for the large-scale, high-throughput modules like One-Way Matching for Betfair, Communication Infrastructure for Fizzback or Data Analysis and Reporting for ScanSafe.
+ \item Heavily involved in so-called ``parallelising'' works: redesign and re-implementation of the performance - critical parts as the distributed or at least multithreaded modules: Multiple Orchestrator project in Betfair, Parallel Query Executor in ION Trading and on-the-fly data processing module in Fizzback. While in some cases it was enough to re-code the critical pieces with the “stateless or immutable” approach, most of the existed system required deep redesign or complete re-implementation with the extensive use of Java multi-threading tools.
+ \item In Betfair, took a major part in transition of the legacy Oracle-based ``traditional'' (i.e. built on classical read-process-write cycle) Matcher implementation into more robust stream-based architecture based on Raft distributed consensus algorithm. Lead a similar project in Fizzback where we transformed an existing project into much more scalable and reliable pipeline - based solution.
+ \item As part of the performance improvement works designed and implemented the project-specific Performance Testing facilities for Betfair, Fizzback and ScanSafe.
+ \item Kept a consistent attention on the operational characteristics of the projects. In ION Trading, implemented the Attribute Replacement feature which greatly increased the system’s configuration flexibility and made administering and configuring of the whole product much more convenient. In Fizzback, deeply re-developed the Communication and Reporting sub-modules to make configuration and maintenance more convenient; these changes (like specialised configuration DSL and flexible report templates) greatly improved overall system's maintainability and customer provisioning time.
+ \item Enhanced the Continuous Integration infrastructure of all projects I've been involved in. In ION Trading, re-implemented a project-specific Maven plugins and streamlined the existed Robot Framework modules increasing the test reliability and reducing the test execution time. In Fizzback, improved the execution time of the whole Unit Testing process (mostly by database-related optimisation).
+ \item Provided training and on-the-fly consultations to the junior team members. In Fizzback, developed good working relations with colleagues from Operations, QA and Customer Support departments; combined with good ``pure'' development work this decreased an average defect response time and improved overall IT team flexibility and confidence.
  \end{itemize}
 
-\jobdes{ION Trading: London, UK} {July 2013 - March 2015}{Senior Software Developer}
-{Java 7, distributed multithreaded low-latency systems. Continuous Integration (CI) with Jenkins, }
-\begin{itemize}
- \item Re-designed the Query Execution module as a distributed parallel executing subsystem.
- \item Enhanced the Continuous Integration infrastructure, re-implemented a project-specific Maven plugins. Streamlined the existed Robot Framework modules which increased the test reliability and reduced the test execution time.
- \item Implemented the Attribute Replacement feature which greatly improved the system’s configuration flexibility and made administering and configuring of the whole product much more convenient.
- \end{itemize}
-
-\jobdes{Fizzback (now NICE Co): London, UK} {June 2011 - July 2013}{Senior Software Engineer}
-{Java 6, multi-threading, jUnit, Mockito, VisualVM, Maven, Domain-Specific Languages (DSLs), Python (Jython) SMS-based mobile communicating, Mac OS, Linux, Scrum, peer reviews}
-\begin{itemize} \itemsep -2pt % reduce space between items
- \item Refactored and enhanced a set of modules enabling a massive multi-threading data processing on top of Spring Integration pipelines.
-While for some modules it was enough to re-code the critical pieces with the standard “stateless or immutable” approach, the main part of existed system required deep re-design based on Enterprise Integration Patterns (EIP) messaging-based architecture and extensive use of Java multi-threading tools. The changes in performance and resource consumption were constantly monitored using jMeter and VisualVM.
- \item Redeveloped a database access layer, got rid of locking-related problems. Some modules were completely re-built until the required level of performance and reliability was achieved.
- \item In addition to the scalability improvements deeply re-developed the Communication and Reporting sub-modules to make them more convenient in configuration and maintenance. These changes (like introducing ad-hoc configuration DSL and flexible report templates) greatly improved overall system's maintainability and customer provisioning time.
-Improved the execution time of the whole Unit Testing process (mostly by database-related optimisation). Initiated use of CI service (Jenkins) as a key component of the team’s Scrum Agile methodology approach.
- \item Developed good working relations with colleagues from Operations, QA, and Customer Support departments. Combined with good ``pure'' development work this decreased an average defect response time and improved overall IT team flexibility and confidence.
+\aggjobdes {Senior Software Engineer / Principal Software Developer / Architect}{December 2006 - April 2010}
+{MapInfo (Pitney Bowes), UK: 1.5 years, Original Solutions, Ireland: 0.5 years, Kring LLC, Ukraine: 1 year}
+{.NET (C\#), NUnit, Rhino Mocks, Visual Studio, MS Entity Framework, LINQ, WPF/XAML, Java 5, multi – threading, Web Services, Subversion, Oracle 11g, SQL, PL/SQL, Spring, Hibernate, jBoss jBPM, jUnit, Eclipse, GIS, ETL, TETRA – based mobile devices communication, Scrum}
+\begin{itemize} % \itemsep -2pt % reduce space between items
+ \item Took a key part in a development of a new MapInfo major product version. Innovative approaches like LINQ and SaaS were featured in this project together with some elements of functional-based design allowing to cut down the codebase size; the stability and reliability of the whole system improved.
+ \item Provided the performance optimisation; created a project-specific performance testing subsystem.
+ \item Lead the offshore development project of a major Public Safety and Emergency (PS\&E) system development. The project consisted of the server part built on Java (conversion of existing military Command and Control Information System) and mobile .Net Compact Framework - based clients interacting with on-board GPS receivers. A purpose-built integration testing facility was created.
 \end{itemize}
 
-\jobdes{ScanSafe Inc (now part of Cisco): London, UK}{July 2010 - June 2011}{Senior Software Developer}
-{Java 6, multi - threading, Spring, Hibernate, Tomcat, JSP, Spring MVC, Groovy, jUnit, Mockito, XML/XSLT, jMeter, Hudson, Oracle 11g, Oracle SQL, PL/SQL, VerticaDB, Linux, Sparx EA, Selenium, Agile Development (Scrum)}
-\begin{itemize} \itemsep -2pt % reduce space between items
- \item Designed and implemented various parts of a major Web Security system based on a set of parallel running services being executed in a cloud environment. This included a lot of re-design work, particularly switching from the standard Java objects to the immutable structures in combination with elements of functional-oriented programming. Data structures like tries and algorithm tricks like specifically built hash functions were used to provide the required scalability level.
- \item Implemented Data Analysis and Reporting modules with sophisticated “on-the-fly” SQL query building. Provided the serious database performance tuning including query re-writing, some PL/SQL programming and index optimisation.
-\end{itemize}
-
-\jobdes{Pitney Bowes (MapInfo): Chatham, UK}{July 2008 - April 2010}{Senior Software Engineer}
-{.NET (C\#), NUnit, Rhino Mocks, Visual Studio, MS Entity Framework, LINQ, WPF/XAML, Web Services, Subversion, Oracle 11g, SQL, PL/SQL, GIS, ETL, Agile Scrum Development}
-\begin{itemize} \itemsep -2pt % reduce space between items
- \item Took a key part in major system redesign and redevelopment works managed around the Scrum methodology. Innovative approaches like LINQ and SaaS were also featured in this project together with some elements of functional-based design which allowed to cut down the codebase size; the stability and reliability of the whole system also improved. Suggested and implemented a number of innovations like Finite-State Machine formalisation of business logic and BPM workflow.
-\end{itemize}
-
-\jobdes {Original Solutions: Limerick, Ireland}{December 2007 - May 2008}{Consulting Software Developer}
-{Java 5, multi – threading, Spring, Hibernate, jBoss jBPM, jUnit, Eclipse, Perforce, Ant, Oracle, SQL, PL/SQL}
-\begin{itemize} \itemsep -2pt % reduce space between items
- \item Provided performance optimization works; created a project-specific performance testing subsystem. Amending jBPM for use in multi-threaded environment was a massive effort but we managed to provide a high level of scalability on our system.
-\end{itemize}
-
-\jobdes {Kring LLC: Ukraine - Denmark}{December 2006 - December 2007}{Principal Software Developer/Architect}
-{Java 5, Spring, JDBC, jUnit, jMock, Eclipse, Subversion, Ant, Oracle, SQL, .NET Compact Edition (C\#), NUnit, Rhino Mocks, Visual Studio, GIS, TETRA – based mobile devices communication}
-\begin{itemize} \itemsep -2pt % reduce space between items
- \item Lead the offshore development project of a major Public Safety and Emergency (PS\&E) system development. The project consisted of the server part built on Java (conversion of existing military Terma FlexCCIS Command and Control Information System) and mobile clients based in .Net Compact Framework (C\#). Modules for interacting with on-board GPS receivers and specialised communication hardware were implemented along with purpose-built integration testing facility.
-\end{itemize}
-
-\jobdes{Vnipitransgaz: Kiev, Ukraine}{July 2002 - November 2006}{Team Lead}
-{Java 1.3 and 5, multi-threading, GIS, Oracle Spatial Data Option (SDO), Bentley MicroStation, Intergraph suite, Spring, O/R Mapping, Swing, JDBC, jUnit, jMock, Eclipse, Subversion, Oracle 8i, 9i, and 10g, SQL, PL/SQL, UML, Sparx EA, Rational Rose, XML, MS Office + VBA, XSLT, TDD and RUP}
-\begin{itemize} \itemsep -2pt % reduce space between items
- \item Formed and led the Software Development Team involved in the major distributed Geographical Information System (GIS MT) for the Gasprom gas transportation company. My role included business process analysis and modelling, requirement analysis, system design and architecting in cooperation with customer’s IT department and other development teams plus work coordination with partners.
- \item Inside team (up to eight people) was responsible for planning development efforts for team members, technical oversight and coaching as well as hands-on project work. The project has exceeded the customer’s expectation and was recommended for adoption in all Gasprom child companies.
+\aggjobdes {Team Lead / Software Engineer / Analyst Programmer}{November 1996 - November 2006}
+{VNIPITRASNGAZ : 4.5 years, Lost Boys: 0.5 years, KPMG: 3.5 years, KiGIS LLC: 1.5 years (All Ukraine)}
+{Java 1.3 and 5, multi-threading, GIS, Oracle Spatial Data Option (SDO), Bentley MicroStation and GeoGraphics, Intergraph suite, Spring, O/R Mapping, Swing, JDBC, jUnit, jMock, Eclipse, Subversion, Oracle 8i, 9i, and 10g, SQL, PL/SQL, UML, Sparx EA, Rational Rose, XML, MS Office + VBA, XSLT, TDD and RUP}
+\begin{itemize} % \itemsep -2pt % reduce space between items
+ \item Formed and led the Software Development Team involved in the major distributed Geographical Information System (GIS MT) for the Gasprom gas transportation company. The project has exceeded the customer’s expectation and was recommended for adoption in all Gasprom child companies.
    \item Designed, developed, maintained and enhanced the data collection, verification and migration ETL-like system for Utility and Oil \& Gas - specific databases (both spatial and attribute parts). The changes in the business process proposed by our team and backed by our software enabled a productivity increase in 3-4 times compared to old approach.
+ \item In Lost Boys, was selected to be part of the special fine-tuning and performance optimization team.
+ \item In KPMG, took a first-hand part in a planning, design and implementation of various projects devoted to the budgeting process of the state and local budgets.  The projects were credited with eliminating 2 months from the budget development cycle and greatly expanded the analytic capabilities of the Ministry of Finance of Ukraine.
 \end{itemize}
-\jobdes {Lost Boys Business Solutions: Amsterdam, The Netherlands}{June 2001 - December 2001}{Software Engineer}
-{Java 1.3: JSP, EJB, JDBC, jUnit, Oracle 8i, SQL, PL/SQL, custom-built performance measurement tools}
-\begin{itemize} \itemsep -2pt % reduce space between items
- \item Was selected to be part of the special fine-tuning and performance optimization team - a distinction given to the best developers at the Company.
-\end{itemize}
-\jobdes {KPMG Consulting Barents Group: Kiev, Ukraine}{November 1997 - May 2001}{Analyst Programmer}
-{MS SQL Server, MS Office (particularly MS Access), VBA, Delphi, Crystal Reports, IIS + ASP, XML/XSLT}
-\begin{itemize}
- \item Provided production support to a planning, design and technical implementation of various projects devoted to the budgeting process of the state and local budgets.  The projects were credited with eliminating 2 months from the budget development cycle and greatly expanded the analytic capabilities of the Ministry of Finance of Ukraine.
-\end{itemize}
-\jobdes {KiGIS LLC: Kiev, Ukraine / Bratislava, Slovakia}{March 1996 - November 1997}{Software Engineer}
-{Geographical Information Systems (GIS)-specific software: Intergraph, Bentley Microstation/Geo graphics}
-
-\osection{EDUCATION}
-\jobdes {National Technical University of Ukraine (KPI): Kiev, Ukraine}{Sep 1990 - March 1996}{Engineer Diploma}
- {Engineer Diploma (USSR equivalent of MSc) in Electrical Engineering}
-
-\jobdes {online courses - see full list in LinkedIn profile}{Sep 1990 - March 1996}{Self-study}
- {Computer Science (Algorithms, Functional Programming and Reactive Programming); Finance (including Computational Investing and Financial Markets); Data Science (including Big Data, Machine Learning and Artificial Intelligence)}
 
 \osection{SPECIALS}
-\vspace{0.20cm}
 \begin{itemize}
  \item Profiles: StackOverflow \url{http://stackoverflow.com/users/900174/l-yara}, GitHub \url{http://github.com/l-yara}, LinkedIn \url{http://uk.linkedin.com/in/ylyakh}.
- \item An active member of Data Science London, London Java Community (LJC) and London Clojurians communities.
+ \item Education: Engineer Diploma (USSR equivalent of MSc) in Electrical Engineering from National Technical University of Ukraine (KPI) in Kiev, Ukraine, 1996.
+ \item An active member of Data Science London, London Java Community (LJC) and London Clojurians communities. Took a number of online courses on Computer Science (Algorithms, Functional and Reactive Programming); Finance (incl. Financial Markets and Computational Investing); Data Science (incl. Big Data, Machine Learning and Artificial Intelligence) - see full list in LinkedIn profile.
  \item Sports: volleyball (former player of ``CBPhoto'' Irish Division 1 team, now playing in Kent amateur league), sailing (former pupil of Kiev Olympic School).
 \item Holding two patents awarded on IT innovations in Data Presentation and Data Visualisation areas.
 \item Available from mid-March 2016.

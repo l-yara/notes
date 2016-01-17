@@ -35,7 +35,7 @@
    M-a  :: Alias for M-x.
 
 *** File/buffer/window commands
-    C-o  ::        Find file (Open File)
+    C-o          Find file (Open File)
     C-s          Save buffer
     C-x s        Save file (like save-as)
     C-x b        Switch buffer
