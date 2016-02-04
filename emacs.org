@@ -95,7 +95,7 @@
    C-=  Run expand-region (incremental text selection).
 
 ** Magit
-   C-x g        Open Magit's status buffer.
+   C-x g(M 9)   Open Magit's status buffer.
    Tab          Toggle 'diff'
 
 ** Prelude-mode
