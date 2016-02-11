@@ -1,9 +1,10 @@
-Currents
+* Currents
 - Вадим: 20 Manor Street, Gillingham, Brompton, ME7 5AW Kent
 - Wacky Races !!!
   :::: current:
-- Read:http://the-mockturtle.livejournal.com/748113.html and previous - photos in comments
-- Коля Герасимов был не избранный. Он просто пошел за кефиром.
+- Read: http://the-mockturtle.livejournal.com/748113.html and previous - photos in comments
+- http://pan-baklazhan.livejournal.com/,
+- Придётся вас разочаровать насчёт Гаспарова... -Горячо рекомендую. Начните с "Занимательной Греции".
 - https://megamozg.ru/post/23426/
 - http://buzhor.livejournal.com/171907.html
 - Yiddish metal: https://www.youtube.com/watch?v=E4-mPEiVZiM
@@ -24,7 +25,9 @@ Currents
 reference to talk and memory issues: http://psy-lob-saw.blogspot.co.uk/2013/05/know-thy-java-object-memory-layout.html
 
 
-- Betfair: Greg Bennett <Greg.Bennett@betfair.com>; Orestis Foufris <Orestis.Foufris@betfair.com>; Konstantin Anashkov (Konstantin.Anashkov@betfair.com); David Carter <David.Carter@betfair.com>; Simon Nash <simon.nash@betfair.com>; Alexander.Sklikas@betfair.com
+* Betfair:
+- https://www.youtube.com/watch?v=aQ6TdYF9Y7k&feature=youtu.be
+- Greg Bennett <Greg.Bennett@betfair.com>; Orestis Foufris <Orestis.Foufris@betfair.com>; Konstantin Anashkov (Konstantin.Anashkov@betfair.com); David Carter <David.Carter@betfair.com>; Simon Nash <simon.nash@betfair.com>; Alexander.Sklikas@betfair.com
 - Typical Saturday at Betfair: 2-5 billion requests; "normal" peak rate 65K / s.
 
 - Reading: "Врата огня" Стивена Прессфилда? Я читал. Непосредственно описание Фермопильского сражения занимает что-то около 90 страниц, насколько я помню. И я не мог от него оторваться.
@@ -84,7 +87,8 @@ www.englishchess.org.uk/calendars-rd/  => Calendars
 Membership number: JB23837 Grading core: 293658G
 
 * Копипаста
-
+- Коля Герасимов был не избранный. Он просто пошел за кефиром.
+- "в разгар веселья всплывает Офелия"
 - "the world can go to hell unless I have my lunch"
 - When you are with work - be with work. When you are with your woman - be with your woman. When you drink coffee - coffee is your woman....
 - ...мелкий чиновник Цутому Ямагути 6 августа 1945 года был в Хиросиме, когда на город упала американская атомная бомба. Японец получил тяжелые ожоги и на следующий день вернулся домой в город Нагасаки, на который 8 августа США сбросили вторую ядерную бомбу. В 2009 году, за год до смерти... (http://plumqqz.livejournal.com/365205.html)
