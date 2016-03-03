@@ -12,7 +12,7 @@
 - super picture: http://ic.pics.livejournal.com/sprinsky/13646075/83676/83676_original.gif
 - models, links http://the-mockturtle.livejournal.com/745024.html
 
-
+- Coursera: А лекции Воронцова лучше слушать не в курсе, на на страничке ШАД (https://yandexdataschool.ru/edu-process/courses). Там они не обескровлены попытками впихнуть их в формат курсеры. Первый курс «Математика и Python для анализа данных» специализации «Машинное обучение и анализ данных Specialization» (https://www.coursera.org/specializations/mashinnoye-obucheniye) тоже пока не радует глубиной изложения.
 
 
 - https://www.masteringemacs.org/reading-guide
