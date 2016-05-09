@@ -1,5 +1,7 @@
 #-*- mode: org -*-
 #+STARTUP: showall
+** Explanation - in ru:
+https://habrahabr.ru/post/174467/
 
 ** Logs:
 git log --oneline --decorate
