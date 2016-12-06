@@ -1,0 +1,141 @@
+* Analysis of the Income Statement
+  The income statement  (profit and loss (P&L) statement) looks at the expenses and revenues of an entity *over a period of time*, and shows whether or not the entity made a profit or loss over this period.
+
+** Elements of
+
+  | XYZ Corp                                 |   20X5 |   20X6 |
+  |------------------------------------------+--------+--------|
+  | Revenue (AKA Sales or Turnover)          |        |        |
+  |------------------------------------------+--------+--------|
+  | Widgets                                  | 12,375 | 12,990 |
+  | Repair Kits                              |    429 |    330 |
+  | Service                                  |  4,329 |  3,306 |
+  | *Total Sales Revenue*                    | 17,133 | 16,626 |
+  |                                          |        |        |
+  |                                          |        |        |
+  | Cost of Sales                            |        |        |
+  |------------------------------------------+--------+--------|
+  | Widgets                                  |  6,612 |  6,333 |
+  | Repair Kits                              |     54 |     12 |
+  | Service                                  |  3,567 |  2,841 |
+  | *Total Sales Cost*                       | 10,233 |  9,186 |
+  |                                          |        |        |
+  | *Gross Profit (Loss) AKA Gross Income*   |  6,900 |  7,170 |
+  |                                          |        |        |
+  | Operating Expenses                       |        |        |
+  |------------------------------------------+--------+--------|
+  | General & Administrative                 |    876 |    903 |
+  | Sales & Marketing                        |  4,167 |  4,242 |
+  | Research & Development                   |    642 |    642 |
+  | Other Operating Expenses                 |     15 |     21 |
+  | *Total Operating Expenses*               |  5,700 |  5,808 |
+  |                                          |        |        |
+  | *Operating Income*                       |  1,200 |  1,362 |
+  |                                          |        |        |
+  | Interests Paid                           |      3 |      6 |
+  | *Income Before Taxes*                    |  1,197 |  1,356 |
+  |                                          |        |        |
+  | Taxes                                    |    381 |    432 |
+  | *Net Income from Continuing Operations*  |    816 |    924 |
+  |                                          |        |        |
+  | Exceptional Items (Non-Recurring Events) |      - |      3 |
+  | *Net Income*                             |    816 |    924 |
+  |                                          |        |        |
+  | Dividends to Stockholders                |      0 |      6 |
+  |------------------------------------------+--------+--------|
+  | *Net Income Available to Shareholders*   |    816 |    915 |
+
+Revenue (AKA Sales or Turnover) - amount derived from sale of goods or services involved in firm's ordinary activities after deducting trade discounts but before deduction of settlement discounts and addition of sales-based taxes.
+
+Operating Expenses - can also include wages and salaries, light/heat, _depreciation_.
+
+Dividend Cover: $\frac{Profits}{Total Dividends}$ - the higher the level of cover, the more secure the dividends are considered to be.
+
+** Related Statements:
++ The Statement of Retained Earnings: $= Beginning Retained Earnings - Dividends Paid + Net Income$
+
++ The Statement of Total Recognized Gains and Losses: shows the extent to which shareholders' funds have increased or decreased from all gains and losses recognized in the period. The purpose of the statement is to highlight any items that, even if they were significant, would otherwise only appear in a note to the accounts, like:
+  + a large foreign exchange rate variance (favorable or adverse) that might cause a large movement in reserves;
+  + a large gain on the revaluation of a property
+  + prior period adjustment (this will also appear on the income statement)
+
+** Ratio Analysis
+*** Profitabiity ratios
++ Gross profit margin $ = frac{Gross profit}{Sales revenue} * 100\% $
+
++ Net profit margin $ = frac{Net profit}{Sales revenue} * 100\% $
+  (usually financing costs and interest income are excluded from Net profit as we're interested in the "normal" company operations).
+
++ Return on Capital Employed (ROCE): Capital Employed is shareholder's funds + Long-term borrowing (equals to Total accets less Current Liabilities). Meassures how effectively company is using its capital: $ROCE = frac{Earnings (profit) before interest and tax}{Total accets - Current liabilities} * 100\%$
+
+*** Activity ratios
+Show how well companyis managing its key short-term assets and liabilities (working capital):
++ Inventory turnover ratio $ = frac{Cost of sales}{Average inventory} $
++ Accounts Receivable Collection Period $ = frac{Average accounts receivable}/{Credit sales} * 365 $
+
+also Accounts receivable turnover $ =frac{Credit sales}{Average accounts receivable} $
+
++ Accounts payable period $ = frac{Average accounts payable}{Cost of sales} * 365 $, also
+
+Accounts payable turnover $ = frac{Cost of sales}{Average accounts payable} $
++ Asset turnover ratio $ = frac{Sales}{Average total assets} $.Shows how effectively a company's assets are being employed togenerate sales.
+
+*** Investor's ratios
+**** Earnings Per Share (EPS)
+$ EPS = frac{Profit attributable to ordinary shareholders}{Weighted average number of ordinary shares in issue} $. Basically, it is amount ofprofit that belongs to asingle ordinary share. Companies are required to publish the statutory (AKA "basic") EPS. The "adjusted" EPS numbers are also popular; common adjustments are adding back goodwill, amortization and exceptional costs to profits. Also EPS can be differentiated accross time as:
++ Trailing EPS – last year's numbers and the only actual EPS
++ Current EPS – this year's numbers, which are still projections
++ Forward EPS – future (projected) earnings and share prices
+
+**** Price Earning(P/E) Ratio
+P/E Ratio $ = frac{Market price per ordinary share}{EPS} $. Gives an ideaof what market is willing to pay for company's earning. A higher P/E means that the same share of a company's profits will cost a prospective shareholder more. A higher P/E may reflect faster expected earnings growth, or lower risk earnings. Conversely, a low P/E may indicate a 'vote of no confidence' by the market or it could mean that the market has 'overlooked' the stock.
+
+
+* Analysis of the Cash Flow Statement
+** Overview
+Cash flow types:
+- Operating Activities: cash generated from internal business activities.
+- Investing Activities: collection of money on load and buying/selling of long-term assets. Includes refurbishing menufacturing outlets to increase productivity and regularly servicing machinery to keep it in good condition.
+- Financing Activities: cash flow to and from external sources, including money risen from selling stocks and bonds, and borrowing from banks.
+
+** Uses of Cash Flow Statement
+Can be used for:
+- Determine corporate health
+- Reconcile profit and cash
+- Project future cash flow
+- Assess the firm's liquidity
+
+Working Capital to Sales $=frac{Inventory + Accounts Receivable - Account Payable}{Sales}$
+
+** Limitations:
+
+*** Reasons behind changes:
+A CFS is a record of historical fact without any opinion. Thus, it may show:
+- Expansion of inventory: without explanation was it because poor inventory or production control; inability to sell the finished product or deliberate act of policy;
+- Increase in accounts receivable: may be because debtors are slow to pay, credit policy has changed or rise in receivables merely represents the expansion of sales;
+- Raising new capital: do we really need it?
+
+** Preparing a Cash Flow Statement
+*** Direct Method
+
+*** Indirect Method
+
+** Interpreting the Cash Flow Statement
+
+*** Ratios:
+- Quality of Operation Income: $ = frac{Operating Cash Flow}{Operating Income} $
+- Operating Cash Flow Ratio: $ = frac{Operating Cash Flow}{Current Liabilities} $
+- Cash Flow to Asset Ratio: $ = frac{Operating Cash Flow}{Total Assets} $
+- Cash Current Debt Coverage $ = frac{Opearting Cash Flow - Cash Dividends}{Current Interest - Bearing Debt}$
+- Cash Flow Per Share (CPS) $ = frac{Operating Cash Flow}{Common Shares Outstanding} $
+
+** Working Capital and Cash Flow
+
+*** Managing Inventory
+- Economic order quantity: EOQ model can be used to decide the optimum order quantity for inventory, which will minimize the cost of ordering and holding inventory
+- Bulk purchase discount
+- Buffer inventory
+
+Inventory turnover $ = frac{Cost of sales}{Average inventory} $
+
+*** Managing Cash
