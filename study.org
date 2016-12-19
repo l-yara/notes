@@ -1,3 +1,58 @@
+* Dictionary (Description List):
+- ABC :: Activity Based Costing
+- ABS :: Asset - Backed Securities
+- ADR :: American Depository Receipts
+- AGM :: Annual General Meeting (of the stockholders)
+- AMC :: Asset Management Company
+- AML :: Anti-Money Laundering
+- APS ::
+- ASM :: ATOM Service Manager
+- ATOM :: Action and Task Orchestrator Manager
+- AWE :: Access Workflow Engine
+
+- BDS :: (Registered) Brokers - Dealers
+- BEA :: Business/Enterprise Architecture: official app inventory system of records
+- BSA :: Bank Secrecy Act
+- BXP :: BNY Mellon eXtreme Platform
+
+- CA  :: Corporate Actions
+- CAE :: Client Access Entitlements
+- CBI :: Central Bank of Ireland
+- CC  :: Control Center (analogous to Eagle)
+- CCN :: ?
+- CIP :: Customer Identification Program
+- COB :: Client Onboarding
+- CPU :: ?
+- CR  :: Change Request
+- CTS :: Client Technology Service
+- CSD :: Client Service Delivery
+- DNDBW :: Do Not Do Business With list
+- DP  :: Digital Pulse
+- DRV :: Data Request Vehicle
+- DWF :: Nexen Workflow (whoknowswhy)
+- EARB:: Enterprise Architecture Review Board
+- EDG :: Enterprise Document Gateway
+- EFI :: Enterprise Federated Inbox (near MyTask)
+- EGM :: Emergency General Meeting (of the stockholders)
+- EMS :: Exception Management System
+- ERI :: Enterprise Risk Management(?)
+- ETF :: Exchange Trading Fund -  "an investment company whose shares are traded intraday on stock exchanges at market-determined prices"
+
+- FA  :: Fund Accountant
+- FAO :: Fund Accountant Officer(?)
+- FASB:: Financial Accounting Standards Board, USA
+- FIS :: <a new name for Sungard>
+- FRS :: Financial Reporting Standard
+- FX  :: (a foreign currency exchange)
+
+- PD  :: Probability of Default
+- PPE :: Property, Plant & Equipment
+
+- SEC :: Securities and Exchange Comission
+
+- RFP :: Request for Proposals
+
+
 * Analysis of the Income Statement
   The income statement  (profit and loss (P&L) statement) looks at the expenses and revenues of an entity *over a period of time*, and shows whether or not the entity made a profit or loss over this period.
 
@@ -139,3 +194,104 @@ A CFS is a record of historical fact without any opinion. Thus, it may show:
 Inventory turnover $ = frac{Cost of sales}{Average inventory} $
 
 *** Managing Cash
+
+
+
+* Bond Prces & Yields
+Bond :: a debt security (issued by...). Generally makes a regular payment ("coupon") at fixed interval and a terminal payment ("face value", AKA "nominal value" or "maturity amount") on a known date (the "maturity date" or "redemption date").
+- Details:
+  - Price : "Par"
+  - Amount (paid for the bond) : $100.000
+  - Maturity (time to mature) : 5 years
+  - Coupon payment : 6%
+
+The current price for the bond inversely related to the payment (yield) currently available on the market.
+
+** Bond Pricing
+- The "Fair Price" of a bond: sum of the present values of all the future cash flows:
+
+$ P = frac{c}{(1+r)}+ frac{c}{(1+r)^2} + ... + frac{c}{(1+r)^n} + frac{B}{(1+r)^n} = ... $
+
+For semi-annual payments:
+
+$ P = frac{c/2}{(1+r/2)}+ frac{c/2}{(1+r/2)^2} + ... + frac{c}{(1+r/2)^2n} + frac{B}{(1+r/2)^2n} = ... $
+
+*** The Clean Price
+is the fair price of the bond (that is, Present Value - PV) or the payment stream on the day after coupon payment. This is alos a price which is quated up until the next coupon paymnet.
+
+*** The Dirty Price
+is the price which is /actually paid/ - an clean price plus *accrued interest*:
+Accrued Interest: the fraction of the *coupon payment* that the bond seller earns for holding the bond over the period of time between bond payments.
+
+The inclusion of any interest accrued since the last payment period determines whether the bond is "dirty" or "clean". Bond prices quoted in press are usual the "clean" prices.
+
+*** Valuation of Other Bond-Like Instruments
+- Zero-Coupon Bonds (or zero): $ P = frac{cash inflow on the bond}{(1+r)^t} $
+- Floating - rate notes (FRN): bonds with variable coupon payments. These bonds link the coupon payments to a measure of current market rates. I.e. the coupon rate might be linked to T-bill rate plus 2.5%.
+
+** Bond Yields
+*** Yield To Maturity (YTM)or  Redemption Yield
+the single rate of interest that equates the present value of the income stream with the current price (same as Internal Rate or Return, IRR): the approximate total return anticipated on a bond if the bond is held until the end of its lifetime and all coupon payments were invested at that rate. Often is being calculated via "trials and errors" method.
+
+The YTM of a zero-coupon bond is referred to as the *spot yield* - also a measure of the interest rate that is appropriate for discounting a single payment ini future.
+
+
+
+* Options
+** Specification:
+On June 1 Harry pays Sally $200 ($2 per share) for an option that gives him right to buy 100 shares of Widgetcorp stock from Sally at a price of $50 on September 1:
+- Option Holder :: Harry
+- Option Writer :: Sally
+- Start Date :: June 1
+- Expiration Date :: September 1
+- Premium :: $200
+- Underlying Asset :: Widgetcorp stock
+- Quantity :: 100
+- Option Type :: call (right to purchase). If it was right to sell, it would be *put* type. Sally sold (*short*) the call, Harry bought (*long*) one.
+- Excercise/Strike Price :: $50
+
+** Moneyness:
+(for the above example):
+- in-the-money (ITM) :: Spot Price > Strike Price (Harry can excercise option and buy shares from Sally; than he can keep or sell at the higher price)
+- at-the-money (ATM) :: Spot Price = Strike Price (Harry should be indifferent between excercising the option or buying shares at the market)
+- out-of-the-money (OTM) :: Spot Price < Strike Price (Harry can let the option expire and buy the shares at the open market cheaply)
+
+** Excercise:
+- Physical Settlement :: Harry pays $5000 and gets shares;
+- Cash Settlement :: a payment is made based on the difference between the strike and the market (spot) price.
+
+** Style:
+- European-style :: has a single excercise date when the holder must decide if he wants to excercise the option;
+- American-style :: excercise may take place at any time between the start date and expiration date;
+- Bermudan :: exercise is restricted to a predetermined set of dates or times between the start date and the expiration date. For instance, a 3-month Bermudan call option on a stock might allow the holder to exercise the option during the first business hour of any Wednesday.
+
+** Uses:
+
+*** Protective Put
+Holding something (security X); want to protect ourselves vs major price fall. Buy a put option on the security X at a strike price P which we srill can withstand. In worst case (market price falls below P) our loss is (Current Price - P + Premium), but never greater;
+
+*** Procective Call
+Protecting yourself from rising prices: "For example, an airline’s revenues may fall in the event of rising fuel prices. The airline can protect itself in a similar fashion to the previous example, but by buying a call option rather than a put. The strike price sets a ceiling on fuel costs – if, at expiration, the fuel price is lower than the strike, then the airline simply lets the option expire worthless and buys its fuel at the cheaper market price."
+
+*** Covered Call
+Generating cash by selling options against their positions: "Let’s look at Harry and his Widgetcorp portfolio again. Even though he is a long-term holder of the stock, assume that he might be willing to sell shares if the price increased (in the short term) above a particular target level. He can monetize this view by selling call options struck at this target price. If, as he expects, the price stays below the strike, the option premium earned increases the value of his portfolio. If the price “pops” above this level, he can sell his portfolio at the target price".
+
+*** Covered Put
+"For an airline looking to protect itself against rising fuel prices, the situation would be reversed. It would sell a put option allowing market participants to sell fuel to the airline in the event that fuel prices dropped below a particular target level";
+
+*** Combinations
+- Collar :: financing insurance (buying a put) by selling a call.
+- Straddle :: a combination of a call and a put with the same strike price and expiration date. Assuming the expiration price is not equal to the strike price, then irrespective of the level of the underlying at expiration, this combination will have some value:
+- If the expiration price is below the strike price, then the put has value and the call expires worthless.
+- If the expiration price is above the strike price, then the call has value and the put expires worthless.
+
+Since one of the options will be in-the-money, the value of a straddle must be positive at expiration. But for a straddle to be profitable, the payoff of the positive leg must be greater than the total premium paid. The price of a straddle gives an indication of the /size/ of expected market movements (volatility) rather than the /direction/.
+Comment: "Straddles are ideal for option dealers. For example, a dealer who sells puts and calls in the same quantities may be able to (broadly speaking) balance out market risk. But the dealer will still be exposed to the volatility risk – market movements may be greater than anticipated and the payoffs on the sold options may exceed earned premiums. This risk could be mitigated by buying straddles".
+
+** Complex Options
+- Multiple Excercise Date and/or Strike Price :: "In some cases, different exercise dates may also have different expiration prices. For example, a call option with three exercise dates might have ascending strike prices for each date";
+- Path-Dependency :: the expiration value is dependent on previous observations of the underlying asset price; For example:
+-- barrier options (“knock-outs” and “kick-ins/knock-ins”) are a class of option where exercise is dependent on whether certain price levels have been reached in particular periods in the future;
+-- asian option : the (cash-settled) payoff is based on the difference between the strike price and the average price (measured over some period before expiration).
+- Digital (binary) options :: (also "bet" options): the payoff is fixed and based on cash settlement. For example, a digital call might have a fixed payoff of USD 10 if a particular asset price exceeded USD 100 at expiration. It would not matter if the expiration price was USD 100.01 or USD 1000 – the USD 10 payoff would be the same.
+- Multi-Asset Option :: An option may have more than one underlying asset. For instance, the exercise of an option on one asset might be contingent on the market price of another. There are also equity options that reference baskets containing many underlying stocks, with payoffs linked (for example) to the best or worse performing stocks.
