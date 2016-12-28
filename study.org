@@ -1,5 +1,5 @@
 * Dictionary (Description List):
-- ABC :: Activity Based Costing
+- Abc :: Activity Based Costing
 - ABS :: Asset - Backed Securities
 - ADR :: American Depository Receipts
 - AGM :: Annual General Meeting (of the stockholders)
@@ -217,7 +217,7 @@ For semi-annual payments:
 $ P = frac{c/2}{(1+r/2)}+ frac{c/2}{(1+r/2)^2} + ... + frac{c}{(1+r/2)^2n} + frac{B}{(1+r/2)^2n} = ... $
 
 *** The Clean Price
-is the fair price of the bond (that is, Present Value - PV) or the payment stream on the day after coupon payment. This is alos a price which is quated up until the next coupon paymnet.
+is the fair price of the bond (that is, Present Value - PV) or the payment stream on the day after coupon payment. This is also a price which is quoted up until the next coupon paymnet.
 
 *** The Dirty Price
 is the price which is /actually paid/ - an clean price plus *accrued interest*:
@@ -235,7 +235,38 @@ the single rate of interest that equates the present value of the income stream 
 
 The YTM of a zero-coupon bond is referred to as the *spot yield* - also a measure of the interest rate that is appropriate for discounting a single payment ini future.
 
+*** Current Yield (AKA Flat Yield or Interest Yield)
+The current Yield is a coupon expressed as a percentage of the current price. For example, if the annual coupon on a bond is 7% and the bond price is 102%, then the current yield is 6.86% = 7% / 102%
 
+*** Holding Period Yield
+= the return from holding a bond for a fixed period
+
+*** The Forward Yield
+= the future rate of interest that is implied by spot yields for different maturities. For instanse:
+- one-year spot yiled R1 = 10%
+- two-year spot yield R2 = 12%
+then the implied one-year spot rate in one year's time is:
+$ Rf = frac{(1+R2)^2}{(1+R1)} - 1 = frac{1.12^2}{1.1} - 1 = 14.04% $
+
+** Bond Rates of Return (RoR)
+
+
+Imagine you buy a bond which pays a 8% coupon for $1070 and sell in one year for $1190. Total return of investment is the coupon payment ($80) plus price difference ($1,190-$1,070 = $120). Therefore, the rate of return (RoR) is:
+$ ROR = frac{Coupon + Capital Gain}{Investment} =$200/$1070 =18.69% $
+
+The ROR on a bond is linked to market interest rates (bond price decrease when market interest rate increase and vice versa) => bonds are subject of *market interest risk*.
+
+** Theories of the Term Structure of Interest Rates
+
+There are three main theories as to why spot rates vary by maturity:
+- Expectation Hypothesis
+The T-period spot rate is just the average of the expected one-period spot rate over the next T periods. The ter structure can be upward or downward sloping depending on expectations of future short-term interest rates.
+
+- Liquidity Hypothesis
+Even if the short-term interest rates are not expected to change, the term structure should be upward sloping. This is because there is more real interest rate risk for long-term bonds than for short-term bills.
+
+- Seqmented Markes Hypothesis
+The investors who buy short-term bonds are different from those that buy long-term bonds. The shape of the term structure is then determined by supply and demand amongst each type of investor.
 
 * Options
 ** Specification:
@@ -295,3 +326,7 @@ Comment: "Straddles are ideal for option dealers. For example, a dealer who sell
 -- asian option : the (cash-settled) payoff is based on the difference between the strike price and the average price (measured over some period before expiration).
 - Digital (binary) options :: (also "bet" options): the payoff is fixed and based on cash settlement. For example, a digital call might have a fixed payoff of USD 10 if a particular asset price exceeded USD 100 at expiration. It would not matter if the expiration price was USD 100.01 or USD 1000 – the USD 10 payoff would be the same.
 - Multi-Asset Option :: An option may have more than one underlying asset. For instance, the exercise of an option on one asset might be contingent on the market price of another. There are also equity options that reference baskets containing many underlying stocks, with payoffs linked (for example) to the best or worse performing stocks.
+
+* Relative Value Trading
+** Introduction
+*** Overview of RV Trading
