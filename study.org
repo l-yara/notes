@@ -230,7 +230,7 @@ The inclusion of any interest accrued since the last payment period determines w
 - Floating - rate notes (FRN): bonds with variable coupon payments. These bonds link the coupon payments to a measure of current market rates. I.e. the coupon rate might be linked to T-bill rate plus 2.5%.
 
 ** Bond Yields
-*** Yield To Maturity (YTM)or  Redemption Yield
+*** Yield To Maturity (YTM) or  Redemption Yield
 the single rate of interest that equates the present value of the income stream with the current price (same as Internal Rate or Return, IRR): the approximate total return anticipated on a bond if the bond is held until the end of its lifetime and all coupon payments were invested at that rate. Often is being calculated via "trials and errors" method.
 
 The YTM of a zero-coupon bond is referred to as the *spot yield* - also a measure of the interest rate that is appropriate for discounting a single payment ini future.
@@ -327,6 +327,74 @@ Comment: "Straddles are ideal for option dealers. For example, a dealer who sell
 - Digital (binary) options :: (also "bet" options): the payoff is fixed and based on cash settlement. For example, a digital call might have a fixed payoff of USD 10 if a particular asset price exceeded USD 100 at expiration. It would not matter if the expiration price was USD 100.01 or USD 1000 – the USD 10 payoff would be the same.
 - Multi-Asset Option :: An option may have more than one underlying asset. For instance, the exercise of an option on one asset might be contingent on the market price of another. There are also equity options that reference baskets containing many underlying stocks, with payoffs linked (for example) to the best or worse performing stocks.
 
-* Relative Value Trading
+
+* Equities – Trading
+
+** Overview
+
+Alpha :: a risk-adjusted measure of the 'excess return' on an investment over and above a benchmark index of 'risk-free' investment. Positive alpha figure indicates that a stock has performed better than its beta would predict. A negative alpha means indicates that a stock has underperformed.
+Beta :: measures the sensivity of a stock's price to changes in the market.
+STP :: Straight Through Processing. The details of individual trade are inputted only once following trade execution.
+FIX :: Financial Information Exchange protocol (messaging - based).
+OMS :: Order Management System
+Crossing Networks :: electronic systems set up by brokers to bring together potential buyers and sellers for the purpose of trading large blocks of securities. Some Crossing Networks are even registered as alternative trading systems.
+
+** Information & Models
+
+Public Data: company information, economic indicators, macro & micro information
+
+Whisper Number :: unofficial estimate of Earnings Per Share (EPS)
+
+- Market Information:
+-- Spread :: difference between the bid and ask (offer) price. Represent some measure of risk: when spread suddenly change, it is an indication of market perception of increased risk.
+-- Size :: another measure of risk. In a sense, there is a tradeoff between size and spread.
+-- Volume :: number of shares traded in a stock for a given period (usually a day).
+ADV :: Average Day Volume.
+-- Volatility :: measure of the riskness of:
+--- holding the stock;
+--- trading a stock.
+Volatility measure is called Beta. Beta > 1 means the stock is more volatile than a market; < 1 - less volatile.
+
+*** Models:
+- Pricing Models: intended to produce a _fair price_ for the stock;
+- Portfolio Models
+- Risk Management Models
+VAR :: Value At Risk
+- "Black Box" models: algorithms that use immediately market information to make trades (?)
+
+Because they are based on assumptions, models are always a simplified representation of what happens under real-life conditions. If these assumptions break down, as they can do particularly under extreme market conditions, then the model is rendered virtually worthless. Model risk can be defined as the risk of loss arising from the failure of a model to sufficiently match reality, or to otherwise deliver the required results. It can arise from a number of issues, including:
+- invalid assumptions (for instance, assuming a lognormal distribution when the true distribution is 'fat-tailed')
+- mathematical errors (for example, in determining the formulas for valuing more complex financial instruments)
+- inappropriate parameter specification
+- the lack of transparent market prices for some of the more illiquid securities
+- errors in implementation ('implementation risk')
+- poor or inappropriate data ('garbage in, garbage out')
+
+** Trade Execution & Transaction Costs
+
+Costs:
+- Explicit (comissions, custodial fees, transfer fees, stamp duties)
+- Implicit (indirect): bid-ask spread, market impact costs, execution cost (reflect the difference between the transaction price and what the market price would have been in the absence of that transaction), opportunity cost (Intended/Unintended),
+
+* Algorithmic Trading
+
+
+
+
+
+
+
+* Relative Value (RV) Trading
+
+* Basis Trading
+A tool for enchancing yield, the simultaneous trading of futures contracts written on government bonds and the bonds themselves. For this to work the portfolio manager must have a view on the relationshio between futures prices between cach bond prices. Three possible views possible:
+
+1. Spot bond prices will move away fromfutures prices.
+2. No changes in the differential between spot bond prices and futures prices (AKA Gross Basis).
+3. Spot bond prices will move towards the futures prices.
+
+
+
+* High-Frequency Trading (HFT)
+
 ** Introduction
-*** Overview of RV Trading

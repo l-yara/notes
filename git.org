@@ -70,3 +70,28 @@ git commit --amend -m "...new message..."
 
 ** Get me outta here:
 git revert HEAD;git commit -m "revert";git push origin WN
+
+** Nice .gitconfig:
+#+BEGIN_SRC
+[branch]
+	autosetuprebase = always
+[user]
+
+	email = yaroslav.lyakh@bnymellon.com
+
+	name = Yaroslav Lyakh
+
+[alias]
+	co = checkout
+	lg = log --oneline --graph --all --decorate
+	last = log -1 HEAD
+	ignore = update-index --assume-unchanged
+	unignore = update-index --no-assume-unchanged
+[core]
+	excludesfile = ~/.gitignore
+	autocrlf = input
+[http]
+	proxy = http://outboundproxy.bnymellon.net:8083
+[https]
+	proxy = http://outboundproxy.bnymellon.net:8083
+#+END_SRC
