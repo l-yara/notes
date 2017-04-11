@@ -377,14 +377,131 @@ Costs:
 - Implicit (indirect): bid-ask spread, market impact costs, execution cost (reflect the difference between the transaction price and what the market price would have been in the absence of that transaction), opportunity cost (Intended/Unintended),
 
 * Algorithmic Trading
+** The Strategies
+Key Parameters:
+- Price
+- Size & Liquidity
+- Timing
+- Fill Ratio (the likelihood that an order will be executed/completed)
+- Transaction Costs
 
+** The Tasks Performed
+- Data Analysis
+- Decision Analysis
+- Trade Matching
+- Trade Execution
+- Smart Order Routing (SOR)
 
+** Types of Algorithms
+- Impact-driven algorithms:
+-- Volume Weighted Average Price - VWAP
+-- Time Weighted Average Price-TWAP strategy
+-- Sensivity - SENS strategy
+-- Percent of Volume (POV) strategy
 
+- Cost-driven algorithms - trying to reduce the effect of overall transaction costs, like market impact:
+-- Implementation Shortfall (IS)
+-- Market Close (MC)
+
+- Opportunistic algorithms
+-- Price Inline (PI)
+-- Liquidity - Driven (LD)
+-- Pairs Trading (PT) : used for statistical arbitrage.
+
+- Others:
+-- Arrival Price (AP)
+-- Target Volume (TVOL)
+
+** Risks and Concerns
+
+* High-Frequency Trading (HFT)
+
+** Introduction
+Types of HFT firms:
+- Independent and proprietary market-makers
+- Broker-dealer proprietary desks at major investment houses
+- Hedge funds using quantitative trading algorithms
+
+Flash Orders: "a very controversial practice" by several ATSs is the offering of 'flash orders' to a number of HFT firms. In some marketplaces, it is possible for HTFs to get s sneak preview of orders for a fraction of a second before they are sent to the market for everyone to view (in exchange for a fee).
+
+*** Positive impact on the market:
+- increased liquidity;
+- narrowing of bid-ask spread through increased competition;
+- improved market efficiency due to prices reflecting information more accurately and rapidly.
+
+** Key HFT Strategies
+*** Liquidity Provision
+- Market-making
+- Rebate Trading
+
+*** Technical Trading
+- Statistical Arbitrage
+i.e. the mean-reversion strategy, where underlying asset (such as a stock price) will tend to move back towards the average (mean) value over time.
+- Pairs Trading
+
+** Development of IT
 
 
 
 
 * Relative Value (RV) Trading
+
+
+* Forwards and Futures - An Introduction
+Futures transactions are executed on either a bilateral OTC basis or on standardized futures exchanges. Historically there have been many differences between these markets in terms of product descriptions and credit arrangements. However, in recent years the distinctions between these markets have broken down. Some of the market reforms see OTC derivatives now being cleared by the same clearing houses as exchange-traded contracts.
+
+** Similarities Between Forwards and Futures
+*** Spot & Future Prices
+- Spot Price: the price at which an asset is bought or sold for immediate delivery/settlement.
+- Forward Contract: a privately negotiated contract between two parties, who agree to exchange a financial transaction (typically an asset) for a specified price at an agreed date in the future. The contract states who is agreeing to buy and sell the asset, for what price, and for when. This has the effect of fixing the price for both parties, so that they are both unaffected by any price volatility.
+- Futures Contract: much like a Forward except that the terms of the agreement aren't privately customized. The terms are standardized and the contracts are traded in on a regulated exchange. Although the trade may have been initiated between the two parties, their contracts are typically novated by the exchange. This means that the counterparty for each of the parties now becomes the exchange. The parties will be required to settle the gains and losses on each contract daily. Each futures contract defines a standard size, delivery date, quality, minimum price fluctuation, and so on.
+
+*** Elements of Forwards and Futures Contracts
+Forwards and futures are fundamentally the same derivative. A forward or future is a legally binding agreement made today (trade date) to deliver/receive something (underlying asset and quantity) on a future date (delivery date) at a price that is agreed upon today by both market participants (agreed price).
+
+- Trade Date: the date the transaction is agreed. For forwards, this is the date of entry into the forward agreement, and for futures, it is the date that the contract was bought or sold.
+- Underlying Asset and Quantity: are outlined in the forward/futures contract. The grade or quality of the asset can also be set out. For example, a contract could be for five thousand barrels of light sweet crude oil.
+- Delivery Date: for forwards, the delivery date is the future date that the actual transaction will occur. In other words, it is the date the contract is settled. The delivery date is individually negotiated for each transaction. Futures contracts have standardized delivery dates such as every month or every three months. The Dow Jones Eurostoxx 50 futures index, a stock index of 50 of the largest eurozone stocks by market capitalization, has a standard contract settlement of four times a year, in March, June, September, and December.
+- Agreed Price: the effective price that will be paid by one party to a counterparty when the delivery of the underlying asset is made.
+
+*** Standardized Settlement
+The means by which delivery will be made in a forward or futures contract will be outlined in the contract:
+- Physical settlement involves the actual physical delivery of the underlying transaction/asset on reaching the settlement date. The delivery details on the contract will specify particular settlement venues (warehouses, pipelines, and so on) and any invoicing procedures. For instance, the New York Mercantile Exchange (NYMEX) lists a contract for crude oil which has a physical settlement for one thousand barrels of crude oil to be delivered to a key pipeline hub in Oklahoma.
+
+- Cash Settlement: the amount of cash to be exchanged at settlement will be equal to the difference between the prevailing market price and the prespecified contract price. Generally contracts are cash settled either because it is more convenient to cash settle the contract or physical delivery of the underlying asset is not possible.
+
+** Difference Between Forwards and Futures
+Can be grouped as follows:
+-Marketplace:
+-- OTC market: Forward contracts are traded via the broker-dealer network. A broker-dealer contacts another broker-dealer by telephone or computer network and the two dealers agree on the specific details.
+-- Recognized derivatives exchange: Futures contracts are traded on recognized exchanges. A trader would be dealing on a similar market price to the one other traders deal on and the details of the underlying contract would be the same across all comparable contracts.
+- Bridging the Marketplace Gap: it may not be easy to make a distinction between an OTC and an exchange-traded transaction. In addition to the fact that most market participants may execute similar transactions in both areas, there is often an "official" bridge between them.
+- Customization
+- Contract Standardization: forward contracts are privately negotiated between the two parties involved in the contract, and between them they can customize the contract to their needs. This is not the case with futures contracts. Particular elements are standardized by the exchanges and listed in the contract specification:
+-- Settlement Dates: futures contracts have standardized settlement dates during particular delivery months. Settlement takes place on a predetermined date during that month (usually around the middle of the month). Exchanges list multiple delivery months for a particular product depending on demand.
+-- Underlying Transaction: each futures contract references a fixed quantity of a specific underlying asset or contract. For example, each CME/NYMEX gold futures contract has an underlying quantity of 100 ounces of gold, satisfying particular quality criteria.
+-- Standardized Pricing: prices are usually quoted relative to the basic measurement for an asset. For example, although the gold futures contract has an underlying quantity of 100 ounces, the contract price is “dollars per ounce.” There will be a minimum price fluctuation (tick size) set at a size small enough to ensure granularity, but not so small that liquidity is unduly dissipated. In the case of the gold futures contract, the tick size is USD 0.10. Contracts have a tick value equal to the tick size multiplied by the size of the underlying. For example, in the gold futures contract, the tick value = USD 0.10 × 100 ounces = USD 10.
+-- Contract Specification: there is a contract specification for each futures contract with regards to the underlying asset, trading times, trading fluctuations, and so on. The underlying forward transaction is thus standardized and becomes a fungible entity (capable of being freely transferred). This transferability gives liquidity to futures markets.
+
+*** Unwinding a Contract
+The fungible nature of futures contracts enhances their liquidity. There will be a large number of market participants with positions (long or short) in the same standardized instruments. Each futures contract on that exchange has the same counterparty (the exchange itself or an appointed clearing house). If a market participant wishes to dissolve a position ahead of maturity, there is no need to go back to the original counterparty – the participant can simply sell the contract in the market if it is a long position (or buy if short position). The extinguished position is then cash-settled, without any requirement for a new instrument.
+
+** Risks in the Forwards and Futures Markets
+- Risk Types
+ -- Credit Risk: credit risk is the risk that a party to a financial transaction will not be able to make scheduled payments in line with its legal obligations. Calculating the amount of credit exposure is a particularly complex task as it involves calculating the probability of default, the amount lost in the event of default, and the fair compensation to be paid to the counterparty.
+  --- Margin: the clearing house insulates itself from the default risk of participants by requiring them to keep a margin account above a predetermined level (the maintenance margin).
+  --- Blateral Collateralization Agreements: specified the collateral required to offset potential losses caused by counterparty defaults. Similar to variation margin, collateral amounts are revised periodically in accordance with market movements.
+ -- Basis Risk: basis is the price difference between the current forward price of the underlying transaction (for example, a government bond) and the delivery price of that transaction: $Basis = Futures Price – Spot Price$. Basis risk is the chance that the basis will have strengthened or weakened from the time the hedge is implemented to the time when the hedge is removed.
+ -- Liquidity Risk can be defined as the risk of an asset holder not being able to sell that asset quickly enough to prevent or minimize a loss. Liquidity risk has two dimensions:
+  --- The ability to refinance
+  --- The ability to sell assets at a reasonable price
+
+** Trading Mechanisms and Regulations
+*** Central Cleaning
+Following the financial crisis, regulators worldwide turned their attention to OTC counterparty credit risk. In both Europe and the US, legislation dictates that "standardized" OTC derivatives must be cleared through a "central clearing counterparty (CCP)." Under this clearing arrangement, market participants replace their original dealing counterparties with a single CCP. Collateral payments are made to and from the CCP, allowing market participants to net offsetting payments.
+
+
+* Bond Futures Basis
 
 * Basis Trading
 A tool for enchancing yield, the simultaneous trading of futures contracts written on government bonds and the bonds themselves. For this to work the portfolio manager must have a view on the relationshio between futures prices between cach bond prices. Three possible views possible:
@@ -392,9 +509,3 @@ A tool for enchancing yield, the simultaneous trading of futures contracts writt
 1. Spot bond prices will move away fromfutures prices.
 2. No changes in the differential between spot bond prices and futures prices (AKA Gross Basis).
 3. Spot bond prices will move towards the futures prices.
-
-
-
-* High-Frequency Trading (HFT)
-
-** Introduction

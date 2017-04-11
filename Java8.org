@@ -1,0 +1,7 @@
+** Generics
+A method is /generic/ if it declares one or more type variables. These type variables are known as /type parameters/ of the method.
+
+* 17.  Threads and Locks
+Semantic: rules for which values can be seen by a read of shared memory that is updated by multiple threads (similar to the /memory model/ for different HW architectues).
+
+Every object, in addition to having an associated monitor, has an associated /wait set/ which is a set of threads. This set is empty when object is just created. Elementary actions that add threads to and remove threads from wait sets are atomic. Wait sets are manipulated solely through the methods Object.wait, Object.notify, and Object.notifyAll.
