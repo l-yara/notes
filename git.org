@@ -95,3 +95,18 @@ git revert HEAD;git commit -m "revert";git push origin WN
 [https]
 	proxy = http://outboundproxy.bnymellon.net:8083
 #+END_SRC
+** Stop tracking file (to respect a .gitignored):
+git update-index --assume-unchanged 《file 》
+
+** Merge other (master) branch into mine:
+git checkout mine # to "mine" branch
+git fetch origin # gets me up to date
+git merge origin/master
+
+** Ignoring tracked files:
+in .gitconfig:
+
+[alias]
+ignore = update-index --assume-unchanged
+unignore = update-index --no-assume-unchanged
+(see http://stackoverflow.com/questions/5011390/git-ignoring-a-file-which-is-version-controlled for details)
