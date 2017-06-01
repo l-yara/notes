@@ -197,7 +197,8 @@ Inventory turnover $ = frac{Cost of sales}{Average inventory} $
 
 
 
-* Bond Prces & Yields
+* DONE Bond Prces & Yields
+  CLOSED: [2017-04-13 Thu 19:38]
 Bond :: a debt security (issued by...). Generally makes a regular payment ("coupon") at fixed interval and a terminal payment ("face value", AKA "nominal value" or "maturity amount") on a known date (the "maturity date" or "redemption date").
 - Details:
   - Price : "Par"
@@ -268,7 +269,9 @@ Even if the short-term interest rates are not expected to change, the term struc
 - Seqmented Markes Hypothesis
 The investors who buy short-term bonds are different from those that buy long-term bonds. The shape of the term structure is then determined by supply and demand amongst each type of investor.
 
-* Options
+
+* DONE Options
+  CLOSED: [2017-04-13 Thu 19:38]
 ** Specification:
 On June 1 Harry pays Sally $200 ($2 per share) for an option that gives him right to buy 100 shares of Widgetcorp stock from Sally at a price of $50 on September 1:
 - Option Holder :: Harry
@@ -376,7 +379,9 @@ Costs:
 - Explicit (comissions, custodial fees, transfer fees, stamp duties)
 - Implicit (indirect): bid-ask spread, market impact costs, execution cost (reflect the difference between the transaction price and what the market price would have been in the absence of that transaction), opportunity cost (Intended/Unintended),
 
-* Algorithmic Trading
+
+* DONE Algorithmic Trading
+  CLOSED: [2017-04-13 Thu 19:38]
 ** The Strategies
 Key Parameters:
 - Price
@@ -413,6 +418,7 @@ Key Parameters:
 -- Target Volume (TVOL)
 
 ** Risks and Concerns
+
 
 * High-Frequency Trading (HFT)
 
@@ -509,3 +515,5 @@ A tool for enchancing yield, the simultaneous trading of futures contracts writt
 1. Spot bond prices will move away fromfutures prices.
 2. No changes in the differential between spot bond prices and futures prices (AKA Gross Basis).
 3. Spot bond prices will move towards the futures prices.
+
+* Options: Beyond Black-Scholes
