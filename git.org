@@ -68,6 +68,10 @@ git rebase -i a1b2c3d4
 *** amend the commit message:
 git commit --amend -m "...new message..."
 
+** Before push - squash commits into less amount of:
+git rebase -i origin/master
+(will be 2 edits: picking commits first, editing message second)
+
 ** Get me outta here:
 git revert HEAD;git commit -m "revert";git push origin WN
 
