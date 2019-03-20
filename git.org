@@ -8,7 +8,7 @@ git log --oneline --decorate
 # convenient for checking before merge:
 git log -5
 # compact:
-git log --onleine -5
+git log --oneline -5
 
 ** Safe update (see http://stackoverflow.com/questions/6406762/why-am-i-merging-remote-tracking-branch-origin-develop-into-develop for discussion):
 git remote update -p;git merge --ff-only @{u}
@@ -86,6 +86,7 @@ git revert HEAD;git commit -m "revert";git push origin WN
 	name = Yaroslav Lyakh
 
 [alias]
+        up = "!git remote update -p; git merge --ff-only @{u}"
 	co = checkout
 	lg = log --oneline --graph --all --decorate
 	last = log -1 HEAD
@@ -106,6 +107,9 @@ git update-index --assume-unchanged 《file 》
 git checkout mine # to "mine" branch
 git fetch origin # gets me up to date
 git merge origin/master
+
+** If we have a centralized certification problem:
+GIT_SSL_NO_VERIFY=true git clone https://gitlab.com/mwasilewski/undo-tree
 
 ** Ignoring tracked files:
 in .gitconfig:
