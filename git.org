@@ -29,6 +29,13 @@ git stash clear
 *** Show with the last commits:
 git branch -av
 
+*** List branches merged in current:
+# CAUTION! This includes `master`!
+git branch --merged
+
+*** Branches mass murder:
+git branch --merged >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches
+
 *** Delete branch WN on client and remote:
 git branch -d WN
 git push origin --delete WN
