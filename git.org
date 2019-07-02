@@ -88,7 +88,7 @@ git revert HEAD;git commit -m "revert";git push origin WN
 	autosetuprebase = always
 [user]
 
-	email = yaroslav.lyakh@bnymellon.com
+	email = yaroslav.lyakh@<company>.com
 
 	name = Yaroslav Lyakh
 
@@ -103,9 +103,9 @@ git revert HEAD;git commit -m "revert";git push origin WN
 	excludesfile = ~/.gitignore
 	autocrlf = input
 [http]
-	proxy = http://outboundproxy.bnymellon.net:8083
+	proxy = http://outboundproxy.<company>.net:8083
 [https]
-	proxy = http://outboundproxy.bnymellon.net:8083
+	proxy = http://outboundproxy.<company>.net:8083
 #+END_SRC
 ** Stop tracking file (to respect a .gitignored):
 git update-index --assume-unchanged 《file 》
