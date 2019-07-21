@@ -1,6 +1,18 @@
 ,,#-*- mode: org -*-
 #+STARTUP: showall
 
+* Current projects
+
+- Start server:
+=> lein ring server
+
+- CIDER connect:
+=> lein repl 
+;; note port no
+<in Emacs> M-x cider-connect (or C-c M-c)
+
+
+
 * REPL tricks
 - выход: C-d (End of File), or (System/exit 0)(killing whole JVM)
 - загрузить и исполнить файл:

@@ -1,6 +1,5 @@
 * Currents
-- Вадим: 20 Manor Street, Gillingham, Brompton, ME7 5AW Kent
-- Wacky Races !!!
+- Вадим Шимбаев: 20 Manor Street, Gillingham, Brompton, ME7 5AW Kent
   :::: current:
 - Read: http://the-mockturtle.livejournal.com/748113.html and previous - photos in comments
 - http://pan-baklazhan.livejournal.com/,
@@ -8,18 +7,12 @@
 - https://megamozg.ru/post/23426/
 - http://buzhor.livejournal.com/171907.html
 - Yiddish metal: https://www.youtube.com/watch?v=E4-mPEiVZiM
-- http://flying-elk.livejournal.com/
-- super picture: http://ic.pics.livejournal.com/sprinsky/13646075/83676/83676_original.gif
-- models, links http://the-mockturtle.livejournal.com/745024.html
 
 - Coursera: А лекции Воронцова лучше слушать не в курсе, на на страничке ШАД (https://yandexdataschool.ru/edu-process/courses). Там они не обескровлены попытками впихнуть их в формат курсеры. Первый курс «Математика и Python для анализа данных» специализации «Машинное обучение и анализ данных Specialization» (https://www.coursera.org/specializations/mashinnoye-obucheniye) тоже пока не радует глубиной изложения.
-
 
 - https://www.masteringemacs.org/reading-guide
 
 - Mockturtle: http://the-mockturtle.livejournal.com/184889.html, http://the-mockturtle.livejournal.com/285253.html, http://the-mockturtle.livejournal.com/200616.html, http://the-mockturtle.livejournal.com/306560.html, http://the-mockturtle.livejournal.com/309297.html , http://the-mockturtle.livejournal.com/324537.html ,
-
-- http://the-mockturtle.livejournal.com/507347.html
 
 - Java performance: http://psy-lob-saw.blogspot.co.uk/p/jmh-related-posts.html, the whole http://mechanical-sympathy.blogspot.co.uk/2012/10/compact-off-heap-structurestuples-in.html
 reference to talk and memory issues: http://psy-lob-saw.blogspot.co.uk/2013/05/know-thy-java-object-memory-layout.html
