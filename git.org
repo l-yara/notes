@@ -8,7 +8,7 @@ git log --oneline --decorate
 # convenient for checking before merge:
 git log -5
 # compact:
-git log --onleine -5
+git log --oneline -5
 
 ** Safe update (see http://stackoverflow.com/questions/6406762/why-am-i-merging-remote-tracking-branch-origin-develop-into-develop for discussion):
 git remote update -p;git merge --ff-only @{u}
@@ -28,6 +28,13 @@ git stash clear
 ** Branch operation:
 *** Show with the last commits:
 git branch -av
+
+*** List branches merged in current:
+# CAUTION! This includes `master`!
+git branch --merged
+
+*** Branches mass murder:
+git branch --merged >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches
 
 *** Delete branch WN on client and remote:
 git branch -d WN
@@ -81,11 +88,12 @@ git revert HEAD;git commit -m "revert";git push origin WN
 	autosetuprebase = always
 [user]
 
-	email = yaroslav.lyakh@bnymellon.com
+	email = yaroslav.lyakh@<company>.com
 
 	name = Yaroslav Lyakh
 
 [alias]
+        up = "!git remote update -p; git merge --ff-only @{u}"
 	co = checkout
 	lg = log --oneline --graph --all --decorate
 	last = log -1 HEAD
@@ -95,9 +103,9 @@ git revert HEAD;git commit -m "revert";git push origin WN
 	excludesfile = ~/.gitignore
 	autocrlf = input
 [http]
-	proxy = http://outboundproxy.bnymellon.net:8083
+	proxy = http://outboundproxy.<company>.net:8083
 [https]
-	proxy = http://outboundproxy.bnymellon.net:8083
+	proxy = http://outboundproxy.<company>.net:8083
 #+END_SRC
 ** Stop tracking file (to respect a .gitignored):
 git update-index --assume-unchanged 《file 》
@@ -106,6 +114,9 @@ git update-index --assume-unchanged 《file 》
 git checkout mine # to "mine" branch
 git fetch origin # gets me up to date
 git merge origin/master
+
+** If we have a centralized certification problem:
+GIT_SSL_NO_VERIFY=true git clone https://gitlab.com/mwasilewski/undo-tree
 
 ** Ignoring tracked files:
 in .gitconfig:

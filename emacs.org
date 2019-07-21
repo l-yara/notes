@@ -161,3 +161,7 @@
 - Imenu-mode — меню для навигации по текущему буферу. Обычно языковые режимы emacs автоматически наполняют его позициями в которых определены методы или функции. Отображается меню как пожелаете :) Можно в minibuffer (аналог комадной строки vim), можно в оконном меню а можно в буфере anything.el :) Жутко удобная фича. Расширяется так же просто как anything.
 - Speedbar - file management
 - Commenting, Yasnippet etc.
+
+* Windows setup: 
+https://ftp.gnu.org/gnu/emacs/windows/README
+
