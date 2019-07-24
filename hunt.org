@@ -1,8 +1,16 @@
 
 
+* Credit Suisse
+*** James Egan <james.egan@oliverbernard.co.uk>
+- Senior Java Developer Ref 66973-1 (Scenario Framework)
+
 * Deutche Bank
 *** Stephanie@stanfordblack.com
 - 3188431 & 3189762 – Technology Lead – Java – Vice President ::Stephanie Doherty::
+  
+* Digiterre
+*** Matthew Arrowsmith <MArrowsmith@hunterbond.com>
+software delivery manager (perm)
 
 
 * Goldman Sachs
@@ -15,9 +23,14 @@
 - ???? (top secret perm) 
 
 
+* NatWest Markets
+*** Jack Tuffs <JTuffs@mcgregor-boyall.com>
+- Java Developer into Fixed Income eTrading
+
 * Nomura
 *** Stephanie@stanfordblack.com
 - 1141320: FX Options Java Developer
+
 
 
 
