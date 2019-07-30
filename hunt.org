@@ -1,14 +1,20 @@
 
+* BBVA
+*** Jack Tuffs <JTuffs@mcgregor-boyall.com> 
+- BBVA Java (???) - passed to Dan Fischer 
+
+
 * BNP Paribas
+*** Tom Morland <tmorland@thomsonkeene.com>, now Charles Curley <ccurley@thomsonkeene.com>
+- 11076 Java developer – Fixed Income & Equity derivatives  (on hold as of 29 July)
 *** Lyndy Adlam <LAdlam@adlam.com>
-- 11076 Java developer – Fixed Income & Equity derivatives  (might be put by 	Tom Morland <tmorland@thomsonkeene.com>)
 - 11206 - Algo Java Developer 
 (answered 26 July)
 
 
 * Credit Agricole
 *** Jack Tuffs <JTuffs@mcgregor-boyall.com>
-- eFX Senior Developer (Contract)
+- eFX Senior Developer (Contract) - on hold from 29 July
 
 
 * Credit Suisse
@@ -40,7 +46,7 @@ software delivery manager (perm)
 
 * JP Morgan
 *** Stephanie@stanfordblack.com
-- ???? (top secret perm) 
+- ???? (top secret perm) - failed
 
 
 * NatWest Markets
@@ -52,9 +58,16 @@ software delivery manager (perm)
 - 1141320: FX Options Java Developer applied 19 July, 
 
 
+* PA Consulting
+*** Lakshman Shanmuganathan <lakshman@careerwise.com>
+- ??? (CV sent 30 July)
+
 * RBC
 *** Jonathan Kaye <jonathan.kaye@cititec.com> 
-- RBC Algo Trading Developer (1 July; 1st stage 
+- RBC Algo Trading Developer (1 July; 1st stage ???, 2nd stage 11 July - failed)
+*** "Hajigeorgiou, George" <ghajigeorgiou@teksystems.com>
+- 90409 FX eTrading Senior Java Developer (eFX Java Developer - ?) (29 July - 1st contact)
+
 
 * Standard Chartered
 *** Augustas apavilionis@morganmckinley.com
@@ -67,7 +80,7 @@ software delivery manager (perm)
 *** Jonathan Kempster <jonathan.kempster@cornwalliselt.com>
 - 191238BR Senior FX e-Trading Developer (perm) - NOT asked yet
 *** Phil Hadfield (via LinkedIn)
-- 191239BR Senior FX e-Trading Developer (perm) - via LinkedIn
+- 191239BR Senior FX e-Trading Developer (perm) - via LinkedIn. Actually sent 29 July
 
 
 * Vanguard Asset Management 
