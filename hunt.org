@@ -1,15 +1,17 @@
+,,#-*- mode: org -*-
+#+STARTUP: showall
 
 * BBVA
-*** Jack Tuffs <JTuffs@mcgregor-boyall.com> 
-- BBVA Java (???) - passed to Dan Fischer 
+*** Jack Tuffs <JTuffs@mcgregor-boyall.com>
+- BBVA Java (???) - passed to Dan Fischer
 
 
 * BNP Paribas
 *** Tom Morland <tmorland@thomsonkeene.com>, now Charles Curley <ccurley@thomsonkeene.com>
 - 11076 Java developer – Fixed Income & Equity derivatives  (on hold as of 29 July)
-*** Lyndy Adlam <LAdlam@adlam.com>
-- 11206 - Algo Java Developer 
-(answered 26 July)
+*** Lyndy Adlam <LAdlam@adlam.com> (now Deborah Lovejoy <DLovejoy@adlam.com>)
+- 11206 - Algo Java Developer
+(answered 26 July, put forward 2 August)
 
 
 * Credit Agricole
@@ -26,7 +28,7 @@
 * Deutche Bank
 *** Stephanie@stanfordblack.com
 - 3188431 & 3189762 – Technology Lead – Java – Vice President ::Stephanie Doherty::
-  
+
 * Digiterre
 *** Matthew Arrowsmith <MArrowsmith@hunterbond.com>
 software delivery manager (perm)
@@ -43,6 +45,10 @@ software delivery manager (perm)
 *** Monique Collman <monique.collman@harringtonstarr.com>
 - MTF Operator Technical Team Lead (perm) -updated 8 July (!); 125K
 
+* Instinet
+*** 	Ben Stanyard <Ben.Stanyard@radleyjames.com>
+- Algo Developer (perm) - first contact 7 August
+
 
 * JP Morgan
 *** Stephanie@stanfordblack.com
@@ -51,19 +57,24 @@ software delivery manager (perm)
 
 * NatWest Markets
 *** Jack Tuffs <JTuffs@mcgregor-boyall.com>
-- Java Developer into Fixed Income eTrading
+- Java Developer into Fixed Income eTrading (perm)
+*** "Philip Staples (Caspian One)" <philip.staples@caspianone.co.uk>
+-eFX Developer (contract, sent 9 August)
+
 
 * Nomura
 *** Stephanie@stanfordblack.com
-- 1141320: FX Options Java Developer applied 19 July, 
+- 1141320: FX Options Java Developer applied 19 July,
 
 
 * PA Consulting
 *** Lakshman Shanmuganathan <lakshman@careerwise.com>
 - ??? (CV sent 30 July)
+*** Oliver Mutch <oliver@pioneer-search.com>
+- Senior Java Developer (Activiti)  CV sent 6 Aug
 
 * RBC
-*** Jonathan Kaye <jonathan.kaye@cititec.com> 
+*** Jonathan Kaye <jonathan.kaye@cititec.com>
 - RBC Algo Trading Developer (1 July; 1st stage ???, 2nd stage 11 July - failed)
 *** "Hajigeorgiou, George" <ghajigeorgiou@teksystems.com>
 - 90409 FX eTrading Senior Java Developer (eFX Java Developer - ?) (29 July - 1st contact)
@@ -71,19 +82,25 @@ software delivery manager (perm)
 
 * Standard Chartered
 *** Augustas apavilionis@morganmckinley.com
- - 73576 Blade (Senior Developer) 
-*** 	Gareth Shipley <GShipley@scopeat.co.uk>
+ - 73576 Blade (Senior Developer)
+*** Gareth Shipley <GShipley@scopeat.co.uk>
 - SCBJP00074146 (SABRE Developer)
 
+* Tradepoint Systems
+*** Jonathan Kaye <jonathan.kaye@cititec.com>
+- Sr. Java Developer – Real-Time Trading Systems (perm, sent 8 Aug)
 
 * UBS
 *** Jonathan Kempster <jonathan.kempster@cornwalliselt.com>
-- 191238BR Senior FX e-Trading Developer (perm) - NOT asked yet
+- 191238BR Senior FX e-Trading Developer (perm) - NOT asked yet Actually sent 31 July
 *** Phil Hadfield (via LinkedIn)
-- 191239BR Senior FX e-Trading Developer (perm) - via LinkedIn. Actually sent 29 July
+- 191239BR Senior FX e-Trading Developer (perm) - via LinkedIn. Actually sent
+29 July officially denied 2 August
+(FX Cash Execution Technology team - ???)
+*** "Hunter-Wylie, Elliot" <Elliot.Hunter-Wylie@hays.com>
+- Senior FX eTrading Developer (FX Cash Execution Technology team in London)
 
-
-* Vanguard Asset Management 
+* Vanguard Asset Management
 *** 	Jack Tuffs <JTuffs@mcgregor-boyall.com>
 - Lead Java Developer - TS03 - OMS Reporting (perm) 100K ???
 
@@ -92,7 +109,7 @@ software delivery manager (perm)
 - Kate Oliver <Kate.Oliver@opusrs.com>
 - 	Sam Stone <Sam.Stone@nicollcurtin.com>
 - Jonathan Kempster <jonathan.kempster@cornwalliselt.com>
-- Monique Collman <Monique.Collman@harringtonstarr.com> 
+- Monique Collman <Monique.Collman@harringtonstarr.com>
 
 
 State Street:
