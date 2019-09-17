@@ -96,6 +96,7 @@ git revert HEAD;git commit -m "revert";git push origin WN
         up = "!git remote update -p; git merge --ff-only @{u}"
 	co = checkout
 	lg = log --oneline --graph --all --decorate
+	ls = branch -a
 	last = log -1 HEAD
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
@@ -107,6 +108,7 @@ git revert HEAD;git commit -m "revert";git push origin WN
 [https]
 	proxy = http://outboundproxy.<company>.net:8083
 #+END_SRC
+
 ** Stop tracking file (to respect a .gitignored):
 git update-index --assume-unchanged 《file 》
 
