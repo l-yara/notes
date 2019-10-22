@@ -1,0 +1,455 @@
+,,#-*- mode: org -*-
+#+STARTUP: showall
+
+Project has:
+- expected output;
+- start and end date;
+- limited resource.
+
+** Organisation Types:
+
+**** Functional Organisation
+little or no project-specific coordination, meetings etc. Employees are often unaware that they are part of the project; often there is no project meetings
+
+**** Matrix Organisation
+The designation of weak, balanced, or strong has to do with who has more power or control over the project, the functional manager or the project manager.
+
+***** Weak Matrix
+- Functional Manager(s) in charge;
+- (S)he has the assistance of the project manager;
+- The coordinator helps maintain the schedule and the status but does not have decision-making responsibility.
+
+***** Balanced Matrix
+- The PM has some decision-making responsibilities
+- The PM manages the team to stay within scope, schedule and budget
+
+***** Strong Matrix
+- PM has his own line of report (NOT under Functional Manager);
+- The PM has much more authority and responsibility (but not complete authority and responsibility);
+- PM still can not make all decisions.
+
+***** Projectized Organisation
+- PM is a king/queen
+- Team works on one project
+- PM = manager of the team (may write performance appraisals)
+
+** PMBoK (The Project Management Body of Knowledge):
+Areas:
+- Integration
+- Scope
+- Time
+- Cost
+- Quality
+- Human Resources
+- Communications
+- Risk
+- Procurement
+- Stakeholder
+
+*** Factors:
+ 1. Agreement among the project team, customers, and management on the goals of the project.
+ 2. A plan that shows an overall path and clear responsibilities and that can be used to measure progress during the project (contains the details for estimating the people, money, equipment, and materials necessary to get the job done);
+ 3. Constant, effective communication among everyone involved in the project;
+ 4. A controlled scope;
+ 5. Management support.
+
+** Processes
+a project consists of Processes:
+-Project management processes;
+-Product-oriented processes.
+
+** The Triple Constraint
+- a framework for balancing competingproject demands:
+ -- Time (schedule)
+ -- Money (resources)
+ -- Scope (quality)
+the determination of what to modify or change is based on the *priorities* assigned to each constraint and the available alternatives.
+
+** Organisational Process Assets (OPAs):
+4Ps (plans, processes, policies and procedures), grouped into two categories:
+- Processes and procedures;
+- Corporate Knowledge Base.
+
+** The Standard Lifecycle :
+definition, planning, execution, and closeout (???)
+
+** The Stakeholders
+- actually, "anybody involved". Good set of questions to find out:
+1. Who asked for this project?
+2. Who will use the product or service we're creating or enhancing?
+3. Who will have to change the way they do their jobs because of this project?
+4. Who makes decisions about the project?
+5. Who has the ability to give or take away resources from the project?
+6. Who influences those who make decisions about this project?
+
+Good idea is to find out which stakeholders "will drive project success". Nice to represent in a Power/Interest grid:
+- Low interest, low power : Monitor them;
+- Low interest, high power : Keep them informed;
+- High interest, low power : Keep Satisfied;
+- High interest, high power : Manage Closely.
+
+Similar story - with Power/Influence grid
+
+A critical part of managing your stakeholders involves understanding what type of information they need, and when they need it. It is a good idea to interview them at the beginning of the project (some will be more concerned about budget, some - about schedule, some - about quality).
+
+*** Stakeholder Register
+- contains key informationabout your stakeholders
+ -- Assesment information;
+ -- Stakeholder Classification
+ -- Identification Information
+
+- Inputs:
+  - Project Chapter;
+  - Procurement Documents;
+  - Enterprise Environmental Factors;
+  - Organisational Process Assets;
+
+*** Processes (group 13):
+**** Identify Stakeholders
+Input: Project Charter; output: Stakeholder Register
+identifying all people or organisations impacted by the project and documenting relevant information regarding their interest, invovement and impact on the project success
+- Identify All Potential Stakeholders;
+- Consider the impact;
+- Assess stakeholder reactions;
+- Capture information (keep confidential!)
+**** Plan Stakeholder Management
+Input: Project Management Plan; output: Stakeholder Management Plan
+develop appropriate management strategies to effectively engage stakeholders throughout the project lifecycle, based on the analysis of their needs, interest and potential impact to project.
+***** Stakeholder Engagement Level (and plans what to do with each):
+- Unaware :: provide them an overview of the project and follow up after the overview
+- Resistant :: partner them with someone enthusiastic, someone they admire and trust
+- Neutral :: find ways to increase their interest in the project, perhaps by involving them more or by sharing with them a project benefit they can support
+- Supportive :: keep them in the loop and provide them open and hinest status
+- Leading :: continue to give them opportunities to stay invoved, let them know you appreciate them.
+***** Stakeholder Management Plan:
+a subsidiary plan of the project management plan (formal or informal). Contains the management strategies to effectively manage stakeholders, including:
+- interrelations and overlap between stakeholders;
+- desired and current level of stakeholder engagement;
+- information to be distributed to stakeholders (language, format, content, level of detail).
+SENSITIVE INFORMATION!
+**** Stakeholder Management Executing
+- actually, management of the stakeholder's execution.
+- Inputs:
+ -- Stakeholder Management Plan;
+ -- Communication Management Plan;
+ -- Change Log;
+ -- Organisational Process Assets.
+- Outputs:
+ -- Issue Log
+ -- Change Requests
+ -- Project Management Plan Updates
+ -- Organisational Process Assets Updates
+
+- Tips & Tricks
+  --Continue to engage your stakeholders during the project (if you forget your stakeholders, they forget about you and your project);
+  --Manage your project expectations (negotiations and communications);
+  --Don's make false promises; don't be less than accurate about the true state of the project;
+  --Do address stakeholder concerns; anticipate future problems;
+  --Clarify the nature of issues so that stakeholders understand what the team is up against;ask them to resolve issues when appropriate and always let them know when an issue is causing a delay or when an issue has been succesfully resolved.
+  --Facilitate consensus towards objectives!!!
+
+**** Monitoring and Controlling
+- actually, Control Stakeholder Engagement
+- Inputs:
+ --Project Management Plan;
+ --Issue Log;
+ --Work Performance Data;
+ --Project Documents.
+- Outputs:
+ --Work Performance Information;
+ --Change Requests;
+ --Project Management Plan Updates;
+ --Project Document Updates;
+ --Organisational Process Assets Updates.
+
+...Be sure to gather input from:
+ --Senior Management;
+ --Other Parts of Organisation;
+ --Key stakeholders;
+ --Other Project Managers;
+ --Professional and Technical Associations.
+
+** Scope: Project Charter, key elements of the Project Plan, the Scope structure and Work Breakdown Structure - WBS
+*** The Project Charter:
+- Serves as an announcement which states that the project has been approved; States that you (PM) has been authorized to run the project and describes what you are authorized to do:
+ -- hire team members?
+ -- sign purchase orders?
+ -- have input into team member's performance appraisals?
+- Includes:
+  - Project Purpose or justification;
+  - High-level requirements and description of project;
+  - Project assumptions and constraints
+  - high-level risks;
+  - project approval requirements;
+  - stakeholder list;
+  - ...
+
+
+- Inputs:
+  - Business Case (will also help to identify the stakeholders as shows who wrote the business case and who approved it)?
+  - Agreements
+  - Project Proposal?
+  - Enterprise Environmental Factors
+  - Organisational Process Aspects
+
+Good idea would be to make a draft and discuss with the stakeholders during interview(s)
+
+*** Planning
+the checklist (?)could be the basis for the plan:
+- see  [[PMBoK]] / [[Areas]] section to list bodies of knowledge you should consider
+Examples:
+- the Scope:
+  - How will you and the team determine what that project is accomplishing and what the project is not accomplishing?
+  - Who has to approve this?
+  - Once this is approved, can anybody suggest changes?
+  - What happens if they do?
+  - How will this be handled?
+- the Schedule Management:
+  - Are there guidelines for how schedules are to be created?
+  - What software is going to be used?
+  - How often is the schedule to be maintained?
+  - And who can make changes to it?
+  - What types of scheduling information will you report?
+You might even note known work shifts and holiday information.
+- the Cost Management:
+  - Are there guidelines for how estimates are to be created and documented?
+  - Who approves the budget?
+  - What do you do if you are over or under the budget?
+  - Can you ask for more money?
+  - Who do you ask?
+  - What type of budget reporting will you do?
+
+Another way of looking at the Project Plan document is to consider it as Rules of Engagement document, or even Project Receipt Book / Cookbook.
+
+*** Project Management Plan
+- "is the process of documenting actions necessary to define, prepare, integrate and coordinate all subsidiary plans"
+- Inputs:
+  - Project Charter;
+  - Outputs from Planning Processes;
+  - Enterprise Environmental Factors;
+  - Organisational Process Assets
+
+by definition, it is a formal, approved document that defines how the project is **executed, monitored** and **controlled**.
+  - Baselines include:
+    - Scope Baseline
+    - Schedule Baseline
+    - Cost Baseline
+  - Subsidiary Plans Include (among others):
+    - Scope Management Plan;
+    - Requirement Management Plan;
+    - Schedule Management Plan;
+    - Cost Management Plan;
+    - Quality Management Plan;
+    - Risk Management Plan;
+    - ...
+  - Other possible components:
+    - The lifecycle selected for a project;
+    - A configuration Management Plan;
+    - Customization by tha project management team, such as:
+      - Project Management Process;
+      - Description of tools and techniques used in the process;
+      - ...
+    - ...
+
+A **Progressive Collaboration** is the technique of continuously improving and detailing a plan as more detailed and specific information and more accurate estimates become available.
+
+*** Project Scope Statement
+is a part of the Project Plan:
+- describes what the project is creating;
+- is the product scope definition;
+- defines the conditions that must be met for your product or service to be accepted;
+- defines the deliverables that must be created along the way;
+- also, the Project Exclusions (!);
+- includes the Known Project Constraints ;
+ - "must be completed by ... date"
+ - "must include ..."
+- also includes the "assumptions":
+ - "all team members will give at least 50% of their time to the project";
+
+Built by extending the Project Charter through
+- interviews
+- learning...
+
+after creating, it is recommended to put this doc through a **Decomposition** process: dividing and subdividing the project scope and project deliverables into smaller, more manageable parts. This results into **Work Breakdown Structure**
+
+*** Scope Management
+**** Plan Scope Management                                     :grp_planning:
+- Inputs:
+  - Project Management Plan
+  - Project Charter
+  - EEFs + OPAs
+- Outputs:
+  - Scope Management Plan
+  - Requirements Management Plan
+**** Collect Requirements                                      :grp_planning:
+defining and documenting stakeholders' needs to meet the project objectives (what conditions or capabilities must the project meet or provide?)
+- Inputs:
+  - Scope Management Plan
+  - Requirements Management Plan
+  - Stakeholder Management Plan
+  - Stakeholder Register
+- Outputs:
+  - Requirements Documentation
+    - Business Requirements
+    - Stakeholder Requirements
+    - Solution Requirements
+    - Project Requirements
+    - Transition Requirements
+  - Requirements Traceability Matrix
+**** Define Scope                                              :grp_planning:
+"not everything identified during Collect Requirements will make it into the project - this is where that decision is made"
+- Inputs:
+  - Scope Management Plan
+  - Project Charter
+  - Requirements Documentation
+  - OPAs
+- Outputs:
+  - Project Scope Statement
+  - Project Document Updates
+Product Scope :: refers to the **output** of the project. Completion measured vs the **produce requirements**
+Project Scope :: encompasses the **work** (deliveries). Completion measured vs the **Project Management Plan**, *Scope Management Statement*, *WBS*.
+
+**** Create Work Breakdown Structure                           :grp_planning:
+ ...depicts the work that is necessary to meet the project objectives. Helps create the schedule estimates and become clear about the resource needs.
+- Inputs:
+  - Scope Management Plan;
+  - Project Scope Statement;
+  - Requirements Documentation;
+  - EEFs and OPAs.
+- Outputs:
+  - Scope Baseline;
+  - Project Document updates;
+  - WBS Dictionary:
+    - Definition (brief) of scope or statement of work;
+    - defined deliverables;
+    - Start and end dates; list of milestones;
+    - Responsible Organisation;
+    - Resources Required;
+    - Cost Estimates, charging information;
+    - Quality Requirements; acceptance Criteria;
+    - Technical and Contact References.
+
+Basically, a foundational planning tool for the whole project. WBS should so completely depict the scope that if something not in the WBS, it is not in the project.
+
+Build as a hierarchy: the lowest level is called **work package** (sometimes the **deliverables**). It is possible to create a WBS where work is broken into phases but each phase should depict a specific deliverable, not cycle (i.e. no "three month time phase").
+
+(almost) always is being created by the team (not individually).
+
+For "how deep do I go" - empirical rules:
+- 8 to 80: the work package should be between 8 (if less - we're probably micromanaging) and 80 (if more - we can loose the track of the work) hours to complete;
+  - the distance between status point: do not let something get more than two status points without showing some type of completed work;
+  - "if it makes sense" rule (break any other rule if it makes sense)
+
+Also might include so-called *Control Accounts* / *Cost Accounts*: the management control points where the integration of scope, schedule and cost takes place and where the measurement of performance will happen.
+
+**** Validate Scope                                          :grp_monitoring_n_control:
+a process of formalizing acceptance of the completed project deliverables (the deliverables should meet clear and specific acceptance criteria and be signed off or approved by the appropriate individuals)
+- Inputs:
+  - Project Management Plan
+  - Requirements Documentation
+  - Requirements Traceability Matrix
+  - Verified Deliverables
+  - Work Performance Data
+- Outputs:
+  - Accepted Deliverables
+  - Change Requests
+  - Work Performance Information
+  - Project Documents Update
+
+**** Control Scope                                 :grp_monitoring_n_control:
+a process of monitoring the status of the project and product scope and managing changes to the scope baseline.
+- Inputs:
+  - Project Management Plan
+  - Requirements Documentation
+  - Requirements Traceability Matrix
+  - Work Performance Data
+  - OPAs
+- Outputs:
+  - Work Performance Information
+  - Change Requests
+  - Project Management Plan updates
+  - Project Document Updates
+  - OPAs updates
+
+** Project Human Resource Management (group 9)
+*** HR Management: Planning                                    :grp_planning:
+**** Plan HR Management: a process of identifying and documenting roles, responsibilities, required skills and reporting relations
+- Inputs:
+  - Project Management Plan
+  - Activity Resource Requirements
+  - EEFs
+  - OPAs
+- Outputs:
+  - HR Management Plan (Staffing Management Plan)
+HR Management Plan includes:
+- timetable for staff acquisition and release
+- (optional):
+  - identification of the training needs
+  - team-building strategies
+  - plans for recognition and rewards programs
+  - compliance considerations
+  - safety issues
+  - potential impact of staff acquisition and release on the organisation.
+
+
+*** HR Management: Executing                                  :grp_execution:
+**** Acquire Project Team
+a process of confirming human resource availability and obtaining the team necessary to complete project assignments
+- Inputs:
+  - HR Management Plan
+  - EEFs
+  - OPAs
+- Outputs:
+  - Project Staff Assignment
+  - Resource Calendar
+  - Project Management Plan Updates
+**** Develop Project Team
+a process of improving competencies, team interaction and overall team environment to enhance project performance
+- Inputs:
+  - HR Management Plan
+  - Project Staff Assignment
+  - Resource Calendars
+- Outputs:
+  - Team Performance Assessments
+  - EEFs Updates
+
+Tuckman's model of group development:
+- Forming :: "group initially concerns itself with orientation accomplished primarily through testing. Coincides with the establishing of dependency relations"
+- Storming :: conflict and polarisation around interpersonal issues
+- Norming :: resistance is overcome, in-group feeling and cohesiveness develop, new standards evolve, new roles are adopted
+- Performing :: interpersonal structure becomes the tool of task activities. Roles become flexible, structure can now become supportive of task performance
+- Adjourning :: (mourning?) termination of roles
+
+**** Manage Project Team
+a process of tracking team member performance, providing feedback and managing changes to optimize project performance
+- Inputs:
+  - HR Management Plan
+  - Project Staff Assignments
+  - Team Performance Assessments
+  - Issue Log
+  - Work Performance Report
+  - OPAs
+- Outputs:
+  - Change Requests
+  - Project Management Plan Updates
+  - Project Document Updates
+  - EEFs Updates
+  - OPAs Updates
+
+* Glossary
+- actually, a "description list in org-mode terms":
+- EEFs :: Enterprise Environmental Factors
+- ITTO :: Inputs, Tools, Technics and Outputs
+- IPMA :: Iternational Project Management Association
+- OPAs :: Organisational Process Assets
+- FM :: Functional Manager
+- PM :: Project Manager
+- PMBOK :: Project Management Body of Knowledge (created by PMI)
+- BMBoK Guide :: "a process framework for executing a project"
+- PMI :: Project Management Institute
+- PMP :: Project Management Professional (a professionaldistinction sponsored by PMI)
+- Portfolio :: a collection of projects and programs managed as a group to achieve a strategic objectives
+- Program :: a group of related projects managed in coordinated way to obtain benefits and control not available from managing them individually
+- Project Charter :: the document which formally announces the project and grants the project management the authority to use organizational resources to neet project objectives.
+- RAM :: Responsibility Assignment Matrix (illustrates connections between a project scope and the project team)
+- WBS (Work Breakdown Structure) ::

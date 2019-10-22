@@ -60,20 +60,6 @@ Cascalog for Impatient: https://github.com/Quantisan/Impatient/wiki
 -- Session lib (???)
 
 
-- пробить REST операции и их аналоги по CRUD
-- Олегу: RSA Factorisation Challenge (Clay Millennium Problems)
-- слушаем Silly Wizard, The Pogues
-- Junior Chess Club: East Grinstead, David Fryer 01342 317287
-- профиль на линкед Ин - переделать с нуля (погуглить что нужно)
-
-* Hunting
--- http://www.just-java.co.uk/ (nafik)
--- CWJobs
--- Jobsite
--- Jobserve
--- emptylemon(s).co.uk
--- planetjobs
--- LinkedIn
 
 * Chess
 www.englishchess.org.uk/calendars-rd/  => Calendars
