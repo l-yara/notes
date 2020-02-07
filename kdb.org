@@ -1,0 +1,37 @@
+#+STARTUP: showall
+
+** Q4
+*** Constants
+- `::` :: nil (empty index when used in {{L[::]}})
+
+*** Functions
+- enlist :: creates a singleton list from the argument
+- -3!   :: "toString"
+- .Q.s1 :: "toString"
+- flip :: транспонировать матрицу (rectangular list)
+
+*** Operators (?)
+- , :: joining two lists;
+- ^ :: merging (coalescing) two lists;
+- ? :: find in list (if element is not found, the list length is returned). Able to find a multiple elements (like q)1001 1002 1003?1003 1001);
+- til :: takes a non-negative int ~n~ and returns a list on ~n~ consecutive natural numbers starting at 0;
+- distinct :: returns the unique items in its list arguments in order of accurence;
+- where :: returns the indices of ~1b~ in a boolean list
+- group :: takes a list and returns a dictionary with each distinct item of the argument is mapped to the indices of its occurence: ~q)group "i miss mississippi"~
+- ~ :: matching (returns ~true~ if operands are identical)
+- neg :: negate number (do NOT use minus ~-~!)
+- | :: greater (for binary data might be written as `or`)
+- & :: lesser (for binary data might be written as `and`)
+- : :: amend ("assign in place"). See paragraph 4.6.3 "Amend with list" for magic
+- ,: :: appends list in place: `L1,:L2`
+***** Numeric Operators
+- sqrt, exp, log, xexp, xlog :: square root, base e to the power, natural logarithm, n to power, logarithm on base
+- div :: division (integer)
+- mod :: modulo (remainder)
+- signum :: well, signum
+- reciprocal :: = 1%x
+- floor and ceiling :: as you'd expect. To truncate to the given number of digits: ~0.01floor 100x~
+- abs :: absolute value
+***** Operations on Temporal Values
+
+уупс, ну хоть так?
