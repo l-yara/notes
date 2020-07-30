@@ -1,96 +1,97 @@
 ,,#-*- mode: org -*-
 #+STARTUP: showall
 
-* BBVA
-*** Jack Tuffs <JTuffs@mcgregor-boyall.com>
-- BBVA Java (???) - passed to Dan Fischer
+* Campaing August 2019
+** BBVA
+**** Jack Tuffs <JTuffs@mcgregor-boyall.com>
+ - BBVA Java (???) - passed to Dan Fischer
 
 
-* BNP Paribas
-*** Tom Morland <tmorland@thomsonkeene.com>, now Charles Curley <ccurley@thomsonkeene.com>
-- 11076 Java developer – Fixed Income & Equity derivatives  (on hold as of 29 July)
-*** Lyndy Adlam <LAdlam@adlam.com> (now Deborah Lovejoy <DLovejoy@adlam.com>)
-- 11206 - Algo Java Developer
-(answered 26 July, put forward 2 August)
+** BNP Paribas
+**** Tom Morland <tmorland@thomsonkeene.com>, now Charles Curley <ccurley@thomsonkeene.com>
+ - 11076 Java developer – Fixed Income & Equity derivatives  (on hold as of 29 July)
+**** Lyndy Adlam <LAdlam@adlam.com> (now Deborah Lovejoy <DLovejoy@adlam.com>)
+ - 11206 - Algo Java Developer
+ (answered 26 July, put forward 2 August, f2f 16 August, denied 19 Aug)
 
 
-* Credit Agricole
-*** Jack Tuffs <JTuffs@mcgregor-boyall.com>
-- eFX Senior Developer (Contract) - on hold from 29 July
+** Credit Agricole
+**** Jack Tuffs <JTuffs@mcgregor-boyall.com>
+ - eFX Senior Developer (Contract) - on hold from 29 July
 
 
-* Credit Suisse
-*** James Egan <james.egan@oliverbernard.co.uk>
-- Senior Java Developer Ref 66973-1 (Scenario Framework)
-*** 	Rebecca Sfedj <rebecca.sfedj@oliverbernard.co.uk>
--- 65728-1 EDA Java Developer (failed)
+** Credit Suisse
+**** James Egan <james.egan@oliverbernard.co.uk>
+ - Senior Java Developer Ref 66973-1 (Scenario Framework)
+**** 	Rebecca Sfedj <rebecca.sfedj@oliverbernard.co.uk>
+ -- 65728-1 EDA Java Developer (failed)
 
-* Deutche Bank
-*** Stephanie@stanfordblack.com
-- 3188431 & 3189762 – Technology Lead – Java – Vice President ::Stephanie Doherty::
+** Deutche Bank
+**** Stephanie@stanfordblack.com
+ - 3188431 & 3189762 – Technology Lead – Java – Vice President ::Stephanie Doherty::
 
-* Digiterre
-*** Matthew Arrowsmith <MArrowsmith@hunterbond.com>
-software delivery manager (perm)
-
-
-* Goldman Sachs
-*** "Hajigeorgiou, George" <ghajigeorgiou@teksystems.com>
--  Java Developers - Accelerate Project - 9093613 + 9085848 +  9352084 + 9258788 + 9258874
-
-*** Stephanie@stanfordblack.com
-- 53668 Java Quant Developer-Equities Electronic Trading (perm) - NOT asked yet
-
-* IG
-*** Monique Collman <monique.collman@harringtonstarr.com>
-- MTF Operator Technical Team Lead (perm) -updated 8 July (!); 125K
-
-* Instinet
-*** 	Ben Stanyard <Ben.Stanyard@radleyjames.com>
-- Algo Developer (perm) - first contact 7 August
+** Digiterre
+**** Matthew Arrowsmith <MArrowsmith@hunterbond.com>
+ software delivery manager (perm)
 
 
-* JP Morgan
-*** Stephanie@stanfordblack.com
-- ???? (top secret perm) - failed
+** Goldman Sachs
+**** "Hajigeorgiou, George" <ghajigeorgiou@teksystems.com>
+ -  Java Developers - Accelerate Project - 9093613 + 9085848 +  9352084 + 9258788 + 9258874
+
+**** Stephanie@stanfordblack.com
+ - 53668 Java Quant Developer-Equities Electronic Trading (perm) - NOT asked yet
+
+** IG
+**** Monique Collman <monique.collman@harringtonstarr.com>
+ - MTF Operator Technical Team Lead (perm) -updated 8 July (!); 125K
+
+** Instinet
+**** 	Ben Stanyard <Ben.Stanyard@radleyjames.com>
+ - Algo Developer (perm) - first contact 7 August
 
 
-* NatWest Markets
-*** Jack Tuffs <JTuffs@mcgregor-boyall.com>
-- Java Developer into Fixed Income eTrading (perm)
-*** "Philip Staples (Caspian One)" <philip.staples@caspianone.co.uk>
--eFX Developer (contract, sent 9 August)
+** JP Morgan
+**** Stephanie@stanfordblack.com
+ - ???? (top secret perm) - failed
 
 
-* Nomura
-*** Stephanie@stanfordblack.com
-- 1141320: FX Options Java Developer applied 19 July,
+** NatWest Markets
+**** Jack Tuffs <JTuffs@mcgregor-boyall.com>
+ - Java Developer into Fixed Income eTrading (perm)
+**** "Philip Staples (Caspian One)" <philip.staples@caspianone.co.uk>
+ -eFX Developer (contract, sent 9 August)
 
 
-* PA Consulting
-*** Lakshman Shanmuganathan <lakshman@careerwise.com>
-- ??? (CV sent 30 July)
+** Nomura
+**** Stephanie@stanfordblack.com
+ - 1141320: FX Options Java Developer applied 19 July 2020
+
+
+** PA Consulting
+**** Lakshman Shanmuganathan <lakshman@careerwise.com>
+ - ??? (CV sent 30 July)
 *** Oliver Mutch <oliver@pioneer-search.com>
 - Senior Java Developer (Activiti)  CV sent 6 Aug
 
-* RBC
-*** Jonathan Kaye <jonathan.kaye@cititec.com>
-- RBC Algo Trading Developer (1 July; 1st stage ???, 2nd stage 11 July - failed)
-*** "Hajigeorgiou, George" <ghajigeorgiou@teksystems.com>
-- 90409 FX eTrading Senior Java Developer (eFX Java Developer - ?) (29 July - 1st contact)
+** RBC
+**** Jonathan Kaye <jonathan.kaye@cititec.com>
+ - RBC Algo Trading Developer (1 July; 1st stage ???, 2nd stage 11 July - failed)
+**** "Hajigeorgiou, George" <ghajigeorgiou@teksystems.com>
+ - 90409 FX eTrading Senior Java Developer (eFX Java Developer - ?) (29 July - 1st contact)
 
 
-* Standard Chartered
+** Standard Chartered
 *** Augustas apavilionis@morganmckinley.com
  - 73576 Blade (Senior Developer)
 *** Gareth Shipley <GShipley@scopeat.co.uk>
 - SCBJP00074146 (SABRE Developer)
 
-* Tradepoint Systems
+** Tradepoint Systems
 *** Jonathan Kaye <jonathan.kaye@cititec.com>
 - Sr. Java Developer – Real-Time Trading Systems (perm, sent 8 Aug)
 
-* UBS
+** UBS
 *** Jonathan Kempster <jonathan.kempster@cornwalliselt.com>
 - 191238BR Senior FX e-Trading Developer (perm) - NOT asked yet Actually sent 31 July
 *** Phil Hadfield (via LinkedIn)
@@ -100,20 +101,84 @@ software delivery manager (perm)
 *** "Hunter-Wylie, Elliot" <Elliot.Hunter-Wylie@hays.com>
 - Senior FX eTrading Developer (FX Cash Execution Technology team in London)
 
-* Vanguard Asset Management
-*** 	Jack Tuffs <JTuffs@mcgregor-boyall.com>
+** Vanguard Asset Management
+*** Jack Tuffs <JTuffs@mcgregor-boyall.com>
 - Lead Java Developer - TS03 - OMS Reporting (perm) 100K ???
 
+* Contacts
+** LonkedIn:
+ - Sebastian Parfitt de Vergnette
+** Contracting:
+ - Megan Murphy <mmurphy@algocapitalgroup.com>
+ - Lyndy Adlam <LAdlam@adlam.com>
+ - Dale, Ben <Ben.Dale@hays.com>
+ - Lee Russell <lee.russell@oliverbernard.co.uk>
+ - Hajigeorgiou, George <ghajigeorgiou@teksystems.com>
+ - Jonathan Kaye <jonathan.kaye@cititec.com>
+ - Ben McGregor <Ben.McGregor@whitehallresources.co.uk>
+ - James Peachey <inmail-hit-reply@linkedin.com>
+ - Zack Appleton <Zack.Appleton@searchtechnology.io>
+ - Craig Armstrong <CArmstrong@scopeat.co.uk>
+ - brad.claydon@opusrs.com (SW Dev Manager)
+ - Rebecca Sfedj <rebecca.sfedj@oliverbernard.co.uk>
+ - Jack.Procter@opusrs.com (Scala)
+ - Samey Haider <samey.haider@g2recruitment.com> (in EU)
+ - Shanice Tatter <s.tatter@gravitasgroup.com>
+ - Matthew.Carter@opusrs.com
+ - Miya.Watson@opusrs.com (Scala)
+ - Zoe Latuszka <zoe.latuszka@talentinternational.com>
+ - Cameron Mckay <CMckay@ikasinternational.com>
+ - Hannah Gordon <hannah.gordon@g2recruitment.com> (Brussels, Netherlands)
+ - Toby Plunkett <toby.plunkett@g2recruitment.com> (DevOps, 500/day)
+ - (???) James McMath <JMcMath@mcgregor-boyall.com>
+ - (???) Kane Fallon <kane.fallon@searchtechnology.io>
+ - (???) philip.staples@caspianone.co.uk
+ - Craig Mullen <CMullen@client-server.com>
+ - James Walter james.walter@vividresourcing.com (Scala, Rotterdam)
+** For the Permanents:
+ - Singh, Sanjay <s.singh@huxley.com> (most interesting roles including Instinet (Nomura) )
+ - Conner Gardner cgardner@hunterbond.com
+ - Olivia Pettengell <Olivia@stanfordblack.com>
+ - Rachel Butcher <RButcher@thomsonkeene.com>
+ - Stephanie Doherty <Stephanie@stanfordblack.com>
+ - Yanli Yuan <yanli.yuan@gqrgm.com>
+ - Jack Tuffs <JTuffs@mcgregor-boyall.com>
+ - Matt Weetman <matt.weetman@oliverbernard.co.uk>
+ - Matthew Arrowsmith <MArrowsmith@hunterbond.com>
+ - Ben Stanyard <Ben.Stanyard@radleyjames.com>
+ - Gareth Holmes | Caspian One <gareth.holmes@caspianone.co.uk>
+ - Gareth Shipley <GShipley@scopeat.co.uk>
+ - Kate Oliver <Kate.Oliver@opusrs.com>
+ - Augustas Pavilionis <apavilionis@morganmckinley.co.uk>
+ - Sam Stone <Sam.Stone@nicollcurtin.com>
+ - Lewis Hall <l.hall@computerfutures.com>
+ - f.alijaj@computerfutures.ch (Zurich)
+ - Ryan McCloskey <ryan.mccloskey@gqrgm.com>
+ - Ian Bailey <ian.bailey@harringtonstarr.com>
+ - Ben Sheridan Edwards <ben@functionalworks.com> (Japan)
+ - Rory Brandon <rory.brandon@oliverbernard.co.uk>
+ - Jonathan Kempster <jonathan.kempster@cornwalliselt.com>
+ - Monique Collman <Monique.Collman@harringtonstarr.com>
+ - Emma Jones <Emma.Jones@selbyjennings.com>
+ - Jerone Elson jerone.elson@harringtonstarr.com
+ - Peter von Schmidt <pvonschmidt@scopeat.co.uk>
+ - Bryn Heath <bryn.heath@harringtonstarr.com>
+ - Ciara Mckenna <Ciara.Mckenna@twentyrecruitment.com>
+ - Kiriaki Papadopoulou <k.papadopoulou@progressive.de> (Germany, Data Scientist)
+ - Brandon Maizels <brandon.maizels@cornwalliselt.com>
+ - Jayden.Broodryk@opusrs.com
+ - Oliver Mutch <oliver@pioneer-search.com>
+ - harles Curley <ccurley@thomsonkeene.com>
+ - Lewis Hall <l.hall@computerfutures.com>
+ - Jamie Burman <jburman@taurustech.co.uk>
+ - Hadfield, Philip <phihadfield@teksystems.com>
+ - Robert Plumtree <R.Plumtree@x4group.co.uk>
+ - Clare Cooper <Clare.Cooper@glocomms.com> (Berlin)
+ - BAML: https://www.linkedin.com/in/christian-slaney-97717b10b/
 
-* For the Pers:
-- Kate Oliver <Kate.Oliver@opusrs.com>
-- 	Sam Stone <Sam.Stone@nicollcurtin.com>
-- Jonathan Kempster <jonathan.kempster@cornwalliselt.com>
-- Monique Collman <Monique.Collman@harringtonstarr.com>
 
-
-State Street:
-- contact: 3 July 2017
-- phone interview: 5 July
-- f2f interview: ??? July
-- Start: 7 August;
+ State Street:
+ - contact: 3 July 2017
+ - phone interview: 5 July
+ - f2f interview: ??? July
+ - Start: 7 August;

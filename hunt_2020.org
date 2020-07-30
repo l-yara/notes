@@ -1,0 +1,243 @@
+,,#-*- mode: org -*-
+#+STARTUP: showall
+
+
+* Contacts
+** LinkedIn:
+*** Sebastian Parfitt de Vergnette
+    - connect: Mon Feb  3 01:18:48 2020
+    - suggested Tech Lead in SABRE and Engineer in LMR
+
+*** James Peachey <inmail-hit-reply@linkedin.com>
+   - connect: <2020-02-04 Tue>
+
+** Contractings:
+*** Andreea Blaga <ablaga@ikasinternational.com>
+   - applied for State Street 105347-1
+   - applied for Credit Suisse - Java Risk Developer - 83779 <2020-03-19 Thu>
+
+*** Deborah Lovejoy <DLovejoy@adlam.com>
+   - connect: Mon Feb  4 01:18:48 2020
+   - applied for BNP 11785 at 825/day <2020-02-04 Tue>
+     - face-to-face <2020-02-27 Thu>
+
+*** Lyndy Adlam <LAdlam@adlam.com>
+
+*** Adedeji, Ayobamiji <ayoadedeji@teksystems.com>
+    - applied to HSBC Equities - Algo Trading <2020-03-10 Tue>
+
+*** Ahmadi, Nilufar <nahmadi@teksystems.com> welcome15
+    - Industrial Logic (onsite with Ford). Sent my test <2020-02-17 Mon>
+      - chased 20th Feb and 2nd Mar;
+
+
+*** Elliot Hunter-Wylie < Elliot.Hunter-Wylie@hays.com>
+
+*** Ben Dale <Ben.Dale@hays.com>
+    - connect: <2020-02-05 Wed> http://ulula.refr.cc/yaroslavl
+    - applied to 89235935 on TotalJobs
+
+*** Mike Wilson <Mike.Wilson@hays.com>
+    - connect: <2020-02-04 Tue>
+    - forwarded to Ben Dale
+
+    - Oliver Stedman <Oliver.Stedman@hays.com>
+
+*** James Egan <james.egan@oliverbernard.co.uk>
+    - applied for Credit Suisse 82830, 82834, 82835 <2020-03-07 Sat>
+
+*** Lee Russell <lee.russell@oliverbernard.co.uk>
+    - connect: Mon Feb  3 01:18:48 2020
+    - asked about perm salary (I've claimed for £140K)
+    - mystical Expert Java Developer - Algo/ Trading/ Pricing (650 outside) applied <2020-02-16 Sun>
+    - similar mystical Foreign Office position "outside of IR35", applied <2020-02-16 Sun>
+
+*** George Hajigeorgiou <ghajigeorgiou@teksystems.com>
+    - applied for Earthport(Visa) <2020-02-11 Tue>
+
+*** Lee Ballen <lballen@hunterbond.com>
+    - mystical role "outside of IR35" @ 650; applied <2020-02-16 Sun>
+
+*** Jonathan Kaye <jonathan.kaye@cititec.com>
+    - connect: Mon Feb  3 01:18:48 2020
+    - has nothing for now
+
+*** Ben McGregor <Ben.McGregor@whitehallresources.co.uk>
+*** Zack Appleton <Zack.Appleton@searchtechnology.io>
+*** Craig Armstrong <CArmstrong@scopeat.co.uk>
+    - connect: Mon Feb  3 01:18:48 2020
+    - asked "why looking for Outside"
+    - suggested Java Algo Developer - Trading Tech perm (with open salary range)
+
+*** brad.claydon@opusrs.com
+*** Rebecca Sfedj <rebecca.sfedj@oliverbernard.co.uk>
+*** Jack.Procter@opusrs.com (Scala)
+*** Samey Haider <samey.haider@g2recruitment.com> (in EU)
+*** Shanice Tatter <s.tatter@gravitasgroup.com>
+*** Matthew.Carter@opusrs.com
+*** Miya.Watson@opusrs.com (Scala)
+*** Zoe Latuszka <zoe.latuszka@talentinternational.com>
+*** Cameron Mckay <CMckay@ikasinternational.com>
+    - connect: <2020-02-03 Mon>
+    - asked about rate for inside
+*** Hannah Gordon <hannah.gordon@g2recruitment.com> (Brussels, Netherlands)
+*** Toby Plunkett <toby.plunkett@g2recruitment.com> (DevOps, 500/day)
+*** James McMath <JMcMath@mcgregor-boyall.com>
+    - connect: Mon Feb  3 01:18:48 2020
+    - suggested "well-paid"  perm
+    - <2020-02-04 Tue>: applied to  Citi - Senior Electronic Trading Developer (Java) 18049140 and 19034400
+    - <2020-02-10 Mon>: suggested Team Lead in SABRE, me rejected
+    - <2020-02-10 Mon>: Applied for BNP Java E-Trading (11858)
+    - <2020-02-13 Thu>: applied for Citi -Lead Java Rates Real-Time Risk Developer (17040171)
+    - <2020-02-19 Wed>: applied for Vanguard, rate too low
+
+*** Fadi Harb <FHarb@ikasinternational.com>
+   - applied for BNP Paribas FX eTrading Java Developer - Ref 11860 <2020-02-28 Fri>
+
+*** Anthony Besant <Anthony.Besant@morganphilips.com>
+
+*** (???) Kane Fallon <kane.fallon@searchtechnology.io>
+*** (???) philip.staples@caspianone.co.uk
+*** Craig Mullen <CMullen@client-server.com>
+    - connect: Mon Feb  3 01:18:48 2020
+    - (contacted both directly and via forward)
+*** James Walter james.walter@vividresourcing.com (Scala, Rotterdam)
+    - connect: Mon Feb  3 01:18:48 2020
+    - Brussels / Amsterdam suggested
+
+*** Peter von Schmidt <pvonschmidt@scopeat.co.uk>
+*** george.booth@opusrs.com
+*** James Gamage <james.gamage@revolutiontechnology.co.uk>
+*** Amy.Kirkpatrick@opusrs.com
+*** Luca Townshend <LTownshend@mcgregor-boyall.com>
+    - rejected ???
+*** Symron Bains <Symron@haybrook.co.uk>
+*** Elli Gkoritsa <Elli.gkoritsa@twentyrecruitment.com>
+*** Louis.hampton-jones@vividresourcing.com
+*** Vishnu Reddy <vishnu@lgrecruit.com>
+*** James Dixon <jdixon@venquis.com>
+*** Maximillian DePfyffer <max.pfyffer@twentyrecruitment.com>
+*** Jennifer Symms <jsymms@thomsonkeene.com>
+    - connect: Mon Feb  3 01:18:48 2020
+    - suggested BNP 11785 and 11776; applied for 11776
+    - <2020-02-05 Wed> applied for Nomura: Java E-Trading Developer and Java E-Trading Pricing Developer
+
+*** Alex Miles-Hewinson <AlexMiles-Hewinson@harnham.com>
+    - rejected ???
+*** Lloyd Dyer <Lloyd.Dyer@alexanderash.com>
+*** Ryan Burgess <Ryan.Burgess@hays.com>
+*** Ben Dowdle <ben.dowdle@caspianone.co.uk>
+*** Zack Keane (Caspian One) <zack.keane@caspianone.co.uk>
+*** Tom Lynch <tom.lynch@cornwalliselt.com>
+*** Ben Chan <ben.chan@twentyrecruitment.com>
+    - not found
+*** Enpu Zhang <Enpu.Zhang@radleyjames.com>
+*** Luke Hunt <LHunt@client-server.com>
+    - connect: Mon Feb  3 01:18:48 2020
+    - forwarded to Craig Mullen
+
+*** Nima Moradmand <nima.moradmand@cititec.com>
+*** George Evans <gevans@teksystems.com>
+*** Ben Stanyard <Ben.Stanyard@radleyjames.com> ????
+    - connect: Mon Feb  3 13:18:48 2020
+    - applied to BNP Java Algo iX (?) contract - 800/day
+
+*** Jamie Evans <jamie@sterlings.uk.com>
+    - applied to RBC - FX Algo Developer <2020-02-05 Wed> (PERM!!!)
+      - asked for interview <2020-02-10 Mon>
+      - interview RBC confirmed for <2020-02-26 Wed>; FAILED
+
+*** James Marsh <j.marsh@huxley.com>
+    - applied for "something" (presumably BNY Mellon) at 700/day if NIC is paid (?)
+
+*** Ivan D'Silva <Ivan.dsilva@emagine.de>
+    - spec (Java FX Developer @ emagine): <2020-02-06 Thu>
+    - NDA (confirmed by email), mentioned RBC role: <2020-02-10 Mon>
+    - asked for IKM test
+    - отлуп <2020-02-20 Thu>; IKM test result [[./IKM_Test Result_2020_02_ 97559969.pdf]]
+
+*** Charles Curley <ccurley@thomsonkeene.com>
+   - update about Nomura 1167182: messed with scopeAt after 19 Feb
+   - Nomura 1165140, 1165148: applied <2020-02-17 Mon>
+
+
+
+
+
+** For the Permanents:
+*** James Batt <james@saragossa.co.uk>
+   - applied to Capula - Senior Java Engineer <2020-02-06 Thu>
+
+*** Holly Horton <hhorton@vertuspartners.com>
+   - mystical role at Zurich: <2020-02-17 Mon>
+
+
+
+   - Singh, Sanjay <s.singh@huxley.com> (most interesting roles including Instinet (Nomura) )
+*** Phoebe Light <phoebe@co-hire.com>
+ - find in Gmail; some service for hiring (???)
+   - Conner Gardner cgardner@hunterbond.com
+   - Olivia Pettengell <Olivia@stanfordblack.com>
+   - Rachel Butcher <RButcher@thomsonkeene.com>
+   - Stephanie Doherty <Stephanie@stanfordblack.com>
+
+*** Yanli Yuan <yanli.yuan@gqrgm.com>
+   - applied for the Credit Suisse: Java Server Side Risk Developer (133357) and Zoo 2.0 Developer (148700) <2020-02-25 Tue>
+
+
+  - Jack Tuffs <JTuffs@mcgregor-boyall.com>
+  - Matt Weetman <matt.weetman@oliverbernard.co.uk>
+  - Matthew Arrowsmith <MArrowsmith@hunterbond.com>
+  - Matthew North <mnorth@welovesalt.com>
+*** Gareth Holmes | Caspian One <gareth.holmes@caspianone.co.uk>
+   - application for Ultra Low Latency Java Software Engineer – Cash Equities eTrading at Goldman Sachs, <2020-02-14 Fri> (full title: Title: Securities, Ultra Low Latency Java Software Engineer –Cash Equities eTrading, London)
+     - phone interview planned for <2020-03-05 Thu>
+
+
+
+  - Darcy Mills <DMills@scopeat.co.uk>
+*** Gareth Shipley <GShipley@scopeat.co.uk>
+  - applied for Nomura - Etrading Developer - 1167182 <2020-02-19 Wed>
+
+
+ - Katie Chan <katie.chan@mbauk.com>
+ - Kate Oliver <Kate.Oliver@opusrs.com>
+*** Augustas Pavilionis <apavilionis@morganmckinley.co.uk>
+   - applied for Standard Chartered (SABRE) Team Lead <2020-02-05 Wed>
+
+*** Maxime Percheron <Maxime@stanfordblack.com>
+   - call, fresh CV sent <2020-02-14 Fri>
+
+   - Sam Stone <Sam.Stone@nicollcurtin.com>
+   - Lewis Hall <l.hall@computerfutures.com>
+   - f.alijaj@computerfutures.ch (Zurich)
+   - Ryan McCloskey <ryan.mccloskey@gqrgm.com>
+   - Ian Bailey <ian.bailey@harringtonstarr.com>
+   - Ben Sheridan Edwards <ben@functionalworks.com> (Japan)
+   - Rory Brandon <rory.brandon@oliverbernard.co.uk>
+   - Jonathan Kempster <jonathan.kempster@cornwalliselt.com>
+   - Monique Collman <Monique.Collman@harringtonstarr.com>
+   - Emma Jones <Emma.Jones@selbyjennings.com>
+   - Jerone Elson jerone.elson@harringtonstarr.com
+   - Bryn Heath <bryn.heath@harringtonstarr.com>
+   - Ciara Mckenna <Ciara.Mckenna@twentyrecruitment.com>
+   - Kiriaki Papadopoulou <k.papadopoulou@progressive.de> (Germany, Data Scientist)
+   - Brandon Maizels <brandon.maizels@cornwalliselt.com>
+   - Jayden.Broodryk@opusrs.com
+   - Oliver Mutch <oliver@pioneer-search.com>
+
+
+
+
+   - Lewis Hall <l.hall@computerfutures.com>
+   - Jamie Burman <jburman@taurustech.co.uk>
+   - Hadfield, Philip <phihadfield@teksystems.com>
+   - Robert Plumtree <R.Plumtree@x4group.co.uk>
+   - Aaron Kelly - onezeero <Aaron.Kelly@onezeero.co.uk>
+   - Clare Cooper <Clare.Cooper@glocomms.com> (Berlin)
+*** Ryan Standing - Mthree <ryan.standing@mthreeconsulting.com>
+    - connect: Mon Feb  3 01:18:48 2020
+    - perm only
+
+
+                            State Street:

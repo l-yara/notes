@@ -1,7 +1,17 @@
+* Architecture
+
+- BPM, UI and common sense: https://medium.com/@humorous_wine_caribou_577/some-casual-notes-about-bpm-based-applications-oracle-camunda-and-others-38ffca053957 (Some casual notes about BPM based applications. Oracle, Camunda and others…)
+
+
+
 ** Generics
 A method is /generic/ if it declares one or more type variables. These type variables are known as /type parameters/ of the method.
 
+** Javadoc
+- code fragments: ~{@code this.size() == 0}~; if multi-line: =<pre>{@code and follow it with }</pre>=
+- to avoid HTML codes for the special symbols: use =@literal=:  ={@literal |r| < 1}=
+
 * 17.  Threads and Locks
-Semantic: rules for which values can be seen by a read of shared memory that is updated by multiple threads (similar to the /memory model/ for different HW architectues).
+Semantic: rules for which values can be seen by a read of shared memory that is updated by multiple threads (similar to the /memory model/ for different HW architectures).
 
 Every object, in addition to having an associated monitor, has an associated /wait set/ which is a set of threads. This set is empty when object is just created. Elementary actions that add threads to and remove threads from wait sets are atomic. Wait sets are manipulated solely through the methods Object.wait, Object.notify, and Object.notifyAll.

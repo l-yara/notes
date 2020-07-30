@@ -2,53 +2,49 @@
 #+STARTUP: showall
 
 * Tips and Tricks
+
 - Open file on Amazon server described in ~/.ssh/config as awshost1 using tramp:
   C-x C-f /sshx:awshost1:
 - Compile (and load) the content of .emacs:
   M-a (standard M-x)  eval-buffer
 
 * Org-mode
+
   TAB/S-TAB - (un)fold
   M-up/down – move a headline up or down
   M-left/right – promote or demote a headline
   M-RET – insert a new headline
 
 ** Lists:
+
 - un- ordered starts with -, * or \*;
 - ordered start with number and dot.
 - descriptions start with :: here comes description
+
 ** Formatting:
+
    You can make words *bold*, /italic/, _underlined_, =code= and ~verbatim~, and, if you must, +strike-through+.
+
 ** todo lists
+
    S-left/right :: cycle workflow
    C-c C-v – show todos in current document
+
 *** Configuring todo's cycle:
+
 - In the file itself (on the beginning of the file):
   #+TODO: TODO IN-PROGRESS WAITING DONE
 - in emacs - config:
   =(setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))=
+
 ** GTD - separate story at [[http://orgmode.org/worg/org-tutorials/org4beginners.html][]
-
 * Prelude + Ergoemacs + Yara's expansions
-
 ** Common
+
    M-a  :: Alias for M-x.
 
-*** File/buffer/window commands
-    C-o          Find file (Open File)
-    C-s          Save buffer
-    C-x s        Save file (like save-as)
-    C-x b        Switch buffer
-    C-x k        Kill buffer
-
-    M-4          Split window horizontally
-    M-S-4        Split window vertically
-    M-s          Goto next window (pane)
-    M-S-s        Goto previous window (pane)
-    M-3          Delete other windows
-    M-2          Delete current window
-
 *** View
+
     C-+          Increase font size(text-scale-increase).
     C--          Decrease font size(text-scale-decrease).
 
@@ -58,14 +54,13 @@
     F12          Toggle the Emacs menu bar.
 
 *** Dired
-
-
-
 ** Unknown
+
    C-x </kbd>   align-regexp
    C-x O        Go back to previous window (the inverse of other-window (C-x o)).
 
 ** Editing
+
    M-e          Kill the previous word(backward-kill-word).
    M-S-6 (M-^)  Join two lines into one(join-line).
 
@@ -75,7 +70,9 @@
 
 
    TODO in Emacs: move to previous/next to M-m / M-,
+
 *** Lines
+
     F9 d         Duplicate line or region
     C-d          Delete line(s)
     S-RET        Insert an empty line below current and indent it properly (as in most IDEs).
@@ -84,21 +81,20 @@
     C-S-down     Move the current line down.
 
 ** Shells
+
    C-x p        Start proced (manage processes form Emacs, works only in Linux).
    C-x m        Start eshell.
    C-x M        Start eshell.
    C-x M-m      Start your default shell.
 
 ** Help
+
    C-h A (F1 A) Run apropos (search in all Emacs symbols).
    C-x C-b      Open ibuffer (a replacement for the default buffer-list).
    C-=  Run expand-region (incremental text selection).
 
-** Magit
-   C-x g(M 9)   Open Magit's status buffer.
-   Tab          Toggle 'diff'
-
 ** Prelude-mode
+
    C-c o        Open the currently visited file with an external program.
    C-c g        Search in Google for the thing under point (or an interactive query).
    C-c n        Fix indentation in buffer and strip whitespace.
@@ -108,11 +104,13 @@
    C-c e        Eval a bit of Emacs Lisp code and replace it with its result.
    C-c s        Swap two active windows.
    C-c d        Duplicate the current line (or region).
-   C-c r        Rename the currently visited file and buffer.
    C-c t        Open a terminal emulator (ansi-term).
+   C-c r        Rename the currently visited file and buffer.
    C-c k        Kill all open buffers except the one you're currently in.
    C-c h        Open Helm (a useful means of navigating your buffers and project files).
+
 ** Projectile
+
    C-c p f      Display a list of all files in the project. With a prefix argument it will clear the cache first.
    C-c p T      Display a list of all test files(specs, features, etc) in the project.
    C-c p g      Run grep on the files in the project.
@@ -131,37 +129,31 @@
    C-c p s      Display a list of known projects you can switch to.
    C-c p h     Help on Projectile
 
-** Movement commands
-   C-a         Select All
-   C-a         Beginning of line
-   C-e         End of line
-   C-n         Next line (down)
-   C-p         Previous line (up)
-   C-b         Back (left)
-   C-f         Forward (right)
-   M-f         Forward a word
-   M-b         Back a word
-   C-v         Forward a page
-   M-v         Back a page
 ** Edit commands
+
    C-d         Kill character
    M-d         Kill word
    M-delete    Kill word backwards
    C-_         Undo
    M-_         Redo
+
 ** Misc commands
+
    C-s         Regex search forwards
    C-r         Regex search backwards
    M-%         Query replace
    C-h a       Apropos - search the help for a term
+
 ** On/off wrapping:
+
    M-x visual-line-mode (or menu->Options->Line Wrapping in This Buffer->)
 
 * Evil mode info
+
 - Imenu-mode — меню для навигации по текущему буферу. Обычно языковые режимы emacs автоматически наполняют его позициями в которых определены методы или функции. Отображается меню как пожелаете :) Можно в minibuffer (аналог комадной строки vim), можно в оконном меню а можно в буфере anything.el :) Жутко удобная фича. Расширяется так же просто как anything.
 - Speedbar - file management
 - Commenting, Yasnippet etc.
 
-* Windows setup: 
-https://ftp.gnu.org/gnu/emacs/windows/README
+* Windows setup:
 
+https://ftp.gnu.org/gnu/emacs/windows/README
