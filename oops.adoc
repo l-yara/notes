@@ -14,4 +14,4 @@ asciimath::[sqrt(4) = 2]
 
 oops: stem:[sqrt(4) = 2]
 
-hee-hoo latexmath:[C = \alpha + \beta Y^{\gamma} + \epsilon]
+hee-hoo latexmath::[C = \alpha + \beta Y^{\gamma} + \epsilon]
