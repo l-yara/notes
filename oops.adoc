@@ -1,4 +1,5 @@
 = My Diabolical Mathmatical Opus
+:stem: asciimath
 Jamie Moriarty
 
 So this is inline math block: $$`sqrt(4) = 2`$$
@@ -7,4 +8,8 @@ So this is inline math block: $$sqrt(4) = 2$$
 
 Inline macro: asciimath:[sqrt(4) = 2]
 
-And block macro: asciimath::[sqrt(4) = 2]
+And block macro: 
+
+asciimath::[sqrt(4) = 2]
+
+oops: stem:[sqrt(4) = 2]
